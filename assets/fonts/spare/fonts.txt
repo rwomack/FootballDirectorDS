@@ -1,0 +1,4 @@
+font16_AA.png is being used as fontim.png / .lsb
+font10_fakeAA.png is being used as font10.png / .lsb
+
+The others are spare

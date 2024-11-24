@@ -1,0 +1,9 @@
+[default]
+textPos=CENTRE
+textScreen=TOP
+
+[1]
+text=On this screen you can set the corner taker, penalty taker, free kick taker and captain for your team.
+
+[2]
+text=To do so, simply drag a player from the squad list onto the corresponding dot on the pitch or caption below the pitch.

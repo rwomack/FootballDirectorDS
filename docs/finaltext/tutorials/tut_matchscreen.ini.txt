@@ -1,0 +1,74 @@
+[default]
+textPos=CENTRE
+textScreen=TOP
+spritePos=LEFTTEXT
+
+[1]
+text=This is the match day screen. On the top screen (in the top left) you can see the current match time, match speed and below that information on the match so far.
+textScreen=BOTTOM
+highlightScreen=TOP
+highlightX=0
+highlightY=0
+highlightW=256
+highlightH=192
+
+[2]
+text=On the bottom screen a match specific menu replaces the standard menu on the left.
+highlightScreen=BOTTOM
+highlightX=0
+highlightY=0
+highlightW=256
+highlightH=192
+
+
+[3]
+text=The button in the upper-left hand of the bottom screen allows you to start or pause the match playback.
+highlightScreen=BOTTOM
+highlightWidgetName=matchplay
+highlightWidgetName2=matchpause
+spriteBank="uiicon"
+spriteName="fast_forward"
+
+[4]
+text=Below that are the menu buttons to:
+
+[5]
+text=View the commentary screen.
+highlightScreen=BOTTOM
+highlightWidgetName=matchcomm
+spriteBank="uiicon"
+spriteName="menu_commentary"
+
+[6]
+text=View match events.
+highlightScreen=BOTTOM
+highlightWidgetName=matchevents
+spriteBank="uiicon"
+spriteName="menu_events"
+
+
+[7]
+text=View a skill comparison between the two teams and the percentage of play information bar.
+highlightScreen=BOTTOM
+highlightWidgetName=matchskill
+spriteBank="uiicon"
+spriteName="menu_skills"
+
+[8]
+text=Open a further menu similar to the main menus to view the teams, make substitutions and tactical team changes. Any changes will affect the result of the match.
+highlightScreen=BOTTOM
+highlightWidgetName=matchmenurollout
+spriteBank="uiicon"
+spriteName="menu_match"
+
+[9]
+text=During relevant matches you can also view a live league table, the latest scores and also adjust the match speed.
+highlightScreen=BOTTOM
+highlightWidgetName=matchmenurollout
+spriteBank="uiicon"
+spriteName="menu_match"
+
+[10]
+text=Note: Keep an eye on the commentary for any indication of an injured player so that a substitution can be made immediately using the team changes screen!
+
+

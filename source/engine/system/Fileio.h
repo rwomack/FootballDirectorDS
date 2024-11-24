@@ -1,0 +1,13 @@
+        extern int ReadInt(CDataFile* file);
+        extern float ReadFloat(CDataFile* file);
+        extern char* ReadString(char* str, int NumChars, CDataFile*file);
+        extern CString ReadCString(CDataFile*file);
+        extern void WriteCString(CString str, CDataFile*file);
+        extern void WriteArray(CDWordArray* TheArray, CDataFile* File);
+        extern void ReadArray(CDWordArray* TheArray, CDataFile* File);
+        extern void WriteArray(CWordArray* TheArray, CDataFile* File);
+        extern void ReadArray(CWordArray* TheArray, CDataFile* File);
+        extern void WriteArray(CByteArray* TheArray, CDataFile* File);
+        extern void ReadArray(CByteArray* TheArray, CDataFile* File);
+        extern void WriteCStringArray(CStringArray* TheArray, CDataFile* File);
+        extern void ReadCStringArray(CStringArray* TheArray, CDataFile* File);

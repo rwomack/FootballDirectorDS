@@ -1,0 +1,30 @@
+[default]
+textPos=CENTRE
+textScreen=TOP
+spritePos=LEFTTEXT
+
+[1]
+text=This screen shows the final result for the match on the top screen.
+textScreen=BOTTOM
+
+[2]
+text=Using the menu buttons on the left of the bottom screen you can view either the Skills screen which shows the skill levels of each team and the percentage of play...
+highlightScreen=BOTTOM
+highlightWidgetName=summaryskill
+spriteBank=uiicon
+spriteName=menu_skills
+
+
+[3]
+text=...or the Events screen showing the match events for each team.
+highlightScreen=BOTTOM
+highlightWidgetName=summaryevents
+spriteBank=uiicon
+spriteName=menu_events
+
+[4]
+text=When you have finished reviewing the results, touch the Back button in the lower-left corner.
+highlightScreen=BOTTOM
+highlightWidgetName=summaryDonebutton
+spriteBank=uiicon
+spriteName=back

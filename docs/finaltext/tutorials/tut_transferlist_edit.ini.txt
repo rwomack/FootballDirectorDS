@@ -1,0 +1,71 @@
+[default]
+textPos=CENTRE
+textScreen=TOP
+
+[1]
+text=This screen allows you to edit a particular search filter used for displaying transfer listed players.
+
+[2]
+text=The top slider allows you to set a minimum contract value for the filter.
+highlightScreen=BOTTOM
+highlightX=92
+highlightW=100
+highlightY=19
+highlightH=14
+#highlightScreen=BOTTOM
+#highlightWidgetName=tle_min_cost_slider
+
+[3]
+text=The slider below allows you to set a maximum contract value for the filter.
+highlightScreen=BOTTOM
+highlightX=92
+highlightW=100
+highlightY=47
+highlightH=14
+#highlightScreen=BOTTOM
+#highlightWidgetName=tle_max_cost_slider
+
+[4]
+text=The next set of sliders allows you to set a minimum age..
+highlightScreen=BOTTOM
+highlightWidgetName=tle_min_age_slider
+
+[5]
+text=..and a maximum age.
+highlightScreen=BOTTOM
+highlightWidgetName=tle_max_age_slider
+
+[6]
+text=Likewise, the next set of sliders allows you to set a minimum overall skill...
+highlightScreen=BOTTOM
+highlightWidgetName=tle_min_skill_slider
+
+[7]
+text=...and a maximum overall skill.
+highlightScreen=BOTTOM
+highlightWidgetName=tle_max_skill_slider
+
+[8]
+text=The checkboxes towards the bottom of the screen allow you to include players in your search who are injured, suspended, out of contract, transfer listed (or non-listed) or loan listed players.
+highlightScreen=BOTTOM
+highlightX=20
+highlightW=256
+highlightY=121
+highlightH=42
+
+
+[9]
+text=The selector at the bottom right of the screen allows you to set filters for each position or for all players.
+highlightScreen=BOTTOM
+highlightWidgetName=tle_position_combo
+
+[10]
+text=As you adjust the filter parameters the top screen will show a preview of the players being returned by your transfer list search.
+textScreen=BOTTOM
+highlightScreen=TOP
+highlightWidgetName=resulttable
+
+[11]
+text=When you have finished, touch the Save button to save your changes and return to the transfer list screen to select and buy or loan players you have found!
+highlightScreen=BOTTOM
+highlightWidgetName=tle_search

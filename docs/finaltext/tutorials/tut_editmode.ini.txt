@@ -1,0 +1,31 @@
+[default]
+textPos=CENTRE
+textScreen=TOP
+
+[1]
+text=This screen allows you to edit club and player names. These changes will take effect when a new game is started.
+
+[2]
+text=To edit a club name, select it using the list in the upper-left hand corner of the screen. If the desired team is in another division, you can choose it using the selector to the right. Tap on the Edit Club button to change the club’s name.
+highlightScreen=BOTTOM
+highlightX=24
+highlightY=34
+highlightW=98
+highlightH=72
+
+
+[3]
+text=To edit a player’s name, select the club to which the player belongs. Then, select the player’s name from the table in the lower-left hand corner of the screen. Tap the Edit Player button to edit their name.
+highlightScreen=BOTTOM
+highlightX=142
+highlightY=34
+highlightW=96
+highlightH=72
+
+[4]
+text=Touch the Save button to save your changes. If you wish to discard your unsaved changes, touch the Cancel button. If you would like to reset all player and club information touch the Reset All button.
+highlightScreen=BOTTOM
+highlightX=20
+highlightY=155
+highlightW=256
+highlightH=24

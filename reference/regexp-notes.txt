@@ -1,0 +1,12 @@
+
+-- Replace sizeof Bla with sizeof(Bla)
+
+sizeof ([a-z_0-9A-Z\ \[\]]*)
+sizeof(\0)
+
+-- read
+
+fread(\(.[ &a-zA-Z0-9_]*)\,([ ()a-zA-Z0-9_]*)\,([ ()a-zA-Z0-9_]*)\,([ ()a-zA-Z0-9_]*)
+File->Read(\0,\1*\2);
+
+fwrite(\(.[ ()&a-zA-Z0-9_]*)\,([ ()a-zA-Z0-9_]*)\,([ ()a-zA-Z0-9_]*)\,([ ()a-zA-Z0-9_]*)

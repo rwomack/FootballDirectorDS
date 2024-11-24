@@ -1,0 +1,917 @@
+<?xml version="1.0" standalone="yes" ?>
+<FDGameWorldXMLArchive version="1">
+    <node_store store_version="0">
+        <node id="1">
+            <object class="lUISpriteWidget" version="0">
+                <object_properties>
+                    <class name="lUISpriteWidget">
+                        <property name="Sprite" m_name="grad_grey1" m_bank="uiicon" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="longStrip_0" />
+                        <property name="Pos" m_x="20.000000" m_y="198.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="236.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="2">
+            <object class="lUISpriteWidget" version="0">
+                <object_properties>
+                    <class name="lUISpriteWidget">
+                        <property name="Sprite" m_name="grad_grey1" m_bank="uiicon" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="longStrip_1" />
+                        <property name="Pos" m_x="20.000000" m_y="224.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="236.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="3">
+            <object class="lUISpriteWidget" version="0">
+                <object_properties>
+                    <class name="lUISpriteWidget">
+                        <property name="Sprite" m_name="grad_grey1" m_bank="uiicon" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="longStrip_2" />
+                        <property name="Pos" m_x="20.000000" m_y="250.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="236.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="4">
+            <object class="lUISpriteWidget" version="0">
+                <object_properties>
+                    <class name="lUISpriteWidget">
+                        <property name="Sprite" m_name="grad_grey1" m_bank="uiicon" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="longStrip_3" />
+                        <property name="Pos" m_x="20.000000" m_y="276.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="236.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="5">
+            <object class="lUISpriteWidget" version="0">
+                <object_properties>
+                    <class name="lUISpriteWidget">
+                        <property name="Sprite" m_name="grad_grey1" m_bank="uiicon" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="longStrip_4" />
+                        <property name="Pos" m_x="20.000000" m_y="302.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="236.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="6">
+            <object class="lUISpriteWidget" version="0">
+                <object_properties>
+                    <class name="lUISpriteWidget">
+                        <property name="Sprite" m_name="grad_grey1" m_bank="uiicon" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="longStrip_5" />
+                        <property name="Pos" m_x="20.000000" m_y="328.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="236.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="7">
+            <object class="lUISpriteWidget" version="0">
+                <object_properties>
+                    <class name="lUISpriteWidget">
+                        <property name="Sprite" m_name="grad_grey1" m_bank="uiicon" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="longStrip_6" />
+                        <property name="Pos" m_x="20.000000" m_y="354.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="236.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="8">
+            <object class="FDBarWidget" version="0">
+                <object_properties>
+                    <class name="FDBarWidget">
+                        <property name="ColourA" m_colour="4278190208" />
+                        <property name="ColourB" m_colour="4278190080" />
+                        <property name="pctA" value="0.466667" />
+                        <property name="Gradient" m_name="grad_white" m_bank="uiicon" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="bar_0" />
+                        <property name="Pos" m_x="58.000000" m_y="210.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="160.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="1" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="9">
+            <object class="lUITextWidget" version="0">
+                <object_properties>
+                    <class name="lUITextWidget">
+                        <property name="Text" str="7" id="" />
+                        <property name="Align" value="CenterCenter" />
+                        <property name="Colour" m_colour="4294967295" />
+                        <property name="Shadow" value="0" />
+                        <property name="ShadowColour" m_colour="4278190080" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="homeplayerlabel_0" />
+                        <property name="Pos" m_x="42.000000" m_y="210.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="5.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="10">
+            <object class="lUITextWidget" version="0">
+                <object_properties>
+                    <class name="lUITextWidget">
+                        <property name="Text" str="CORNERS" id="IDS_MDAY_CORNERS" />
+                        <property name="Align" value="CenterCenter" />
+                        <property name="Colour" m_colour="4294967295" />
+                        <property name="Shadow" value="0" />
+                        <property name="ShadowColour" m_colour="4278190080" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="awayplayerlabel1_0" />
+                        <property name="Pos" m_x="114.000000" m_y="198.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="48.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="11">
+            <object class="lUITextWidget" version="0">
+                <object_properties>
+                    <class name="lUITextWidget">
+                        <property name="Text" str="8" id="" />
+                        <property name="Align" value="CenterCenter" />
+                        <property name="Colour" m_colour="4294967295" />
+                        <property name="Shadow" value="0" />
+                        <property name="ShadowColour" m_colour="4278190080" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="awayplayerlabel2_0" />
+                        <property name="Pos" m_x="233.000000" m_y="210.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="5.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="12">
+            <object class="FDBarWidget" version="0">
+                <object_properties>
+                    <class name="FDBarWidget">
+                        <property name="ColourA" m_colour="4278190208" />
+                        <property name="ColourB" m_colour="4278190080" />
+                        <property name="pctA" value="0.454545" />
+                        <property name="Gradient" m_name="grad_white" m_bank="uiicon" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="bar_1" />
+                        <property name="Pos" m_x="58.000000" m_y="236.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="160.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="1" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="13">
+            <object class="lUITextWidget" version="0">
+                <object_properties>
+                    <class name="lUITextWidget">
+                        <property name="Text" str="5" id="" />
+                        <property name="Align" value="CenterCenter" />
+                        <property name="Colour" m_colour="4294967295" />
+                        <property name="Shadow" value="0" />
+                        <property name="ShadowColour" m_colour="4278190080" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="homeplayerlabel_1" />
+                        <property name="Pos" m_x="42.000000" m_y="236.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="5.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="14">
+            <object class="lUITextWidget" version="0">
+                <object_properties>
+                    <class name="lUITextWidget">
+                        <property name="Text" str="FREE KICKS" id="IDS_MDAY_FREEKICKS" />
+                        <property name="Align" value="CenterCenter" />
+                        <property name="Colour" m_colour="4294967295" />
+                        <property name="Shadow" value="0" />
+                        <property name="ShadowColour" m_colour="4278190080" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="awayplayerlabel1_1" />
+                        <property name="Pos" m_x="108.000000" m_y="224.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="60.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="15">
+            <object class="lUITextWidget" version="0">
+                <object_properties>
+                    <class name="lUITextWidget">
+                        <property name="Text" str="6" id="" />
+                        <property name="Align" value="CenterCenter" />
+                        <property name="Colour" m_colour="4294967295" />
+                        <property name="Shadow" value="0" />
+                        <property name="ShadowColour" m_colour="4278190080" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="awayplayerlabel2_1" />
+                        <property name="Pos" m_x="233.000000" m_y="236.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="5.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="16">
+            <object class="FDBarWidget" version="0">
+                <object_properties>
+                    <class name="FDBarWidget">
+                        <property name="ColourA" m_colour="4278190208" />
+                        <property name="ColourB" m_colour="4278190080" />
+                        <property name="pctA" value="0.250000" />
+                        <property name="Gradient" m_name="grad_white" m_bank="uiicon" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="bar_2" />
+                        <property name="Pos" m_x="58.000000" m_y="262.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="160.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="1" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="17">
+            <object class="lUITextWidget" version="0">
+                <object_properties>
+                    <class name="lUITextWidget">
+                        <property name="Text" str="1" id="" />
+                        <property name="Align" value="CenterCenter" />
+                        <property name="Colour" m_colour="4294967295" />
+                        <property name="Shadow" value="0" />
+                        <property name="ShadowColour" m_colour="4278190080" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="homeplayerlabel_2" />
+                        <property name="Pos" m_x="43.000000" m_y="262.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="4.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="18">
+            <object class="lUITextWidget" version="0">
+                <object_properties>
+                    <class name="lUITextWidget">
+                        <property name="Text" str="SHOTS ON TARGET" id="IDS_MDAY_SHOTSONTARGET" />
+                        <property name="Align" value="CenterCenter" />
+                        <property name="Colour" m_colour="4294967295" />
+                        <property name="Shadow" value="0" />
+                        <property name="ShadowColour" m_colour="4278190080" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="awayplayerlabel1_2" />
+                        <property name="Pos" m_x="91.500000" m_y="250.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="93.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="19">
+            <object class="lUITextWidget" version="0">
+                <object_properties>
+                    <class name="lUITextWidget">
+                        <property name="Text" str="3" id="" />
+                        <property name="Align" value="CenterCenter" />
+                        <property name="Colour" m_colour="4294967295" />
+                        <property name="Shadow" value="0" />
+                        <property name="ShadowColour" m_colour="4278190080" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="awayplayerlabel2_2" />
+                        <property name="Pos" m_x="233.000000" m_y="262.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="5.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="20">
+            <object class="FDBarWidget" version="0">
+                <object_properties>
+                    <class name="FDBarWidget">
+                        <property name="ColourA" m_colour="4278190208" />
+                        <property name="ColourB" m_colour="4278190080" />
+                        <property name="pctA" value="0.444444" />
+                        <property name="Gradient" m_name="grad_white" m_bank="uiicon" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="bar_3" />
+                        <property name="Pos" m_x="58.000000" m_y="288.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="160.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="1" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="21">
+            <object class="lUITextWidget" version="0">
+                <object_properties>
+                    <class name="lUITextWidget">
+                        <property name="Text" str="4" id="" />
+                        <property name="Align" value="CenterCenter" />
+                        <property name="Colour" m_colour="4294967295" />
+                        <property name="Shadow" value="0" />
+                        <property name="ShadowColour" m_colour="4278190080" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="homeplayerlabel_3" />
+                        <property name="Pos" m_x="41.000000" m_y="288.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="6.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="22">
+            <object class="lUITextWidget" version="0">
+                <object_properties>
+                    <class name="lUITextWidget">
+                        <property name="Text" str="SHOTS OFF TARGET" id="IDS_MDAY_SHOTSOFFTARGET" />
+                        <property name="Align" value="CenterCenter" />
+                        <property name="Colour" m_colour="4294967295" />
+                        <property name="Shadow" value="0" />
+                        <property name="ShadowColour" m_colour="4278190080" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="awayplayerlabel1_3" />
+                        <property name="Pos" m_x="89.000000" m_y="276.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="98.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="23">
+            <object class="lUITextWidget" version="0">
+                <object_properties>
+                    <class name="lUITextWidget">
+                        <property name="Text" str="5" id="" />
+                        <property name="Align" value="CenterCenter" />
+                        <property name="Colour" m_colour="4294967295" />
+                        <property name="Shadow" value="0" />
+                        <property name="ShadowColour" m_colour="4278190080" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="awayplayerlabel2_3" />
+                        <property name="Pos" m_x="233.000000" m_y="288.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="5.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="24">
+            <object class="FDBarWidget" version="0">
+                <object_properties>
+                    <class name="FDBarWidget">
+                        <property name="ColourA" m_colour="4278190208" />
+                        <property name="ColourB" m_colour="4278190080" />
+                        <property name="pctA" value="0.500000" />
+                        <property name="Gradient" m_name="grad_white" m_bank="uiicon" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="bar_4" />
+                        <property name="Pos" m_x="58.000000" m_y="314.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="160.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="1" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="25">
+            <object class="lUITextWidget" version="0">
+                <object_properties>
+                    <class name="lUITextWidget">
+                        <property name="Text" str="1" id="" />
+                        <property name="Align" value="CenterCenter" />
+                        <property name="Colour" m_colour="4294967295" />
+                        <property name="Shadow" value="0" />
+                        <property name="ShadowColour" m_colour="4278190080" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="homeplayerlabel_4" />
+                        <property name="Pos" m_x="43.000000" m_y="314.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="4.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="26">
+            <object class="lUITextWidget" version="0">
+                <object_properties>
+                    <class name="lUITextWidget">
+                        <property name="Text" str="OFFSIDE" id="IDS_MDAY_OFFSIDE" />
+                        <property name="Align" value="CenterCenter" />
+                        <property name="Colour" m_colour="4294967295" />
+                        <property name="Shadow" value="0" />
+                        <property name="ShadowColour" m_colour="4278190080" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="awayplayerlabel1_4" />
+                        <property name="Pos" m_x="117.000000" m_y="302.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="42.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="27">
+            <object class="lUITextWidget" version="0">
+                <object_properties>
+                    <class name="lUITextWidget">
+                        <property name="Text" str="1" id="" />
+                        <property name="Align" value="CenterCenter" />
+                        <property name="Colour" m_colour="4294967295" />
+                        <property name="Shadow" value="0" />
+                        <property name="ShadowColour" m_colour="4278190080" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="awayplayerlabel2_4" />
+                        <property name="Pos" m_x="233.000000" m_y="314.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="4.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="28">
+            <object class="FDBarWidget" version="0">
+                <object_properties>
+                    <class name="FDBarWidget">
+                        <property name="ColourA" m_colour="4278190208" />
+                        <property name="ColourB" m_colour="4278190080" />
+                        <property name="pctA" value="0.500000" />
+                        <property name="Gradient" m_name="grad_white" m_bank="uiicon" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="bar_5" />
+                        <property name="Pos" m_x="58.000000" m_y="340.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="160.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="1" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="29">
+            <object class="lUITextWidget" version="0">
+                <object_properties>
+                    <class name="lUITextWidget">
+                        <property name="Text" str="1" id="" />
+                        <property name="Align" value="CenterCenter" />
+                        <property name="Colour" m_colour="4294967295" />
+                        <property name="Shadow" value="0" />
+                        <property name="ShadowColour" m_colour="4278190080" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="homeplayerlabel_5" />
+                        <property name="Pos" m_x="43.000000" m_y="340.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="4.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="30">
+            <object class="lUITextWidget" version="0">
+                <object_properties>
+                    <class name="lUITextWidget">
+                        <property name="Text" str="YELLOW CARDS" id="IDS_MDAY_YELLOWCARDS" />
+                        <property name="Align" value="CenterCenter" />
+                        <property name="Colour" m_colour="4294967295" />
+                        <property name="Shadow" value="0" />
+                        <property name="ShadowColour" m_colour="4278190080" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="awayplayerlabel1_5" />
+                        <property name="Pos" m_x="97.500000" m_y="328.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="81.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="31">
+            <object class="lUITextWidget" version="0">
+                <object_properties>
+                    <class name="lUITextWidget">
+                        <property name="Text" str="1" id="" />
+                        <property name="Align" value="CenterCenter" />
+                        <property name="Colour" m_colour="4294967295" />
+                        <property name="Shadow" value="0" />
+                        <property name="ShadowColour" m_colour="4278190080" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="awayplayerlabel2_5" />
+                        <property name="Pos" m_x="233.000000" m_y="340.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="4.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="32">
+            <object class="FDBarWidget" version="0">
+                <object_properties>
+                    <class name="FDBarWidget">
+                        <property name="ColourA" m_colour="4278190208" />
+                        <property name="ColourB" m_colour="4278190080" />
+                        <property name="pctA" value="0.500000" />
+                        <property name="Gradient" m_name="grad_white" m_bank="uiicon" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="bar_6" />
+                        <property name="Pos" m_x="58.000000" m_y="366.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="160.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="1" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="33">
+            <object class="lUITextWidget" version="0">
+                <object_properties>
+                    <class name="lUITextWidget">
+                        <property name="Text" str="0" id="" />
+                        <property name="Align" value="CenterCenter" />
+                        <property name="Colour" m_colour="4294967295" />
+                        <property name="Shadow" value="0" />
+                        <property name="ShadowColour" m_colour="4278190080" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="homeplayerlabel_6" />
+                        <property name="Pos" m_x="42.000000" m_y="366.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="5.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="34">
+            <object class="lUITextWidget" version="0">
+                <object_properties>
+                    <class name="lUITextWidget">
+                        <property name="Text" str="RED CARDS" id="IDS_MDAY_REDCARDS" />
+                        <property name="Align" value="CenterCenter" />
+                        <property name="Colour" m_colour="4294967295" />
+                        <property name="Shadow" value="0" />
+                        <property name="ShadowColour" m_colour="4278190080" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="awayplayerlabel1_6" />
+                        <property name="Pos" m_x="108.500000" m_y="354.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="59.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="35">
+            <object class="lUITextWidget" version="0">
+                <object_properties>
+                    <class name="lUITextWidget">
+                        <property name="Text" str="0" id="" />
+                        <property name="Align" value="CenterCenter" />
+                        <property name="Colour" m_colour="4294967295" />
+                        <property name="Shadow" value="0" />
+                        <property name="ShadowColour" m_colour="4278190080" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="awayplayerlabel2_6" />
+                        <property name="Pos" m_x="233.000000" m_y="366.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="5.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <world>
+            <gamenode id="1" />
+            <gamenode id="2" />
+            <gamenode id="3" />
+            <gamenode id="4" />
+            <gamenode id="5" />
+            <gamenode id="6" />
+            <gamenode id="7" />
+            <gamenode id="8" />
+            <gamenode id="9" />
+            <gamenode id="10" />
+            <gamenode id="11" />
+            <gamenode id="12" />
+            <gamenode id="13" />
+            <gamenode id="14" />
+            <gamenode id="15" />
+            <gamenode id="16" />
+            <gamenode id="17" />
+            <gamenode id="18" />
+            <gamenode id="19" />
+            <gamenode id="20" />
+            <gamenode id="21" />
+            <gamenode id="22" />
+            <gamenode id="23" />
+            <gamenode id="24" />
+            <gamenode id="25" />
+            <gamenode id="26" />
+            <gamenode id="27" />
+            <gamenode id="28" />
+            <gamenode id="29" />
+            <gamenode id="30" />
+            <gamenode id="31" />
+            <gamenode id="32" />
+            <gamenode id="33" />
+            <gamenode id="34" />
+            <gamenode id="35" />
+        </world>
+    </node_store>
+</FDGameWorldXMLArchive>

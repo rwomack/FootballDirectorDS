@@ -1,0 +1,9 @@
+#define BUILD_VERSION   "{BUILD_VERSION}"
+#define BUILD_REVISION  "{BUILD_REVISION}"
+#define BUILD_ID        "{BUILD_ID}"
+#define BUILD_URL       "{BUILD_URL}"
+
+#define WIDE_BUILD_VERSION   L"{BUILD_VERSION}"
+#define WIDE_BUILD_REVISION  L"{BUILD_REVISION}"
+#define WIDE_BUILD_ID        L"{BUILD_ID}"
+#define WIDE_BUILD_URL       L"{BUILD_URL}"

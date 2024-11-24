@@ -1,0 +1,2621 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+//#include "newres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    MENUITEM "Action",                      ID_ACTION_ACCEPT
+    POPUP "Menu"
+    BEGIN
+        MENUITEM "News",                        ID_SCREEN11
+        POPUP "Club"
+        BEGIN
+            MENUITEM "Home",                        ID_MENU_SCREEN03
+            POPUP "Squad"
+            BEGIN
+                MENUITEM "Team Selection",              ID_MENU_SCREEN05
+                MENUITEM "Training",                    ID_SCREEN36
+                MENUITEM "Youths",                      ID_SCREEN41
+                MENUITEM "Transfer List",               ID_SCREEN48
+            END
+            POPUP "Finance"
+            BEGIN
+                MENUITEM "Accounts",                    ID_SCREEN26
+                MENUITEM "Contracts",                   ID_SCREEN8
+                MENUITEM "Bank",                        ID_SCREEN22
+            END
+            MENUITEM "Employees",                   ID_SCREEN39
+            MENUITEM "Fixtures",                    ID_SCREEN18
+            MENUITEM "Information",                 ID_SCREEN09
+            POPUP "Match Instructions"
+            BEGIN
+                MENUITEM "Formation",                   ID_SCREEN27FORMATION
+                MENUITEM "Roles",                       ID_SCREEN27SPECIALPLAYERS
+                MENUITEM "Tactics",                     ID_SCREEN27TACTICS
+            END
+        END
+        POPUP "Competition"
+        BEGIN
+            MENUITEM "League Tables",               ID_MENU_SCREEN50
+            MENUITEM "League Fixtures",             ID_SCREEN19
+            MENUITEM "Cup Fixtures",                ID_SCREEN20
+            MENUITEM "Cup Schedules",               ID_SCREEN2
+            MENUITEM "Monthly Awards",              ID_SCREEN46
+            MENUITEM "Leading Players",             ID_SCREEN33
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Save Game",                   ID_MENUSAVE
+        MENUITEM "Quit Game",                   ID_MENUQUIT
+        MENUITEM "Options",                     ID_MENUOPTIONS
+        MENUITEM "Help",                        ID_MENUHELP
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDR_MAINFRAME DIALOG  0, 0, 51, 56
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "System"
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,10
+ PRODUCTVERSION 2,0,0,10
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "Football Director For Windows Mobile"
+            VALUE "FileVersion", "2, 0, 0, 10"
+            VALUE "InternalName", "Football Director 08"
+            VALUE "LegalCopyright", "Copyright (C) Sports Director Ltd 2001-2008"
+            VALUE "OriginalFilename", "FootballDirector.EXE"
+            VALUE "ProductName", "Football Director"
+            VALUE "ProductVersion", "2, 0, 0, 10"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Football Director.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Football Director\n\nFootball Director\n\n\nFootball Director.Document\nFootball Director Document"
+    IDS_HIGH                "High"
+    IDS_REGISTRATIONSUCCESSFUL "Congratulations!\nRegistration successful!"
+    IDS_REGISTRATIONFAILED  "Error: Invalid Registration Code, Re-enter?"
+END
+STRINGTABLE 
+BEGIN
+	IDS_AGREETOCOUNTERBIDDEMANDS 
+                            "%s agree to your demands, and are happy to sign %s."
+    IDS_REFUSETOCOUNTERBIDDEMANDS 
+                            "%s are not prepared to meet your demands, and suggest you lower your price for %s."
+    IDS_MUSICINGAME         "In Game Music"
+    IDS_CUPDRAWTITLE        "%s Draw"
+    IDS_INSUFFICIENTFITPLAYERS 
+                            "You have insufficient available players for the next match, you should consider promoting youth players to the first team squad."
+    IDS_ALREADYNEGOTIATINGWITHPLAYER 
+                            "You have already agreed terms with %s for %s."
+    IDS_HIREDYOUTH          "%s accepts your offer and joins the club."
+    IDS_EXTRATIME           "Extra Time"
+    IDS_AGEINVALID          "'Max Age' must be greater than 'Min Age'"
+    IDS_VALUEINVALID        "'Max Value' must be greater than 'Min Value'"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_INCOME              "Inc(£'s)"
+    IDS_EXPENDITURE         "Exp(£'s)"
+    IDS_MIDGATERECIEPTS     "MidWk Gate Rec"
+    IDS_MERCHANDISE         "Merchandise"
+    IDS_SPONSORSHIP         "Sponsor"
+    IDS_SECURITYCOSTS       "Security"
+    IDS_GENERALWAGES        "General Wages"
+    IDS_LOANREPAY           "Loan Payments"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MORALETEXT1         "Disgruntled"
+    IDS_MORALETEXT2         "OK"
+    IDS_MORALETEXT3         "Happy"
+    IDS_TEMPERTEXT1         "V Laidback"
+    IDS_TEMPERTEXT2         "Laidback"
+    IDS_TEMPERTEXT3         "Average"
+    IDS_TEMPERTEXT4         "Aggressive"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEMPERTEXT5         "V Aggress"
+    IDS_PLAYERCONTRACTNEARLYEXPIRED 
+                            "%s is approaching the end of his contract and wishes to negotiate a new one with the club."
+    IDS_PLAYERNOCONTRACTBOSMAN 
+                            "%s's contract has expired. Under the Bosman Ruling the player may move on a free transfer."
+    IDS_FAREWELLMESS        "%s are disappointed with your decision but wish you all the best."
+    IDS_WONTSIGNRETIRE      "%s will not be joining your club as he will be retiring soon."
+    IDS_WONTSIGN            "%s does not want to join your club."
+    IDS_WONTRENEW           "%s does not wish to renew his contract with the club."
+    IDS_PLAYERRETIRED       "%s has retired from football."
+    IDS_PLAYERNOCONTRACTBOSMANUNDERAGE 
+                            "%s's contract has expired. Under the Bosman ruling the player is free to agree a deal elswhere and you would receive compensation from his new club."
+    IDS_SUSPENSIONOVER      " %s has served his suspension."
+    IDS_SUSPENSIONSTARTED   "%s has been suspended for %d matches starting immediately."
+    IDS_CONTRACTTOOSHORTCLUB 
+                            "%s requires a longer contract if you want him to stay with the club."
+    IDS_CONTRACTTOOLONG     "%s will not sign for that many seasons and would like a shorter contract."
+    IDS_CONTRACTACCEPTED    "%s accepts your offer and looks forward to playing for %s until %s."
+    IDS_CONTRACTTOOSHORT    "%s is disappointed that you are not offering a  longer contract."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYERREFUSEDLOAN   "%s does not want to play for your club on loan."
+    IDS_RETIREATENDOFCONTRACT 
+                            "%s has announced he will retire when his current contract expires."
+    IDS_LEAVEATENDOFCONTRACT 
+                            "%s does not want to negotiate a new contract with the club and will be looking to transfer clubs when his current contract ends."
+    IDS_LISTTOOHIGH         "The board believes you could get more than %s for %s."
+    IDS_LISTTOOLOW          "The board will not let you sell %s for under %s.."
+    IDS_REQUESTSNEWCONTRACT "%s's contract expires this season and would like to agree on a new contract with the club."
+    IDS_SACKPERSON          "It will cost you %s to pay off %s's contract. Are you sure you wish to proceed?"
+    IDS_COACH               "Coach"
+    IDS_PHYSIO              "Physio"
+    IDS_SCOUT               "Scout"
+    IDS_YOUTHCOACH          "Youth Coach"
+    IDS_GOALKEEPER          "Goalkeeper"
+    IDS_DEFENDER            "Defender"
+    IDS_MIDFIELDER          "Midfielder"
+    IDS_ATTACKER            "Attacker"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NEWSMANAGERRESIGNED "%s has handed in his resignation as manager of %s."
+    IDS_MANAGERWONTITLE     "%s, %s champions (%s)"
+    IDS_BIDREFUSED          "%s inform you %s is not for sale."
+    IDS_BIDNOTENOUGH        "Your bid has been refused. We require more than this if we are to be tempted to sell him."
+    IDS_BIDREJECTED         "%s's bid for %s has been rejected."
+    IDS_LISTEDPLAYERS       "Listed Players"
+    IDS_FREETRANSFERS       "Free Transfers"
+    IDS_BIDTOOLOW           "%s will not sell %s for that price and want more money."
+    IDS_ACCEPTBID           "Do you want to accept the bid of %s by %s?"
+    IDS_RECEIVELOANBID      "%s want to take %s on loan for a %d week period."
+    IDS_REFUSETOLOAN        "%s will not release %s on loan."
+    IDS_ACCEPTBIDSELLON     "Do you want to accept the bid of %s with %d%% of the fee if they sell him at a later date by %s?"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VENUE               "Venue :"
+    IDS_SQUADFULL           "The Board of Directors feel you have enough players in your squad."
+    IDS_POSITIONFULL        "The board of directors feel you have enough players in this position."
+    IDS_RECEIVEDSELLONMONEY "%s has been sold by %s for %s and you have received %s."
+    IDS_FREETRANSFEREDPLAYER "%s signed for %s from %s on a free transfer."
+    IDS_FREETRANSFEREDPLAYER1 "%s signed for %s from %s on a free transfer."
+    IDS_FREETRANSFEREDPLAYER2 "%s signed for %s from %s on a free transfer."
+    IDS_FREETRANSFEREDPLAYER3 "%s signed for %s from %s on a free transfer."
+    IDS_FREETRANSFEREDPLAYER4 
+                            "%s has completed his move to %s from %s on a free transfer."
+    IDS_FREETRANSFEREDPLAYER5 
+                            "%s has completed his move to %s from %s on a free transfer."
+    IDS_FREETRANSFEREDPLAYER6 
+                            "%s has transferred to %s from %s on a free transfer."
+    IDS_MISSMATCHINJURY     "- but %s will miss the match through injury."
+    IDS_MISSMATCHSUSPENDED  "- but %s is suspended."
+    IDS_TRANSFEREDPLAYER    "%s has joined %s for %s from %s."
+    IDS_TRANSFEREDPLAYER1   "%s signed for %s for a fee of %s from %s."
+    IDS_TRANSFEREDPLAYER2   "%s has moved to %s for a fee of %s from %s."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TRANSFEREDPLAYER3   "%s signed for %s from %s for %s."
+    IDS_TRANSFEREDPLAYER4   "%s has joined %s for %s from %s."
+    IDS_TRANSFEREDPLAYER5   "%s has joined %s for %s from %s."
+    IDS_TRANSFEREDPLAYER6   "%s has joined %s for %s from %s."
+    IDS_TRANSFEREDPLAYER7   "%s has joined %s for %s from %s."
+    IDS_TRANSFEREDPLAYER8   "%s has joined %s for %s from %s."
+    IDS_TRANSFEREDPLAYER9   "%s has transferred to %s for %s from %s."
+    IDS_DEDUCTEDSELLONMONEY "%s have received %s from the sale of %s as they had a %d%% sell on clause agreement."
+    IDS_TRANSFEREDPLAYERRECORD 
+                            "%s have signed %s for a club record fee of %s from %s."
+    IDS_LEFTONBOSMAN        "%s has joined %s from %s under the Bosman ruling."
+    IDS_STARSIGNMSG1        "%s, the fans are delighted that you have signed %s and look forward to seeing the club move forward."
+    IDS_STARSIGNMSG2        "%s, the fans are delighted that you have signed %s."
+    IDS_STARSALEMSG1        "%s, the fans are disappointed at your decision to sell %s."
+    IDS_STARSALEMSG2        "¬"
+    IDS_SIGNFORCLUB         "%s has joined the club."
+    IDS_NOTENOUGHMONEY      "The board of directors cannot authorise this transaction due to shortage of funds."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FRIENDLYMATCH       "Friendly Match"
+    IDS_LOANTOOSMALL        "The directors will not authorise such a small loan."
+    IDS_LOANREFUSED         "Your request for a loan has been turned down. The directors suggest you find another way of raising capital."
+    IDS_LOANACCEPTED        "Your request for a loan of %s has been accepted.\nThe interest rate is %d%%, and repayments are set at %s per week for %d years. Do you wish to continue with your request?"
+    IDS_CONFPARTREPAY       "Are you sure you wish to repay %s?"
+    IDS_CONFFULLREPAY       "Are you sure you wish to repay your loan in full?"
+    IDS_PLAYERNOCONTRACTNOBOSMAN 
+                            "%s's contract has expired. The transfer fee has been set at %s if he moves to another club."
+    IDS_OFFERRENEWMANAGERCONTRACT 
+                            "%s, your contract has expired and the board of %s are prepared to offer you an extension for a further 5 seasons. Would you like to accept?"
+    IDS_MANRETIRED          "%s manager %s has retired."
+	IDS_EMPTY				"Empty"
+    IDS_INJPLAYTEAM         "(%d) %s is unavailable for this match due to injury."
+    IDS_SUSPPLAYTEAM        "(%d) %s is suspended for this match."
+    IDS_REFUSETRANREQ1      "%s is disappointed, but will continue to work hard for the club."
+    IDS_REFUSETRANREQ2      "%s accepts your decision and will work harder for the club."
+    IDS_REFUSETRANREQ3      "%s agrees to stay and hopes this will not affect his chances of first team football."
+    IDS_REFUSETRANREQ4      "%s accepts your decision and says he will continue to give 100%% for the club."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_REFUSETRANREQ5      "%s is disappointed with your decision and may not give the club 100%% in the future."
+    IDS_REFUSETRANREQ6      "%s hopes his request will be reconsidered soon."
+    IDS_REFUSETRANREQ7      "%s is unhappy with your decision and will request a transfer again soon."
+    IDS_PLAYERREQUESTTRANSFER 
+                            "%s is unhappy at the club and requests a transfer. Are you willing to grant his request?"
+    IDS_BIDREFUSEDWONTGOLOWERDIVISION 
+                            "%s inform you %s is not interested in moving to a club in your division."
+    IDS_LISTHIM             "List Player"
+    IDS_REQUESTTRANSFER     "%s is unhappy at %s and has been listed for transfer at his own request."
+    IDS_UNHAPPYLISTED       "%s has been transfer listed because he is unhappy at his lack of first team football."
+    IDS_GRANTFREETRANSFERREQUEST "%s has been released on a free transfer."
+    IDS_GRANTEDFREETRANSFER "%s has been released on a free transfer."
+    IDS_TRANSFERREQUESTREFUSED "%s's transfer request has been refused by %s."
+    IDS_INTERESTEDINMANAGER "%s, %s are interested in you as manager. Would you like to talk to them?"
+    IDS_APPOINTEDMANAGER    "%s has been appointed as manager of %s."
+    IDS_HUMANMANAGERSACKED  "%s, your contract with %s has expired. After lengthy debate the board have decided not to offer you a new one. They wish you well in the future and thank you for your time at the club."
+    IDS_MANLEFT1            "%s have sacked %s as their manager."
+    IDS_MANLEFT2            "%s has resigned as %s's manager."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MANLEFT3            "%s has been released as manager of %s."
+    IDS_MANLEFT4            "By mutual consent %s has stepped down as manager of %s."
+    IDS_MANLEFT5            "%s has stepped down as manager of %s."
+    IDS_MANLEFT6            "%s has been sacked as manager of %s after a boardroom upheaval."
+    IDS_AGREETOEXTENDPLAYERLOAN 
+                            "%s, %s's loan period at %s is complete. Are you willing to extend it a further 4 weeks?"
+    IDS_WARNSQUADSMALL      "The board of directors feel the size of the squad needs increasing as you could have problems if one or two players get injured."
+    IDS_PLAYERLEAVINGAFTERLOAN2 
+                            "%s has completed his loan. %s are not prepared to extend his loan period any further."
+    IDS_PLAYERLEAVINGAFTERLOAN3 
+                            "%s has completed his loan. %s are prepared to extend his loan by 4 weeks. Do you accept?"
+    IDS_PLAYERLEAVINGAFTERLOAN 
+                            "%s's loan period has expired and he has returned to %s."
+    IDS_WARNNOMONEY         "The board are concerned with the clubs financial situation. Unless you can turn the situation around they might be forced to intervene and sell players."
+    IDS_WARNNOCOACH         "The board wish to express their concern over the lack of a coach and suggest you to employ one soon."
+    IDS_WARNNOPHYSIO        "The board are worried that there is no physiotherapist on the books and suggest that you employ one quickly."
+    IDS_WARNNOGKCOVER
+                            "The board strongly advise you to buy or bring in on loan another goalkeeper as an injury in this position could cause real problems."
+    IDS_WARNSQUADSMALLINPOSN 
+                            "The board strongly advise you to buy a %s as an injury in this position could cause real problems."
+    IDS_WARNSQUADSMALLINPOSNAN 
+                            "The board strongly advise you to buy an %s as an injury in this position could cause real problems."
+    IDS_WARNPLAYERFITESSLOW "%s is very tired and would benefit from being rested from the next match."
+    IDS_TOPDISC             "%s, we have the worst disciplinary record in the division. You must sort this out as a matter of urgency."
+    IDS_TOPDISC5            "%s, the chairman, in association with the league headquarters, urges you to take measures to improve the clubs poor disciplinary record."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TOPDISC10           "%s, the board strongly advise you to calm things down on the pitch, or suspensions will become commonplace."
+    IDS_SACKBIZARRETACTIC   "You have been sacked. The board have lost all faith in your tactical ability and don't wish to play another match with you making the tactical decisions."
+    IDS_WARNBIZARRETACTIC   "The board and fans are furious with you for playing such a ridiculous tactic. The chairman has informed you that if you ever pull a stunt like that again you will be sacked instantly."
+    IDS_STAD_NOYEAR         "UNKNOWN"
+    IDS_CUPDEFEAT0          "The Board are furious at being knocked out of the %s at such an early stage and have made it clear to you that similar results will not be tolerated."
+    IDS_CUPDEFEAT1          "The Board are bitterly disappointed at being knocked out of the %s so early and feel the club should have achieved much more."
+    IDS_CUPDEFEAT2          "The Board are unhappy the club didn't progress further in the %s and hope things will be better next season."
+    IDS_NEWSMANAGERAPPOINTED "%s has been appointed as manager of %s."
+    IDS_CUPDEFEAT4          "The Board congratulate you and your staff on a good Cup run in the %s."
+    IDS_PLAYERNOCONTRACTLEFTONBOSMAN 
+                            "%s's contract has expired. Under the Bosman ruling the player is free leave the club immediately and to seek a deal elsewhere."
+    IDS_CUPDEFEAT6          "The board congratulate you on reaching the final. It has been an excellent performance in the %s and a real boost to the club."
+    IDS_REFUSETOLOANNOCOVER "%s can not release %s on loan at this time due to lack of cover."
+    IDS_REFUSETOLOANINTEAMPLANS 
+                            "%s are not willing to loan %s as he is a valuable member of the first team squad."
+    IDS_PLAYERREFUSEDLOANWHILSTPLAYING 
+                            "%s is capable of playing for the 1st team and would not like to leave the club."
+    IDS_PLAYERREFUSEDLOANCHANCESLIMITED 
+                            "%s is unwilling to join your club on loan as he feels he would get more first team experience elsewhere."
+    IDS_ACCEPTLOANBID       "%s would like to loan %s for %d weeks, do you accept?"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WONONAWAYGOALSDOUBLE "%s won on away goals."
+    IDS_CUPOPPONENTS        "The %s has been drawn :- \n%s\nThe match will be played on %s."
+    IDS_CUPDRAWBEENANNOUNCED "The draw for the %s has been announced."
+    IDS_COMMENTARY1         "Penalty, goal, %s (%s)."
+    IDS_COMMENTARY2         "Penalty saved, %s (%s)."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COMMENTARY3         "Penalty off target, %s (%s)."
+    IDS_COMMENTARY4         "%s (%s) has been shown the yellow card for going in with his foot raised."
+    IDS_COMMENTARY5         "%s (%s) has been booked for dangerous play. There didn't look to be too much wrong with that though."
+    IDS_COMMENTARY6         "%s's (%s) name has gone in the book for a reckless challenge."
+    IDS_COMMENTARY7         "%s (%s) has been booked for a nasty tackle that he really didn't need to make."
+    IDS_COMMENTARY8         "%s (%s) has been booked! The referee is signalling that he used dangerous play."
+    IDS_COMMENTARY9         "%s (%s) has been booked for a late challenge."
+    IDS_COMMENTARY10        "Red card for %s (%s). The ref's sent him off for a late tackle."
+    IDS_COMMENTARY11        "Red card for %s (%s). He's been sent off for tackling dangerously."
+    IDS_COMMENTARY12        "Red card for %s (%s). He had to walk after such a reckless challenge."
+    IDS_COMMENTARY13        "Red card for %s (%s). He's been sent off for his comment to the referee after a nasty tackle!"
+    IDS_COMMENTARY14        "Red card for %s (%s). The ref had no option but to send him off after that challenge."
+    IDS_COMMENTARY15        "Red card for %s (%s). The ref's sent him off for going in late again."
+    IDS_COMMENTARY16        "GOAL to %s, %s has put it into his own net!"
+    IDS_COMMENTARY17        "GOAL to %s, %s turned it into his own net!"
+    IDS_COMMENTARY18        "GOAL to %s, %s put it past his own keeper!"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COMMENTARY19        "GOAL to %s, %s tried to give it to the keeper but put it into the roof of his own net!"
+    IDS_COMMENTARY20        "GOAL to %s, %s beat his own keeper with a terrible backpass."
+    IDS_COMMENTARY21        "GOAL to %s, %s turned it into his own net!"
+    IDS_COMMENTARY22        "GOAL to %s. A fantastic goal by %s!"
+    IDS_COMMENTARY23        "GOAL! %s's %s scores with a stunning finish."
+    IDS_COMMENTARY24        "GOAL to %s. That was a text book finish by %s."
+    IDS_COMMENTARY25        "GOAL to %s. Great finish by %s."
+    IDS_COMMENTARY26        "GOAL to %s. %s takes advantage of a defensive error with maximum effect."
+    IDS_COMMENTARY27        "GOAL to %s. A fantastic goal by %s!"
+    IDS_COMMENTARY28        "%s (%s) scores from a corner."
+    IDS_COMMENTARY29        "GOAL to %s! A fantastic free-kick by %s!"
+    IDS_COMMENTARY30        "GOAL to %s. %s scores with an excellent free-kick."
+    IDS_COMMENTARY31        "GOAL to %s. A great curling free-kick by %s."
+    IDS_COMMENTARY32        "GOAL to %s. A brilliant free-kick by %s left the keeper with no chance!"
+    IDS_COMMENTARY33        "GOAL to %s. An excellent long range free-kick by %s."
+    IDS_COMMENTARY34        "GOAL to %s! That was a brilliant free-kick by %s!"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COMMENTARY35        "A fantastic finish by %s (%s) but the goal won't stand. The linesman has spotted an infringement."
+    IDS_COMMENTARY36        "Great GOAL by %s (%s), but the referee has disallowed it."
+    IDS_COMMENTARY37        "GOAL! A great finish by %s (%s) but it won't count - there must have been an infringment."
+    IDS_COMMENTARY38        "GOAL to %s (%s)! No, it won't stand. Amazingly, it's been disallowed for some reason!"
+    IDS_COMMENTARY39        "GOAL to %s (%s), but it won't count. There was an infringement off the ball!"
+    IDS_COMMENTARY40        "GOAL to %s (%s), but it won't count. It looked offside and has been disallowed!"
+    IDS_COMMENTARY41        "That was a great attempt by %s (%s). The keeper did well to keep that out."
+    IDS_COMMENTARY42        "Oh, a fantastic attempt by %s (%s)! The keeper made a great save to keep that out."
+    IDS_COMMENTARY43        "A great effort by %s (%s) that forced an equally impressive save from the keeper."
+    IDS_COMMENTARY44        "Good attempt by %s (%s) but the keeper had it covered."
+    IDS_COMMENTARY45        "Fantastic effort by %s (%s). The keeper made an excellent save though."
+    IDS_COMMENTARY46        "That was a great attempt by %s (%s). The keeper did well to keep that out."
+    IDS_COMMENTARY47        "%s goes off injured, %s bring %s on to replace him."
+    IDS_COMMENTARY48        "%s goes off injured, %s are down to %d men."
+    IDS_COMMENTARY49        "%s (%s) is going to have to come off. He's really struggling."
+    IDS_COMMENTARY50        "%s (%s) looks quite badly injured. He's going to have to come off."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COMMENTARY51        "%s (%s) is injured. He's going to have to be replaced."
+    IDS_COMMENTARY52        "%s has picked up an injury. %s are going to have to make a change."
+    IDS_COMMENTARY53        "%s isn't going to be able to continue. %s are going to have to make a substitution."
+    IDS_COMMENTARY54        "%s (%s) is going to have to come off. He looks in real pain."
+    IDS_COMMENTARY55        "%s (%s) looks like he's picked up an injury. He's trying to continue though."
+    IDS_COMMENTARY56        "%s (%s) has taken a knock. He's trying to run it off though."
+    IDS_COMMENTARY57        "%s (%s) has picked up a bit off an injury. It looks like he's going to play on though."
+    IDS_COMMENTARY58        "%s (%s) took a bit of a knock in that last challenge."
+    IDS_COMMENTARY59        "%s (%s) looks like he's picked up an bit of an injury in that last challenge."
+    IDS_COMMENTARY60        "%s (%s) looks like he's picked up an injury. He's trying to continue though."
+    IDS_COMMENTARY61        "%s are making a change. %s is coming on for %s."
+    IDS_COMMENTARY62        "%s are making a substitution. %s is coming on for %s."
+    IDS_COMMENTARY63        "%s are bringing on a substitute. %s is coming on for %s."
+    IDS_COMMENTARY64        "It looks like %s are making a change. %s is replacing %s."
+    IDS_COMMENTARY65        "%s are changing things. %s is replacing %s."
+    IDS_COMMENTARY66        "%s change things around . %s is coming on for %s."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COMMENTARY67        "%s are making a change, %s is coming on, and %s is taking an early bath."
+    IDS_FREETRANSFER        "Free Transfer"
+    IDS_YOUTHCONTRACTNEARLYEXPIRED 
+                            "%s will be released at the end of the season if he is not offered a contract."
+    IDS_VIEWYOUTHINFO       "Youth Info"
+    IDS_SIGNONFEETOOLOW     "%s would like a higher signing on fee."
+    IDS_SIGNONFEETOOHIGH    "The board won't pay %s a signing on fee that large and suggest you offer him a smaller fee."
+    IDS_WAGETOOLOW          "%s will not accept such a low wage and asks that you increase your offer."
+    IDS_WAGETOOHIGH         "The board will not allow such a high wage for %s. You should try lowering your offer."
+    IDS_OG                  " (OG)"
+    IDS_COMMENTARYOFFTARGET1 
+                            "Good attempt by %s (%s) that was very nearly on target."
+    IDS_COMMENTARYOFFTARGET2 
+                            "Fantastic attempt by %s (%s) that could so easily have been a goal."
+    IDS_COMMENTARYOFFTARGET3 
+                            "%s (%s) will be gutted he didn't hit the target there."
+    IDS_COMMENTARYOFFTARGET4 
+                            "%s (%s) will be very upset he didn't manage to score a goal with that brave attempt."
+    IDS_COMMENTARYOFFTARGET5 
+                            "%s (%s) will be unhappy that he didn't force the keeper to make a save there."
+    IDS_COMMENTARYOFFTARGET6 
+                            "Good attempt by %s (%s) that was very nearly right on target."
+    IDS_INJUREDINMATCHOFF   "%s (%s) is injured and is unable to continue."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYCOMINGON        "(%d), %s for %s."
+    IDS_WONTRENEWRETIRE     "%s is not willing to extend his contract and he will be retiring when his current one expires."
+    IDS_EMPLOYEECONTRACTNEARLYEXPIRED 
+                            "%s's contract expires at the end of season and would like to negotiate a new one."
+    IDS_EMPLOYEECONTRACTWILLEXPIRETODAY 
+                            "%s's contract has expired, offer him a new one?"
+    IDS_EMPLOYEECONTRACTEXPIRED "%s %s has left the club."
+    IDS_RETIRED             "%s (%s) has retired."
+    IDS_CONTRACTREFUSED     "%s thanks you for your offer but is seeking to sign for a club  with better prospects."
+    IDS_EMP_CONTRACTACCEPTED 
+                            "%s accepts your offer and looks forward to working with you at %s for the next %d seasons."
+    IDS_TELEVISIONINCOME    "Television Income"
+    IDS_LOANPAID            "Loan Repayments"
+    IDS_TRANSFERINCOME      "Transfer Income"
+    IDS_TRANSFEREXPENDITURE "Transfer Expenditure"
+    IDS_GENERALEXPENDITURE  "General Expenditure"
+    IDS_GATERECIEPTS        "Gate Receipts"
+    IDS_RUNNINGCOSTS        "Running Costs"
+    IDS_SECURITY            "Security Charges"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GENERALWAGE         "General Wages"
+    IDS_MERCHANDISEINCOME   "Merchandising Income"
+    IDS_SPONSORSHIPINCOME   "Sponsorship/Advertising"
+    IDS_MANAGERSWAGES       "Manager Wages"
+    IDS_YOUTHWAGES          "Youth Wages"
+    IDS_EMPLOYEEWAGES       "Employee Wages"
+    IDS_PLAYERWAGES         "Player Wages"
+    IDS_BUILDINGCOSTS       "Building work"
+    IDS_BANKINTEREST        "Bank Interest"
+    IDS_SUREOVERWRITE       "Are you sure you wish to overwrite this game?"
+    IDS_FILENOTSAVED        "File Not Saved"
+    IDS_SAVINGGAME          "Saving Game"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILENOTFOUND        "Save-game file not found. Please re-select."
+    IDS_FILENOTVALID        "Not a valid save-game file. Please re-select."
+    IDS_CURRENTFORMWON      "W"
+    IDS_CURRENTFORMDRAWN    "D"
+    IDS_CURRENTFORMLOST     "L"
+    IDS_CURRENTFORMNOTPLAYED "-"
+    IDS_JAN                 "Jan"
+    IDS_PLAYERLEAVINGAFTERLOANNOCLUB
+                            "%s has completed his loan. His club are not prepared to extend his loan period any further."
+    IDS_PLAYERLEAVINGAFTERLOANNOCLUBNEWS
+                            "%s's loan period has expired and he has returned to his club."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FITNESSTEXT1        "Very Unfit"
+    IDS_FITNESSTEXT2        "Pretty Unfit"
+    IDS_FITNESSTEXT3        "Struggling"
+    IDS_FITNESSTEXT4        "Ok"
+    IDS_FITNESSTEXT5        "Good"
+    IDS_FITNESSTEXT6        "Excellent"
+    IDS_GOALKEEPERABBR      "G"
+    IDS_DEFENDERABBR        "D"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MIDFIELDERABBR      "M"
+    IDS_ATTACKERABBR        "A"
+    IDS_DISCEVENTTIME       "%s %d"
+    IDS_PENALTYWINNER       "%s won %d - %d on penalties."
+    IDS_PEN                 " (Pen)"
+    IDS_442                 "4-4-2"
+    IDS_433                 "4-3-3"
+    IDS_424                 "4-2-4"
+    IDS_532                 "5-3-2"
+    IDS_523                 "5-2-3"
+    IDS_541                 "5-4-1"
+    IDS_451                 "4-5-1"
+    IDS_334                 "3-3-4"
+    IDS_352                 "3-5-2"
+    IDS_343                 "3-4-3"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PERSONALTERMS       "%s will discuss personal terms on %s."
+    IDS_USERCHAMPIONS       "%s, congratulations, you've done it and finished top of the %s. The board congratulate you on what has been a fantastic season for the club."
+    IDS_USERWONDIVISON      "%s, congratulations, you've won the %s and promotion for the club. The board and fans are overjoyed at being promoted and the way the team has played!"
+    IDS_USERWONCUP          "%s, congratulations, you've won the %s. The board of directors and the fans are overjoyed. It has been a fantastic performance by yourself and the players. The fans will be celebrating this victory for some time to come."
+    IDS_USERWONSHIELD       "%s, congratulations, you've won the %s, The board congratulate you on the team's victory."
+    IDS_USERWONPLAYOFFPROMOTION 
+                            "%s, congratulations, you've won the play offs and promotion for the club. The board and supporters are overjoyed and are already looking forward to next season."
+    IDS_USERFINISHEDBOTTOMOFDIVISION 
+                            "%s, the board and fans are distraught at the club finishing at the bottom of the league. However the board are still confident that you're the manager who can lift the club to mid table next season."
+    IDS_USERAVOIDEDRELEGATION 
+                            "%s, well done, you've avoided relegation. Although the board are relieved to have avoided relegation they inform you that things must improve next season and that a similar performance will not be tolerated."
+    IDS_USERRELEGATED       "%s, the board and fans are distraught at the club being relegated. However the board are still confident that you're the manager who can take the club straight back up next season."
+    IDS_USERPROMOTED        "%s, congratulations, thanks to your great leadership the club have been promoted. The board and supporters are overjoyed and are already looking forward to next season."
+    IDS_ARRANGEFRIENDLY     "%s, the new season is approaching. Now is the time to visit the friendlies screen to arrange some friendly matches to get your squad fully match fit."
+    IDS_CLOSESEASON         "%s, the domestic season has finished. If you press 'Skip to next match' you will go straight to next season and will not be able to view end of season data or take any actions at the club in the close season."
+    IDS_NOTENOUGHFIT        "You do not have enough fit players in your 1st team. You must promote youths or get loan players."
+    IDS_TRAININGBEENINJUREDSHORTPLURAL 
+                            "%s has been injured in training and will be out for approx %d week(s) with %s."
+    IDS_TRAININGBEENINJUREDSHORT 
+                            "%s was injured in training and will be out for approx %d week(s) with a %s."
+    IDS_TRAININGBEENINJUREDLONGPLURAL 
+                            "%s has been injured in training and will be out for approx %d week(s) with %s."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TRAININGBEENINJUREDLONG 
+                            "%s has been injured in training and will be out for approx %d week(s) with a %s."
+    IDS_TIMEINJUREDSHORT    "Unavailable for 1 week."
+    IDS_FEB                 "Feb"
+    IDS_TIMEINJUREDLONG     "Unavailable for %d weeks."
+    IDS_INJUREDSHORTPLURAL  "is unavailable because of %s. He is expected to be available for training in 1 week."
+    IDS_INJUREDSHORT        "is unavailable because of a %s. He is expected to resume training in 1 week."
+    IDS_INJUREDLONGPLURAL   "is unavailable because of %s. He is expected to recommence training in %d weeks."
+    IDS_INJUREDLONG         "is unavailable because of a %s. He is expected to resume training in %d weeks."
+    IDS_SURGERYCOMPLICATIONS 
+                            "There were complications during the surgery on %s."
+    IDS_SURGERYSLIGHTCOMPLICATIONS 
+                            "There were slight complications during the surgery on %s."
+    IDS_SURGERYOK           "The surgery on %s was successful."
+    IDS_SURGERYGOOD         "The surgery on %s was very successful."
+    IDS_INJURYVERYBADRECOVERED 
+                            "%s has recovered from injury and has resumed training."
+    IDS_INJURYBADRECOVERED  "%s is fit again and has resumed training."
+    IDS_INJURYRECOVERED     "%s is now free from injury and  has returned to training."
+    IDS_INJURYGOODRECOVERED "%s has made a good recovery from injury and has resumed training."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_INJURYVERYGOODRECOVERED 
+                            "%s has made an excellent recovery from injury and has resumed training."
+    IDS_NO_ROOM_SQUAD       "You have no room in your squad for %s from %s. The deal has been terminated."
+    IDS_LACK_OF_FUNDS       "The board have blocked your bid for %s from %s due to lack of funds."
+    IDS_PROCEED_WITH_NEG    "Do you wish to proceed and negotiate a contract for %s from %s for %s?"
+    IDS_BREAKOFF            "Break off"
+    IDS_PLAYER_SIGNED       "%s has signed for %s."
+    IDS_PLAYOFFS            "Playoffs"
+    IDS_GAMEOVER            "%s - Game Over\nYou have no money"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GOALEVENTTIME       "%s %d"
+    IDS_HOMEOPPONENTS       "H"
+    IDS_AWAYOPPONENTS       "A"
+    IDS_BANKBALANCELOW      "Your bank balance is very low and unless you get a job this week your career will be over."
+    IDS_MANOFMONTHANNOUNCE	"The %s Manager Of The Month for %s is %s (%s)."
+    IDS_SCREEN50HEADER      "  P  W  D   L  F   A  Pts"
+    IDS_NOMATCH             "No Matches"
+    IDS_APR                 "Apr"
+    IDS_MAY                 "May"
+    IDS_JUN                 "Jun"
+    IDS_JUL                 "Jul"
+    IDS_AUG                 "Aug"
+    IDS_SEP                 "Sep"
+    IDS_OCT                 "Oct"
+    IDS_NOV                 "Nov"
+    IDS_DEC                 "Dec"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_MATCH           "Advance date"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MAR                 "Mar"
+    IDS_PLAYSTYLE1          "Attacking"
+    IDS_PLAYSTYLE2          "Defensive"
+    IDS_PLAYSTYLE3          "Normal"
+    IDS_PLAYSTYLE4          "Passing"
+    IDS_PLAYSTYLE5          "Running"
+    IDS_PLAYSTYLE6          "Physical"
+    IDS_PLAYSTYLE7          "Formation"
+    IDS_PLAYSTYLE8          "Short Ball"
+    IDS_PLAYSTYLE9          "Long Ball"
+    IDS_PLAYSTYLE10         "Zonal"
+    IDS_MARKING1            "Tight"
+    IDS_MARKING2            "Loose"
+    IDS_MARKING3            "Zonal"
+    IDS_MARKING4            "Free"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TRANSFEREXPEND      "Transfer Expen"
+    IDS_GENERALEXPEND       "Gen Expend"
+    IDS_TOTALS              "Totals"
+    IDS_PROFIT              "Profit"
+    IDS_RESULTONLY          "Result Only"
+    IDS_VIEWMATCH           "View Match"
+    IDS_NOTENOUGHCASHTOSACKPLAYER 
+                            "We cannot release %s from his contract without paying him %s, unfortunately we do not have the funds available."
+    IDS_SACKPLAYER          "We must pay %s %s to terminate his contract, do you wish to do this?"
+    IDS_CANTSACKPLAYER      "The board of directors refuse to allow you to terminate the contract of %s. Maybe you should place him on the transfer list."
+    IDS_FREEKICKTO          "Free kick to %s."
+    IDS_SCREENHEADER3301    "Y  R  T"
+    IDS_SCREENHEADER3302    "L  C  T"
+    IDS_SOUNDFX             "Sound Effects"
+    IDS_MUSIC               "Menu Music"
+    IDS_OFF                 "Off"
+    IDS_MEDIUM              "Medium"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MARKING5            "Man-To-Man"
+    IDS_CAPTAIN             "Team Captain"
+    IDS_PENALTYTAKER        "Penalty Taker"
+    IDS_CORNERTAKER         "Corner Taker"
+    IDS_FREEKICKTAKER       "Free Kick Taker"
+    IDS_STYLEOFPLAY         "Style Of Play"
+    IDS_MARKSTYLE           "Marking"
+    IDS_AGGRESSION          "Aggression"
+    IDS_COUNTERATTACK       "Counter Attack"
+    IDS_OFFSIDETRAP         "Offside Trap"
+    IDS_CLUBEMPLOYEES       "Club Employees"
+    IDS_AVAILEMPLOYEES      "Available Employees"
+    IDS_CLUBYOUTHS          "Club Youths"
+    IDS_AVAILYOUTHS         "Available Youths"
+    IDS_MSTATPERCENT        "%d   Percentage Of Play   %d"
+    IDS_MSTATPERCENT1       "Percentage Of Play"
+    IDS_MSTATGSKILL         "Goalkeeper"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSTATDSKILL         "Defender"
+    IDS_MSTATMSKILL         "Midfielder"
+    IDS_MSTATASKILL         "Attacker"
+    IDS_MSTATSOFFSIDES      "Offside"
+    IDS_MSTATSHOTSFT        "Shots Off Target"
+    IDS_MSTATSHOTSONT       "Shots On Target"
+    IDS_MSTATFKICKS         "Free Kicks"
+    IDS_MSTATCORNERS        "Corners"
+    IDS_MSTATSOFFS          "Sendings Off"
+    IDS_MSTATBOOK           "Bookings"
+    IDS_MANAGERS            "Manager Contract"
+    IDS_MANAGER             "Manager"
+    IDS_EMPLOYEES           "Employee Contracts (%d)"
+    IDS_PLAYERS             "Player Contracts (%d)"
+    IDS_YOUTHS              "Youth Contracts (%d)"
+    IDS_APPEARANCES         "App"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GOALS               "Goals"
+    IDS_SEASONS             "Seasons"
+    IDS_LASTSEASON          "Last Season"
+    IDS_CUP                 "Cup"
+    IDS_CLUBS               "Club"
+    IDS_CAREER              "Career"
+    IDS_INTERNATIONAL       "International"
+    IDS_LASTCLUB            "Last Club"
+    IDS_SEASON              "Season"
+    IDS_NATIONALITY         "Nationality"
+    IDS_WEEKLYWAGE          "Weekly Wage"
+    IDS_NODATA              "N/A"
+    IDS_CONTRACT            "Contract"
+    IDS_HANDLING            "Handling"
+    IDS_TACKLING            "Tackling"
+    IDS_PASSING             "Passing"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SHOOTING            "Shooting"
+    IDS_PACE                "Pace"
+    IDS_SKILL               "Overall Skill"
+    IDS_TEMPER              "Temp"
+    IDS_FITNESS             "Fitness"
+    IDS_FORM                "Form"
+    IDS_MORALE              "Morale"
+    IDS_DISCIPLINARYPOINTS  "Disc Pts"
+    IDS_MINVALUE            "Minimum Value"
+    IDS_MAXVALUE            "Maximum Value"
+    IDS_MINAGE              "Minimum Age"
+    IDS_MAXAGE              "Maximum Age"
+    IDS_MINSKILL            "Minimum Skill"
+    IDS_MAXSKILL            "Maximum Skill"
+    IDS_AGE                 "Age"
+    IDS_CLUB                "Club"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CLUBVALUATION       "Value"
+    IDS_BOSMAN              "Bosman"
+    IDS_SKILL6              "Skill"
+    IDS_AVAIL6              "Avail"
+    IDS_MATCH32             "Match"
+    IDS_TEAM32              "Teams"
+    IDS_SUBS32              "Subs"
+    IDS_KICKOFF             "Kick Off"
+    IDS_HALFTIME            "Half Time"
+    IDS_TIME                "Time : %d"
+    IDS_FULLTIME            "Full Time"
+    IDS_DONTNEEDSCOUT       "You must release one of your current scouts before you can employ a new one."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_HALFTIMEATT         "HT : %d-%d    Att : %s"
+    IDS_AGGRESSION1         "Minimum"
+    IDS_AGGRESSION2         "Laid Back"
+    IDS_AGGRESSION3         "Weak"
+    IDS_SUSPENDED           "%s is suspended for the next match."
+    IDS_BESTFOOT            "Best Foot"
+    IDS_LEFT                "Left"
+    IDS_RIGHT               "Right"
+    IDS_SIGNINGONFEE        "Signing On Fee"
+    IDS_CONTRACTENDDATE     "End Date"
+    IDS_TRANSFER            "Tran"
+    IDS_RELEASE             "Free"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER_SIGNEDONLOAN "%s has signed for %s for %d weeks."
+    IDS_CONT                "Cont"
+    IDS_FEE                 "Transfer Fee"
+    IDS_BIDACCEPT           "%s accept your offer for %s and will now allow you to negotiate a contract with the player. Good Luck."
+    IDS_AGGRESSION4         "Low"
+    IDS_AGGRESSION5         "Soft"
+    IDS_AGGRESSION6         "Average"
+    IDS_AGGRESSION7         "Strong"
+    IDS_AGGRESSION8         "High"
+    IDS_AGGRESSION9         "Hard"
+    IDS_WEEKSLOAN           "Weeks Loan"
+    IDS_LOAN                "Loan For"
+    IDS_BUY                 "Buy"
+    IDS_SELLONFEE           "Sellon Fee %"
+    IDS_APPEARANCEFEE       "Appearance Fee"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CONFYOUTHSACK       "Are you sure you wish to release %s ?"
+    IDS_CANTSPAREPLAYER     "%s have cancelled the deal for %s due to a shortage of cover. The deal has been terminated."
+    IDS_AGREETOSELLPLAYER   "Are you sure you wish to sell %s to %s?"
+    IDS_AGREETOLOANPLAYER   "Are you sure you agree to loan %s to %s?"
+    IDS_WONTRENEWWANTSRANSFER 
+                            "%s will is not willing to extend his contract and he is seeking a transfer."
+    IDS_SCREEN27TACTICS     "Tactics"
+    IDS_SCREEN27SPECIALPLAYERS "Roles"
+    IDS_CONFEMPLOYEESACK    "Are you sure you wish to terminate %s's contract? To pay off his contract will cost %s."
+    IDS_NOTWONAGAME         "- have not won a game this season."
+    IDS_WONAGAME            "- Have won only 1 game this season."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WONGAMES            "- Have won %d games this season."
+    IDS_SCOREDALOT          "- They are dangerous on the attack, they have scored %d goals this season so far."
+    IDS_CONCEDEDALOT        "- They are weak at the back, they have conceded %d goals this season so far."
+    IDS_SCOREDFEW           "- They aren't dangerous on the attack, they have only scored %d goals this season so far."
+    IDS_CONCEDEDFEW         "- They are tight at the back, they have only let in %d goals this season so far."
+    IDS_SCOREDBETWEENTHEM   "- %s and %s have scored %d goals between them."
+    IDS_HASSCORED           "- %s has scored %d goals."
+    IDS_ASSISTEDBETWEENTHEM "- %s and %s have created %d goals between them."
+    IDS_ASSISTED            "- %s has created %d goals."
+    IDS_DISCPOINTSBETWEENTHEM 
+                            "- %s and %s have picked up %d disciplinary points between them."
+    IDS_PREDISCPOINTS       "- %s has received %d disciplinary points."
+    IDS_REPORT32            "Report"
+    IDS_INJURED             "Inj 1 week"
+    IDS_SUPSENDED           "Sus 1 match"
+    IDS_INJUREDPLURAL       "Inj %d weeks"
+    IDS_SUPSENDEDPLURAL     "Sus %d matches"
+    IDS_CUPTIED             "Cup Tied"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LEAGUEPOSITION      "%s (%d)"
+    IDS_NEXTMATCH           "Next Match : - %s"
+    IDS_FORMATION			"Formation"
+    IDS_TACTICFORMATION		"Tactics Formation"
+    IDS_EMP_CONTRACTRENEWALACCEPTED 
+                            "%s accepts your offer and looks forward to continue working with you at %s until %s."
+    IDS_LOANWEEKS           "%d Weeks"
+    IDS_PLAYERLOANAGREED    "%s agree to loan %s for the specified period."
+    IDS_LOANEDIN            "On Loan for %d weeks."
+    IDS_SUSPENSIONDETAILS   "Suspended for %d matches"
+    IDS_SUSPENSIONDETAIL    "Suspended for next match"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SELECTCOUNTRY       "Select Country"
+    IDS_SCREEN09PLAYER      "Players"
+    IDS_SCREEN09MATCH       "Matches"
+    IDS_SCREEN09COMP        "Competitions"
+    IDS_SCREEN09TROPHY      "Trophies"
+    IDS_SCREEN33GOALSCORERS "Goalscorers"
+    IDS_SCREEN33DISCIPLINARY "Disciplinary"
+    IDS_SCREEN09INFO        "Info"
+    IDS_STADIUM             "Stadium"
+    IDS_CAPACITY            "Capacity"
+    IDS_AVATTEND            "Average Attendance"
+    IDS_YEARFOUNDED         "Year Founded"
+    IDS_RECORDSALE          "Record Sale"
+    IDS_RECORDBUY           "Record Signing"
+    IDS_RECORDAPPEARANCES   "Record Appearances"
+    IDS_RECORDCLUBGOALS     "Records Goals For Club"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RECORDSEASONGOALS   "Record Goals In A Season"
+    IDS_RECORDVICTORY       "Record Victory"
+    IDS_RECORDDEFEAT        "Record Defeat"
+    IDS_RECORDATTENDANCE    "Record Attendance"
+    IDS_LOWESTATTENDANCE    "Lowest Attendance"
+    IDS_RECORDPOINTS        "Most League Points"
+    IDS_LEASTPOINTS         "Least League Points"
+    IDS_RECORDPOSITION      "Highest League Position"
+    IDS_LOWESTPOSITION      "Lowest League Position"
+    IDS_AIMFORTITLE         "The board believe that we have a squad capable of  challenging for the League title this sesaon. We hope you will be able to bring the club the success it deserves."
+    IDS_AIMFORPROMOTION     "The board feel that promotion is a realistic target for this season and hope that you will do all you can to achieve this."
+    IDS_AIMFOREUROPE        "The board will be disappointed if we fail to qualify for Europe this season."
+    IDS_AIMFORPLAYOFF       "If we could qualify for the playoffs this season then the board will feel we have achieved our objectives."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_AVOIDRELEGATION     "The board will be dissapointed if we are relegated this season."
+    IDS_AIMFORMIDTABLE      "Our objective for the forthcoming season should be to be in mid table or higher when the season is completed."
+    IDS_MONTHLYTARGETMET    "The board are pleased to see that we've achieved our target for the month."
+    IDS_MONTHLYTARGETBEATEN "The board are delighted that we exceeded our target for the month."
+    IDS_MONTHLYTARGETNOTMET "The board are dissappointed that we failed to pickup enough points this month."
+    IDS_SCREEN92            "Team Of Week"
+    IDS_CUPOPPONENTS2LEGS   "The draw for the next round of the %s has been made :- \n%s\nThe first leg will be played on %s and the 2nd leg on %s"
+    IDS_BOARDCONFIDENCE     "Board Confidence : %d%%"
+    IDS_FANCONFIDENCE       "Fan Confidence : %d%%"
+    IDS_BOARDWELCOME        "The %s directors are delighted that you have accepted their offer and look forward to many successful seasons with you at the helm."
+    IDS_OPPONENT            "Opponent :"
+    IDS_NOLEAGUEPOSITION    "League Position : N/A"
+    IDS_HOME                "(H)"
+    IDS_AWAY                "(A)"
+    IDS_ANNUALSHIRTSPONSORSHIP 
+                            "After talking to various companies we have secured a shirt sponsorship deal for the season of %s, which has now been added to our account"
+    IDS_ANNUALKITSPONSORSHIP 
+                            "We have held negotiating with the major kit suppliers, we have successfully neogtiated a deal that provides us with %s sponsorship for the forthcoming season."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ANNUALTELEVISIONINCOME 
+                            "Broadcasting rights for the season coming have been sold for %s which has been credited to our account today."
+    IDS_TELEVISION          "Broadcast Rights"
+    IDS_BIDACCEPTED         "%s joins %s, %s has been credited to our bank account."
+    IDS_BUTTON6103          "Action"
+    IDS_PROCESSING          "Processing..."
+    IDS_TAKINGCORNERS       "Taking Corners"
+    IDS_DEFENDINGCORNERS    "Defending Corners"
+    IDS_FREEKICKS           "Free Kicks"
+    IDS_PENALTIES           "Penalties"
+    IDS_LONGBALL            "Long Ball"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CAP_INFO            "League"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CONTINUE            "Continue\n"
+    IDS_STRING3601T         "5 a side"
+    IDS_STRING3602T         "Tactics"
+    IDS_STRING3603T         "Set Pieces"
+    IDS_STRING3604T         "Free Time"
+    IDS_STRING3601I         "Skillls"
+    IDS_STRING3602I         "Pace"
+    IDS_STRING3603I         "Strength"
+    IDS_SCREENHEADER0503    "Wage    Contract"
+    IDS_TACTIC              "Tactic"
+    IDS_RATING              "Rating"
+    IDS_SETPIECES           "Set Pieces"
+    IDS_INDTRAININGCOLS     "Mo. Ra. Ha. Ta. Ps. Sh."
+    IDS_NAME                "Name"
+    IDS_SCREENHEADER0501    "% Hnd.Tkl.Pas.Sht."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PASSINGFOOTBALL     "Passing"
+    IDS_DRIBBLING           "Dribbling"
+    IDS_DONTNEEDCOACH       "You must release your current coach before you can employ a new one."
+    IDS_DONTNEEDPHYSIO      "You must release your current physio before you can employ a new one."
+    IDS_ENTERNAME           "Enter Manager's Name : -"
+    IDS_BOSMANPLAYERS       "Bosman Players"
+    IDS_UNLISTEDPLAYERS     "Unlisted Players"
+    IDS_ALL                 "All"
+    IDS_STARLEAVEMSG1       "%s, the fans are upset you've allowed %s to leave the club."
+    IDS_STARLEAVEMSG2       "%s, the fans are disappointed at your decision to allow %s to leave the club."
+    IDS_LEAVEATENDOFCONTRACTBETTERCLUB 
+                            "%s does not want to negotiate a new contract with the club and will be looking to transfer to a bigger club when his current contract ends."
+    IDS_LEAVEATENDOFCONTRACTFIRSTTEAM 
+                            "%s has no desire to negotiate a new contract with the club as he would like to play regular first team football."
+    IDS_PLAYEROFFSIDE       "%s is caught offside."
+    IDS_CORNERTO            "%s have won a corner."
+    IDS_CORNERTO2           "The ball is out of play, a corner is given to %s."
+    IDS_CORNERTO3           "Corner to %s."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SCREENHEADER0502    "Injury / Suspension"
+    IDS_PLAYERANDCLUB       "%s (%s)"
+    IDS_SCREENHEADER0504    "Age  App Gls  Disc"
+END
+STRINGTABLE 
+BEGIN
+	IDS_TRANSFERWINDOWCLOSELOOMING
+							"The transfer window will close shortly, clubs may not buy or loan any players until it reopens."
+	IDS_TRANSFERWINDOWCLOSELOANLOOMING
+							"The loan transfer window will close shortly, clubs will be unable to sign players on loan until it reopens."
+	IDS_TRANSFERWINDOWCLOSED	
+							"The transfer window has closed, the club may not buy or loan any players until it reopens."
+	IDS_TRANSFERDEADLINELOANCLOSED
+							"The loan transfer window has closed, the club is unable to sign players on loan until it reopens."
+	IDS_TRANSFERWINDOWOPENSOON	
+							"The transfer window will reopen in 7 days, clubs will be able to buy or loan players."
+	IDS_TRANSFERWINDOWLOANOPENSOON 
+							"The loan transfer window has opened, clubs may now sign players on loan."
+	IDS_TRANSFERWINDOWOPEN	"The transfer window has opened, clubs may now buy or loan players."
+	IDS_TRANSFERWINDOWLOANOPEN	
+							"The loan transfer window has opened, clubs may sign players on loan."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CORNERTO4           "%s win a corner."
+    IDS_CORNERTO5           "%s have won a corner."
+    IDS_CORNERTO6           "The ball goes out of play, its a corner to %s."
+    IDS_INJURYTIME          "The 4th Official indicates %d minutes of injury time to be played"
+    IDS_PLAYEROFFSIDE2      "%s strays offside."
+    IDS_PLAYEROFFSIDE3      "%s is offside."
+    IDS_PLAYEROFFSIDE4      "Offside, %s made his run too early."
+    IDS_PLAYEROFFSIDE5      "%s is a mile offside."
+    IDS_PLAYEROFFSIDE6      "%s fails to beat the offside trap."
+    IDS_AWAYGOALSWINNER     "%s won on away goals."
+    IDS_COMMENTARY68        "%s (%s) has been booked for persistent fouling."
+    IDS_COMMENTARY69        "%s (%s) has been shown the yellow card for dissent."
+    IDS_COMMENTARY70        "Red card for %s (%s). The ref's sent him off for a second bookable offence."
+    IDS_COMMENTARY71        "Red card for %s (%s). He is off for an early bath after his second yellow card of the game."
+    IDS_COMMENTARY72        "GOAL to %s, %s was unlucky to deflect that effort into his own goal!"
+    IDS_COMMENTARY73        "GOAL to %s. %s finishes off what was a superb move."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SKILLINVALID        "'Max Skill' must be greater than 'Min Skill'"
+    IDS_LOANRECEIVED        "Loan Income"
+    IDS_PLAYERINJURED       "%s has been injured and will have to come off."
+    IDS_NOSUBSTITUTESLEFT   "You have used all your substitutes."
+    IDS_YOUTHCONTRACTEXPIRESTODAY 
+                            "%s's contract has expired and he will be released today by the club unless he is offered a first team squad contract."
+    IDS_WONALLGAMES         "- have won all their games this season so far."
+    IDS_VERSUS              "Versus"
+    IDS_PLAYERCONTRACTEXPIRESTODAY 
+                            "%s's contract expires today and he will be released today unless he is offered a new contract."
+    IDS_PLAYERCONTRACTEXPIREDLEFTCLUB 
+                            "%s has been released by the club today as his contract has expired."
+    IDS_NOTINTERESTEDINCONTRACT 
+                            "%s is not interested in negotiating a contract with you at the moment."
+    IDS_COMMENTARYKICKOFF   "%s take the kick off."
+    IDS_SACKUSERMANAGER     "The board of directors here at %s are dissappointed with the performance of the team and have decided to relieve you of your duties as manger with immediate effect. The board thank you for the hard work you have given to the club during your time at the club and wish you all the best for the future."
+    IDS_CUPFINALCLUBS       "The %s will be played between %s and %s on %s"
+    IDS_LOWABBR             "L"
+    IDS_HIGHABBR            "H"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COMMENTARY74        "GOAL to %s. %s takes the plaudits after what looked like a deflection off a defender."
+    IDS_COMMENTARY75        "GOAL! %s's %s rounds the keeper to slot it home."
+    IDS_COMMENTARY76        "GOAL to %s. %s had the easy task of tapping that home after a great cut back."
+    IDS_COMMENTARY77        "GOAL! %s's %s rifles the ball home after a great turn."
+    IDS_COMMENTARY78        "GOAL! A sublime finish as %s's %s lobs the keeper from outside the box."
+    IDS_COMMENTARY79        "GOAL to %s. %s finds the top corner with a well placed effort."
+    IDS_COMMENTARY80        "GOAL to %s. %s thundered that home from a long way out."
+    IDS_COMMENTARY81        "GOAL to %s. %s smashes the ball into the roof of the net from close range."
+    IDS_COMMENTARY82        "GOAL to %s. %s rose well to header the ball back across goal into the far corner."
+    IDS_COMMENTARY83        "GOAL to %s. %s flicks a near post header past the diving keeper."
+    IDS_COMMENTARY84        "GOAL to %s. %s sees his miss hit effort squirm past the despairing keeper."
+    IDS_COMMENTARY85        "GOAL to %s. %s scored a well worked free-kick straight from the training ground."
+    IDS_COMMENTARY86        "GOAL to %s (%s), but it's been chalked off for offside!"
+    IDS_COMMENTARY87        "GOAL to %s (%s), but the linesman's flag is up. The goal won't count."
+    IDS_COMMENTARY88        "Great reactions by the keeper to get a hand to the shot by %s (%s)."
+    IDS_COMMENTARY89        "That was a great block by the keeper as %s (%s) looked certain to score."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COMMENTARY90        "Good goalkeeping as the keeper dives at the feet of %s (%s)."
+    IDS_COMMENTARY91        "%s (%s) almost scored as the keeper collects it at the second attempt."
+    IDS_COMMENTARY92        "%s (%s) can't believe it as his shot is cleared off the line."
+    IDS_COMMENTARY93        "%s (%s) clips the ball past the keeper but it's blocked on the line."
+    IDS_COMMENTARY94        "The defender was in the right place at the right time as a %s (%s) shot almost finds the net."
+    IDS_COMMENTARY95        "The strike from %s (%s) was cleared with the keeper stranded in no man's land."
+    IDS_COMMENTARY96        "The keeper was beat all ends up as the shot from %s (%s) thundered off the crossbar to safety."
+    IDS_COMMENTARY97        "The keeper watches in relief as the shot from %s (%s) comes back off the post."
+    IDS_COMMENTARY98        "%s (%s) holds his head as the woodwork denies him a fine goal."
+    IDS_COMMENTARY99        "%s (%s) sees his effort strike the inside of the post and back into play."
+    IDS_COMMENTARYOFFTARGET7 
+                            "%s (%s) really should have hit the target there!"
+    IDS_COMMENTARYOFFTARGET8 
+                            "%s (%s) sends a wild effort high into the stand!"
+    IDS_COMMENTARYOFFTARGET9 
+                            "%s (%s) screws his shot wide when he looked a certainty to score."
+    IDS_COMMENTARYOFFTARGET10 
+                            "%s (%s)'s shot had the keeper worried as it shaves the outside of the post."
+    IDS_COMMENTARYOFFTARGET11 
+                            "%s (%s) pulls his shot agonisingly wide of the far post."
+    IDS_OWNGOALEVENTTIME    "%s %d (OG)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PENALTYGOALEVENTTIME "%s %d (Pen)"
+    IDS_CUPDEFEAT7          "Whilst it's dissappointing to be out of the cup, we can take consolation in the fact that they were from a higher division and were expected to win."
+    IDS_CUPDEFEAT8          "We really should not have been knocked out of the cup at this stage, on our day we should have eased past them."
+    IDS_SCREEN04            "Club Selection"
+    IDS_SCREEN98            "Manager Details"
+    IDS_SCREEN03            "Status"
+    IDS_SCREEN05            "Squad"
+    IDS_SCREEN06            "Player Search"
+    IDS_SCREEN08            "Contracts"
+    IDS_SCREEN09            "Club Records"
+    IDS_SCREEN02            "Cup Schedules"
+    IDS_SCREEN11            "Messages"
+    IDS_SCREEN12            "Player Bid"
+    IDS_SCREEN13            "Youth Contract"
+    IDS_SCREEN14            "Employee Contract"
+    IDS_SCREEN16            "Transfer Status"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_HALFTIMEANDATTENDANCE "Half Time : %d-%d    Attend : %s"
+    IDS_ENTERFILENAME       "Please enter a file name."
+    IDS_WISHTOSAVE          "Do you wish to save the game before quitting?"
+    IDS_VERSIONEXPIRED      "This application has expired, please download a new version from the Astraware Beta forums"
+    IDS_MATCHSPEED          "Match Speed"
+    IDS_MATCHSPEED2         "Paused"
+    IDS_MATCHSPEED3         "Very Slow"
+    IDS_MATCHSPEED4         "Slow"
+    IDS_MATCHSPEED5         "Medium"
+    IDS_MATCHSPEED6         "Fast"
+    IDS_MATCHSPEED7         "Very Fast"
+    IDS_VOLUME              "Off"
+    IDS_VOLUME2             "Very Quiet"
+    IDS_VOLUME3             "Quiet"
+    IDS_VOLUME4             "Low"
+    IDS_VOLUME5             "Medium"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VOLUME6             "High"
+    IDS_VOLUME7             "Loud"
+    IDS_VOLUME8             "Very Loud"
+    IDS_SUBSLEFT            "%d Substitutions Left"
+    IDS_NOPLAYERLOANSLEFT   "You have loaned in the maximum  number of players this season."
+    IDS_PLAYERLOANSLEFT     "%d Player Loans Left"
+    IDS_LOSS                "Loss"
+    IDS_GOALKEEPERLONGABBR  "Gk"
+    IDS_DEFENDERLONGABBR    "Def"
+    IDS_MIDFIELDERLONGABBR  "Mid"
+    IDS_ATTACKERLONGABBR    "Atk"
+    IDS_SEARCHVALUE1        "< 1m"
+    IDS_BORROW              "Borrow"
+    IDS_REPAY               "Repay"
+    IDS_LOANOUTSTANDING     "Loan Outstanding :"
+    IDS_WEEKLYREPAYMENTS    "Weekly Repayments :"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SCREEN18            "Club Fixtures"
+    IDS_SCREEN19            "League Fixtures"
+    IDS_SCREEN20            "Cup Fixtures"
+    IDS_SCREEN22            "Bank"
+    IDS_SCREEN21            "Transfer Request"
+    IDS_SCREEN23            "Player Contract"
+    IDS_SCREEN24            "Player Loan Offer"
+    IDS_SCREEN26            "Accounts"
+    IDS_SCREEN2701          "Match Tactics"
+    IDS_SCREEN2702          "Match Roles"
+    IDS_SCREEN2703          "Match Formation"
+    IDS_SCREEN28            "Processing"
+    IDS_SCREEN30            "Player Offer"
+    IDS_SCREEN32            "Match Intro"
+    IDS_SCREEN3301          "Goalscorers"
+    IDS_SCREEN3302          "Disciplinary"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SCREEN35            "Release Player"
+    IDS_SCREEN36            "Training"
+    IDS_SCREEN39            "Job Centre"
+    IDS_SCREEN41            "Youth Squad"
+    IDS_SCREEN42            "Credits"
+    IDS_SCREEN46            "Monthly Awards"
+    IDS_SCREEN31            "Match Stats"
+    IDS_SCREEN48            "Transfer List"
+    IDS_SCREEN50            "League Tables"
+    IDS_SCREEN5001          "Home"
+    IDS_SCREEN5002          "Away"
+    IDS_SCREEN5003          "Current Form"
+    IDS_SCREEN5004          "Discipline"
+    IDS_SCREEN54            "Arrange Friendly"
+    IDS_SCREEN59            "Youth Info"
+    IDS_SCREEN60            "Employee Info"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SCREEN61            "Player Info"
+    IDS_SCREEN62            "Manager Info"
+    IDS_SCREEN63            "Contract Negotiations"
+    IDS_SCREEN65            "Match Day"
+    IDS_SCREEN90            "Load / Save"
+    IDS_SCREEN91            "Game Options"
+    IDS_SCREEN47            "Manager Contract"
+    IDS_SCREEN17            "Match Report"
+    IDS_NOMATCHARRANGED     "No Match Arranged"
+    IDS_AGGRESSION10        "Maximum"
+    IDS_CLUBBALANCE         "Club Balance : %s"
+    IDS_CLUBBAL             "Club Bal : %s"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WEEKSREMAINING      "Weeks Remaining :"
+    IDS_SEARCHVALUE2        "1m - 5m"
+    IDS_SEARCHVALUE3        " 5m - 10m"
+    IDS_SEARCHVALUE4        "> 10m"
+    IDS_SEARCHAGE1          "< 22"
+    IDS_SEARCHAGE2          "> 21 & < 31"
+    IDS_SEARCHAGE3          "> 30"
+    IDS_SEARCHSKILL1        "Low"
+    IDS_SEARCHSKILL2        "Medium"
+    IDS_SEARCHSKILL3        "High"
+    IDS_SEARCHPOSN1         "Goalkeeper"
+    IDS_SEARCHPOSN2         "Defender"
+    IDS_SEARCHPOSN3         "Midfielder"
+    IDS_SEARCHPOSN4         "Attacker"
+    IDS_SEARCHPOSN5         "All"
+    IDS_SEARCHAVAIL1        "Transfer Listed"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SCREEN44            "Player Loan Bid"
+	IDS_LOANEDINSEASON		"On loan until the end of the season."
+	IDS_LOANEDIN1WEEK		"On loan until the end of the week."
+	IDS_SCREEN55			"Group Tables"
+	IDS_SCREEN64			"Substitutions"
+	IDS_GROUP				"Group %d"
+	IDS_NOUSERNAME			"To obtain a registration code, a user name must be specified for this Windows Mobile Device"
+    IDS_SAVEGAMEFILE01		"Save01.fd3"
+    IDS_SAVEGAMEFILE02		"Save02.fd3"
+    IDS_SAVEGAMEFILE03		"Save03.fd3"
+	IDS_SAVEGAMEFILE04		"Save04.fd3"
+    IDS_AUTOSAVEGAMEFILE	"AutoSave.fd3"
+    IDS_REGISTRYKEY         "Software\\Astraware\\fd08"
+    IDS_SYSTEMREGISTRYKEY   "SOFTWARE\\Apps\\Astraware Football Director 08"
+    IDS_SAVEDIRREGISTRYKEY  "SaveDir"
+    IDS_APP_TITLE           "Football Director 08"
+	DATA_REGISTRATION_APPID_LIST "4 4430 1216 2216 998"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SEARCHAVAIL2        "Loan Listed"
+    IDS_SEARCHAVAIL3        "All"
+    IDS_SEARCHVALUE         "Value"
+    IDS_SEARCHAGE           "Age"
+    IDS_SEARCHSKILL         "Skill"
+    IDS_SEARCHPOSITION      "Position"
+    IDS_SEARCHAVAILABILITY  "Availability"
+    IDS_TRANSFERLIST        "Transfer List"
+    IDS_REJECTBELOW         "Reject Below"
+    IDS_NOTNEGOTIATECONTRACT 
+                            "%s is not interested in negotiating a contract at present."
+    IDS_NEWSCOUNT           "News (%d)"
+END
+
+STRINGTABLE 
+BEGIN
+	IDS_HELPSCREEN33		"Leading Players"
+	IDS_HELPSCREEN27F		"Match Formation"
+	IDS_HELPSCREEN27R		"Match Roles"
+	IDS_HELPSCREEN27T		"Match Tactics"
+	IDS_HELPSCREEN19		"League Fixtures"
+	IDS_HELPSCREEN20		"Cup Fixtures"
+	IDS_HELPSCREEN09		"Information"
+	IDS_HELPSCREEN02		"Cup Schedules"
+	IDS_HELPSCREEN36		"Team Training"
+	IDS_HELPSCREEN41		"Youth Squad"
+	IDS_HELPSCREEN39		"Job Centre"
+	IDS_HELPSCREEN22		"Bank"
+	IDS_HELPSCREEN08		"Wages and Contracts"
+	IDS_HELPSCREEN48		"Transfer List"
+	IDS_HELPSCREEN28		"Progress"
+	IDS_HELPSCREEN18		"Club Fixtures"
+	IDS_HELPSCREEN26		"Accounts"
+	IDS_HELPSCREEN11		"Club News"
+	IDS_HELPSCREEN50		"League Tables"
+	IDS_HELPSCREEN05		"Squad Menu"
+	IDS_HELPSCREEN03		"Status"
+	IDS_HELPSCREEN98		"HelpScreen98"
+	IDS_HELPSCREEN92		"Team Of The Week"
+	IDS_HELPSCREEN91		"Options2"
+	IDS_HELPSCREEN65		"Match"
+	IDS_HELPSCREEN61		"Status"
+	IDS_HELPSCREEN60		"Employee Information"
+	IDS_HELPSCREEN59		"Youth Information"
+	IDS_HELPSCREEN55		"Group Tables"
+	IDS_HELPSCREEN54		"Friendlies"
+	IDS_HELPSCREEN47		"Main Menu"
+	IDS_HELPSCREEN44		"Loan Offer For Player"
+	IDS_HELPSCREEN42		"Main Menu"
+	IDS_HELPSCREEN35		"Sack Player"
+	IDS_HELPSCREEN32		"Match Intro"
+	IDS_HELPSCREEN30		"Club Negotiations"
+	IDS_HELPSCREEN24		"loan player"
+	IDS_HELPSCREEN23		"Player Negotiation"
+	IDS_HELPSCREEN21		"Transfer Request"
+	IDS_HELPSCREEN17		"Match Summary"
+	IDS_HELPSCREEN16		"Transfer Status"
+	IDS_HELPSCREEN14		"Employee Negotiation"
+	IDS_HELPSCREEN13		"Youth Negotiation"
+	IDS_HELPSCREEN12		"Offer For Player"
+	IDS_HELPSCREEN06		"HelpScreen06"
+	IDS_HELPSCREEN04		"Club Selection"
+	IDS_HELPSCREEN46		"Monthly Awards"
+	IDS_HELPSCREEN99		"Main Menu"
+	IDS_HELPSCREEN64		"Substitutions"
+END
+#endif
+// English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_BRINGPLAYEROFF MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Player Details",              IDP_INFO
+        MENUITEM "Bring Off",					IDP_BRINGPLAYEROFF
+    END
+END
+
+IDR_BRINGPLAYERON MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Player Details",              IDP_INFO
+        MENUITEM "Bring On",					IDP_BRINGPLAYERON
+    END
+END
+
+IDR_OWNEDPLAYER MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Player Details",              IDP_INFO
+        MENUITEM "Transfer Status",             IDP_PLAYERSELL
+        MENUITEM "Release",                     IDP_FREE
+        MENUITEM "Offer Contract",              IDP_CONTRACT
+    END
+END
+
+
+IDR_NOTOWNEDPLAYER MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Player Details",              IDP_NOTOWNEDPLAYERINFO
+        MENUITEM "Buy Player",                  IDP_APROACHBUYPLAYER
+        MENUITEM "Loan Player",                 IDP_APROACHLOANPLAYER
+    END
+END
+
+IDR_VENUE MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Home Match",                  IDP_VENUEHOME
+        MENUITEM "Away Match",                  IDP_VENUEAWAY
+    END
+END
+
+IDR_OWNEDEMPLOYEE MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "View Details",                IDP_EMPLOYEEINFO
+        MENUITEM "Release",                     IDP_EMPLOYEESACK
+        MENUITEM "Offer Contract",              IDP_EMPLOYEECONTRACT
+    END
+END
+
+IDR_YOUTH MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "View Details",                IDP_YOUTHINFO
+        MENUITEM "Release",                     IDP_YOUTHSACK
+        MENUITEM "Promote To First Team ",      IDP_YOUTHPROMOTE
+    END
+END
+
+IDR_CLUB MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "View Squad",                  IDP_CLUBINFO
+        MENUITEM "Club Information",            IDP__CLUBINFORMATION
+    END
+END
+
+IDR_AVAILABLEYOUTH MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "View Details",                IDP_AVAILABLEYOUTHINFO
+        MENUITEM "Hire",                        IDP_YOUTHHIRE
+    END
+END
+
+IDR_NOTOWNEDEMPLOYEE MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "View Details",                IDP_NOTOWNEDEMPLOYEEINFO
+        MENUITEM "Hire",                        IDP_EMPLOYEEHIRE
+    END
+END
+
+IDR_CLUBFIXTURE MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Squad",                       IDP_VIEWSQUAD
+        MENUITEM "Match Report",                IDP_VIEWMATCHREPORT
+        MENUITEM "Club Information",            ID__CLUBINFORMATION
+    END
+END
+
+IDR_CALENDARPROGRESS MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Next Match",                  ID_NEXT_MATCH
+        MENUITEM "Next Date",                   ID_NEXT_DATE
+    END
+END
+
+IDR_PLAYERSQUAD MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "View Squad",                  IDP_CLUBINFO
+        MENUITEM "View Player Info",            IDP_INFO
+        MENUITEM "Player Transfer Status",      IDP_PLAYERSELL
+    END
+END
+
+IDR_OUTOFCONTRACTPLAYER MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "View Details",                IDP_INFO
+        MENUITEM "Offer Contract",              IDP_CONTRACT1
+    END
+END
+
+IDR_SCREEN27ROLEMENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "Substitutions",				ID_ACTION1
+        MENUITEM "Tactics",						ID_ACTION2
+        MENUITEM "Formation",					ID_ACTION3
+        MENUITEM SEPARATOR
+        POPUP "Captain"
+        BEGIN
+            MENUITEM "Next Player",             ID_ACTION4
+            MENUITEM "Previous Player",         ID_ACTION5
+		END
+        POPUP "Penalty Taker"
+        BEGIN
+            MENUITEM "Next Player",             ID_ACTION6
+            MENUITEM "Previous Player",         ID_ACTION7
+		END
+        POPUP "Corner Taker"
+        BEGIN
+            MENUITEM "Next Player",             ID_ACTION8
+            MENUITEM "Previous Player",         ID_ACTION9
+		END
+        POPUP "Free Kick Taker"
+        BEGIN
+            MENUITEM "Next Player",             ID_ACTION10
+            MENUITEM "Previous Player",         ID_ACTION11
+		END
+    END
+    MENUITEM "Match",							ID_CONTINUE
+END
+
+IDR_SCREEN27ROLEVIEWMENU MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        POPUP "Captain"
+        BEGIN
+            MENUITEM "Next Player",             ID_ACTION1
+            MENUITEM "Previous Player",         ID_ACTION2
+		END
+        POPUP "Penalty Taker"
+        BEGIN
+            MENUITEM "Next Player",             ID_ACTION3
+            MENUITEM "Previous Player",         ID_ACTION4
+		END
+        POPUP "Corner Taker"
+        BEGIN
+            MENUITEM "Next Player",             ID_ACTION5
+            MENUITEM "Previous Player",         ID_ACTION6
+		END
+        POPUP "Free Kick Taker"
+        BEGIN
+            MENUITEM "Next Player",             ID_ACTION7
+            MENUITEM "Previous Player",         ID_ACTION8
+		END
+        MENUITEM SEPARATOR
+        MENUITEM "Next Match",                  ID_NEXT_MATCH
+        MENUITEM "Next Date",                   ID_NEXT_DATE
+    END
+END
+
+IDR_SCREEN27TACTICMENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "Substitutions",				ID_ACTION1
+        MENUITEM "Formation",					ID_ACTION3
+        MENUITEM "Roles",						ID_ACTION4
+        MENUITEM SEPARATOR
+        MENUITEM "CounterAttack",				ID_ACTION5
+        MENUITEM "Offside Trap",				ID_ACTION6
+    END
+    MENUITEM "Match",							ID_CONTINUE
+END
+
+IDR_SCREEN27TACTICVIEWMENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "CounterAttack",				ID_ACTION1
+        MENUITEM "Offside Trap",				ID_ACTION2
+        MENUITEM SEPARATOR
+        MENUITEM "Next Match",                  ID_NEXT_MATCH
+        MENUITEM "Next Date",                   ID_NEXT_DATE
+    END
+    MENUITEM "Match",							ID_CONTINUE
+END
+
+IDR_SCREEN27FORMATIONMENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "Substitutions",				ID_ACTION1
+        MENUITEM "Tactics",						ID_ACTION2
+        MENUITEM "Roles",						ID_ACTION4
+    END
+    MENUITEM "Match",							ID_CONTINUE
+END
+
+IDR_SCREEN64MENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "Tactics",						ID_ACTION2
+        MENUITEM "Formation",					ID_ACTION3
+        MENUITEM "Roles",						ID_ACTION4
+    END
+    MENUITEM "Match",							ID_CONTINUE
+END
+
+IDR_SCREEN65MENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "Subs And Tactics",            ID_ACTION_SUBSTITUTIONS
+        MENUITEM "Commentary",                  ID_ACTION_COMMENTARY
+        MENUITEM "Skill",                       ID_ACTION_SKILL
+        MENUITEM "Teams",                       ID_ACTION_TEAMS
+        MENUITEM "Events",                      ID_ACTION_EVENTS
+        MENUITEM "Radar",						ID_ACTION_MATCHRADAR
+    END
+    POPUP "Match Speed"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "Faster",                      ID_ACTION_SPEEDMATCH
+        MENUITEM "Slower",                      ID_ACTION_SLOWMATCH
+        MENUITEM "Skip To End Of Match",        ID_ACTION_SKIPTOENDOFMATCH
+    END
+END
+
+IDR_SCREEN65SCORESMENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "Subs And Tactics",            ID_ACTION_SUBSTITUTIONS
+        MENUITEM "Commentary",                  ID_ACTION_COMMENTARY
+        MENUITEM "Skill",                       ID_ACTION_SKILL
+        MENUITEM "Teams",                       ID_ACTION_TEAMS
+        MENUITEM "Events",                      ID_ACTION_EVENTS
+        MENUITEM "Latest Scores",               ID_ACTION_LATESTSCORES
+        MENUITEM "Radar",						ID_ACTION_MATCHRADAR
+    END
+    POPUP "Match Speed"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "Faster",                      ID_ACTION_SPEEDMATCH
+        MENUITEM "Slower",                      ID_ACTION_SLOWMATCH
+        MENUITEM "Skip To End Of Match",        ID_ACTION_SKIPTOENDOFMATCH
+    END
+END
+
+IDR_SCREEN65SCORESTABLEMENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "Subs And Tactics",            ID_ACTION_SUBSTITUTIONS
+        MENUITEM "Commentary",                  ID_ACTION_COMMENTARY
+        MENUITEM "Skill",                       ID_ACTION_SKILL
+        MENUITEM "Teams",                       ID_ACTION_TEAMS
+        MENUITEM "Events",                      ID_ACTION_EVENTS
+        MENUITEM "Latest Scores",               ID_ACTION_LATESTSCORES
+        MENUITEM "League Table",                ID_ACTION_LEAGUETABLE
+        MENUITEM "Radar",						ID_ACTION_MATCHRADAR
+    END
+    POPUP "Match Speed"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "Faster",                      ID_ACTION_SPEEDMATCH
+        MENUITEM "Slower",                      ID_ACTION_SLOWMATCH
+        MENUITEM "Skip To End Of Match",        ID_ACTION_SKIPTOENDOFMATCH
+    END
+END
+
+IDR_SCREEN65HALFTIMEMENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "Subs And Tactics",            ID_ACTION_SUBSTITUTIONS
+        MENUITEM "Commentary",                  ID_ACTION_COMMENTARY
+        MENUITEM "Skill",                       ID_ACTION_SKILL
+        MENUITEM "Teams",                       ID_ACTION_TEAMS
+        MENUITEM "Events",                      ID_ACTION_EVENTS
+    END
+	MENUITEM "Kick Off"							ID_ACTION_KICKOFF
+END
+
+IDR_SCREEN65HALFTIMESCORESMENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "Subs And Tactics",            ID_ACTION_SUBSTITUTIONS
+        MENUITEM "Commentary",                  ID_ACTION_COMMENTARY
+        MENUITEM "Skill",                       ID_ACTION_SKILL
+        MENUITEM "Teams",                       ID_ACTION_TEAMS
+        MENUITEM "Events",                      ID_ACTION_EVENTS
+        MENUITEM "Latest Scores",               ID_ACTION_LATESTSCORES
+    END
+	MENUITEM "Kick Off"							ID_ACTION_KICKOFF
+END
+
+IDR_SCREEN65HALFTIMESCORESTABLEMENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "Subs And Tactics",            ID_ACTION_SUBSTITUTIONS
+        MENUITEM "Commentary",                  ID_ACTION_COMMENTARY
+        MENUITEM "Skill",                       ID_ACTION_SKILL
+        MENUITEM "Teams",                       ID_ACTION_TEAMS
+        MENUITEM "Events",                      ID_ACTION_EVENTS
+        MENUITEM "Half Time Scores",            ID_ACTION_LATESTSCORES
+        MENUITEM "League Table",                ID_ACTION_LEAGUETABLE
+    END
+	MENUITEM "Kick Off"							ID_ACTION_KICKOFF
+END
+
+IDR_SCREEN65KICKOFFMENU MENU 
+BEGIN
+	MENUITEM "Kick Off"							ID_ACTION_KICKOFF
+END
+
+IDR_SCREEN90LOADMENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "Load Game",					ID_ACTION1
+        MENUITEM "Cancel",						ID_ACTION2
+    END
+END
+
+IDR_SCREEN90SAVEMENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "Save Game",					ID_ACTION1
+        MENUITEM "Cancel",						ID_ACTION2
+    END
+END
+
+IDR_MENUCONTINUE MENU 
+BEGIN
+    MENUITEM "Continue",						ID_CONTINUE
+END
+
+IDR_OWNEDPLAYERMENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "Transfer Status",             ID_ACTION_PLAYERSELL
+        MENUITEM "Release",                     ID_ACTION_FREE
+        MENUITEM "Offer Contract",              ID_ACTION_CONTRACT
+    END
+END
+
+IDR_NOTOWNEDPLAYERMENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "Buy Player",                  ID_ACTION_APROACHBUYPLAYER
+        MENUITEM "Loan Player",                 ID_ACTION_APROACHLOANPLAYER
+    END
+END
+
+IDR_OUTOFCONTRACTPLAYERMENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "Offer Contract",              ID_ACTION_OFFERCONTRACT
+    END
+END
+
+IDR_SCREEN35MENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "Confirm",                     ID_ACTION_CONFIRM
+        MENUITEM "Cancel",                      ID_ACTION_CANCEL
+    END
+END
+
+IDR_ACCEPTREJECTCOUNTERMENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "Accept",                      ID_ACTION_ACCEPT
+        MENUITEM "Reject",                      ID_ACTION_REJECT
+        MENUITEM "Counter",                     ID_ACTION_COUNTER
+    END
+END
+
+IDR_MAKEOFFERMENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "Make Offer",                  ID_ACTION_MAKEOFFER
+        MENUITEM "Cancel",                      ID_ACTION_CANCEL
+    END
+END
+
+IDR_ACCEPTREFUSEMENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "Accept",                      ID_ACTION_ACCEPT
+        MENUITEM "Refuse",                      ID_ACTION_REFUSE
+    END
+END
+
+IDR_SCREEN32MENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "Intro",						ID_ACTION_MATCHINTRO
+        MENUITEM "Teams",						ID_ACTION_LINEUPS
+        MENUITEM "Opposition  Report",			ID_ACTION_OPPOSITIONREPORT
+        MENUITEM SEPARATOR
+        MENUITEM "View Match",                  ID_ACTION_VIEWMATCH
+        MENUITEM "Result Only",                 ID_ACTION_RESULTONLY
+    END
+END
+
+IDR_SCREEN60OWNEDMENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "Offer Contract",              ID_ACTION_OFFERCONTRACT
+        MENUITEM "Release",                     ID_ACTION_SACK
+    END
+END
+
+IDR_SCREEN60NOTOWNEDMENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "Hire",                        ID_ACTION_HIRE
+    END
+END
+
+IDR_SCREEN59OWNEDMENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "Offer First Team Contract",   ID_ACTION_OFFERCONTRACT
+        MENUITEM "Release",                     ID_ACTION_SACK
+    END
+END
+
+IDR_SCREEN17MENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "Time Line",                   ID_ACTION_TIMELINE
+        MENUITEM "Ratings",                     ID_ACTION_RATINGS
+        MENUITEM "Events",                      ID_ACTION_EVENTS
+        MENUITEM SEPARATOR
+        MENUITEM "Continue",                    ID_CONTINUE
+    END
+END
+
+IDR_SCREEN02MENU MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Next Cup",                    ID_ACTION1
+        MENUITEM "Previous Cup",                ID_ACTION2
+        MENUITEM SEPARATOR
+        MENUITEM "Next Match",                  ID_NEXT_MATCH
+        MENUITEM "Next Date",                   ID_NEXT_DATE
+    END
+END
+
+IDR_SCREEN03MENU MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "View Squad",                  ID_ACTION1
+        MENUITEM "View League Table",           ID_ACTION2
+        MENUITEM "View Accounts",               ID_ACTION3
+        MENUITEM "View News",                   ID_ACTION4
+        MENUITEM SEPARATOR
+        MENUITEM "Next Match",                  ID_NEXT_MATCH
+        MENUITEM "Next Date",                   ID_NEXT_DATE
+    END
+END
+
+IDR_SCREEN54MENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "Next Date",                   ID_ACTION1
+        MENUITEM "Previous Date",               ID_ACTION2
+        MENUITEM "Next Division",               ID_ACTION3
+        MENUITEM "Previous Division",           ID_ACTION4
+        MENUITEM "Home Match",                  IDP_VENUEHOME
+        MENUITEM "Away Match",                  IDP_VENUEAWAY
+        MENUITEM "View Squad",                  ID_ACTION5
+        MENUITEM SEPARATOR
+		MENUITEM "Continue",                    ID_CONTINUE
+	END
+END
+
+IDR_SCREEN04MENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "View Squad",                  ID_ACTION1
+        MENUITEM SEPARATOR
+		MENUITEM "Continue",                    ID_CONTINUE
+	END
+END
+
+IDR_SCREEN05MENU MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "View Details",                ID_ACTION1
+        MENUITEM "Offer Contract",              ID_ACTION2
+        MENUITEM "Skill View",                  ID_ACTION3
+        MENUITEM "Status View",                 ID_ACTION4
+        MENUITEM "Contract View",               ID_ACTION5
+        MENUITEM "Stats View",                  ID_ACTION6
+        MENUITEM SEPARATOR
+        MENUITEM "Next Match",                  ID_NEXT_MATCH
+        MENUITEM "Next Date",                   ID_NEXT_DATE
+    END
+END
+
+IDR_SCREEN05NOTMANAGEDMENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "View Details",                ID_ACTION1
+        MENUITEM "Skill View",                  ID_ACTION3
+        MENUITEM "Status View",                 ID_ACTION4
+        MENUITEM "Contract View",               ID_ACTION5
+        MENUITEM "Stats View",                  ID_ACTION6
+        MENUITEM SEPARATOR
+		MENUITEM "Continue",                    ID_CONTINUE
+    END
+END
+
+IDR_SCREEN08DATEMENU MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "View Wage",					ID_ACTION7
+        MENUITEM "Sort Expiry Date",            ID_ACTION1
+        MENUITEM "Offer Contract",              ID_ACTION4
+        MENUITEM "View Details",                ID_ACTION5
+        MENUITEM SEPARATOR
+        MENUITEM "Next Match",                  ID_NEXT_MATCH
+        MENUITEM "Next Date",                   ID_NEXT_DATE
+    END
+END
+
+IDR_SCREEN08WAGEMENU MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "View Expiry Date",			ID_ACTION6
+        MENUITEM "Sort Highest Earner",         ID_ACTION2
+        MENUITEM "Sort Lowest Earner",          ID_ACTION3
+        MENUITEM "Offer Contract",              ID_ACTION4
+        MENUITEM "View Details",                ID_ACTION5
+        MENUITEM "Annual Wage",                 ID_ACTION8
+        MENUITEM "Weekly Wage",                 ID_ACTION9
+        MENUITEM SEPARATOR
+        MENUITEM "Next Match",                  ID_NEXT_MATCH
+        MENUITEM "Next Date",                   ID_NEXT_DATE
+    END
+END
+
+IDR_SCREEN18MENU MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "View Match Report",           ID_ACTION1
+        MENUITEM "View Opponent Squad",         ID_ACTION2
+        MENUITEM SEPARATOR
+        MENUITEM "Next Match",                  ID_NEXT_MATCH
+        MENUITEM "Next Date",                   ID_NEXT_DATE
+    END
+END
+
+IDR_SCREEN19MENU MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Next Date",                   ID_ACTION1
+        MENUITEM "Previous Date",               ID_ACTION2
+        MENUITEM "Next Division",               ID_ACTION3
+        MENUITEM "Previous Division",           ID_ACTION4
+        MENUITEM "View Match Report",           ID_ACTION5
+        MENUITEM SEPARATOR
+        MENUITEM "Next Match",                  ID_NEXT_MATCH
+        MENUITEM "Next Date",                   ID_NEXT_DATE
+    END
+END
+
+IDR_SCREEN20MENU MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Next Round",                  ID_ACTION1
+        MENUITEM "Previous Round",              ID_ACTION2
+        MENUITEM "Next Cup",                    ID_ACTION3
+        MENUITEM "Previous Cup",                ID_ACTION4
+        MENUITEM "View Match Report",           ID_ACTION5
+        MENUITEM "Group Tables",				ID_ACTION6
+        MENUITEM SEPARATOR
+        MENUITEM "Next Match",                  ID_NEXT_MATCH
+        MENUITEM "Next Date",                   ID_NEXT_DATE
+    END
+END
+
+IDR_SCREEN22MENU MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Apply For Loan",              ID_ACTION1
+        MENUITEM "Repay Loan",                  ID_ACTION2
+        MENUITEM SEPARATOR
+        MENUITEM "Next Match",                  ID_NEXT_MATCH
+        MENUITEM "Next Date",                   ID_NEXT_DATE
+    END
+END
+
+IDR_SCREEN26MENU MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "View Current Week",           ID_ACTION1
+        MENUITEM "View Year To Date",           ID_ACTION2
+        MENUITEM SEPARATOR
+        MENUITEM "Next Match",                  ID_NEXT_MATCH
+        MENUITEM "Next Date",                   ID_NEXT_DATE
+    END
+END
+
+IDR_SCREEN33GOALSMENU MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "View Disciplinary",           ID_ACTION3
+        MENUITEM "View  Player Details",        ID_ACTION5
+        MENUITEM SEPARATOR
+        MENUITEM "Next Match",                  ID_NEXT_MATCH
+        MENUITEM "Next Date",                   ID_NEXT_DATE
+    END
+END
+
+IDR_SCREEN33DISCMENU MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "View Goals",                  ID_ACTION4
+        MENUITEM "View  Player Details",        ID_ACTION5
+        MENUITEM SEPARATOR
+        MENUITEM "Next Match",                  ID_NEXT_MATCH
+        MENUITEM "Next Date",                   ID_NEXT_DATE
+    END
+END
+
+IDR_SCREEN39AVAILABLEMENU MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "View Details",				ID_ACTION1
+        MENUITEM "Hire",						ID_ACTION4
+        MENUITEM SEPARATOR
+        MENUITEM "Next Match",                  ID_NEXT_MATCH
+        MENUITEM "Next Date",                   ID_NEXT_DATE
+    END
+END
+
+IDR_SCREEN39EMPLOYEDMENU MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "View Details",				ID_ACTION1
+        MENUITEM "Release",						ID_ACTION2
+        MENUITEM "Offer Contract",				ID_ACTION3
+        MENUITEM SEPARATOR
+        MENUITEM "Next Match",                  ID_NEXT_MATCH
+        MENUITEM "Next Date",                   ID_NEXT_DATE
+    END
+END
+
+IDR_SCREEN41AVAILABLEMENU MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "View Details",				ID_ACTION1
+        MENUITEM "Hire",						ID_ACTION4
+        MENUITEM SEPARATOR
+        MENUITEM "Next Match",                  ID_NEXT_MATCH
+        MENUITEM "Next Date",                   ID_NEXT_DATE
+    END
+END
+
+IDR_SCREEN41EMPLOYEDMENU MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "View Details",				ID_ACTION1
+        MENUITEM "Release",						ID_ACTION2
+        MENUITEM "Promote To First Team",       ID_ACTION3
+        MENUITEM SEPARATOR
+        MENUITEM "Next Match",                  ID_NEXT_MATCH
+        MENUITEM "Next Date",                   ID_NEXT_DATE
+    END
+END
+
+IDR_SCREEN48MENU MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Filter",                      ID_ACTION1
+        MENUITEM "Sort Highest Skill",          ID_ACTION2
+        MENUITEM "Sort Lowest Skill",           ID_ACTION3
+        MENUITEM "Sort Highest Price",          ID_ACTION4
+        MENUITEM "Sort Lowest Price",           ID_ACTION5
+        MENUITEM "View Details",                ID_ACTION6
+        MENUITEM "Make Offer",                  ID_ACTION7
+        MENUITEM SEPARATOR
+        MENUITEM "Next Match",                  ID_NEXT_MATCH
+        MENUITEM "Next Date",                   ID_NEXT_DATE
+    END
+END
+
+IDR_SCREEN50MENU MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Overall",                     ID_ACTION3
+        MENUITEM "Home",                        ID_ACTION4
+        MENUITEM "Away",                        ID_ACTION5
+        MENUITEM "Form",                        ID_ACTION6
+        MENUITEM "Discipline",                  ID_ACTION7
+        MENUITEM "View Squad",                  ID_ACTION8
+        MENUITEM SEPARATOR
+        MENUITEM "Next Match",                  ID_NEXT_MATCH
+        MENUITEM "Next Date",                   ID_NEXT_DATE
+    END
+END
+
+IDR_SCREEN55MENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "Next Group",					ID_ACTION1
+        MENUITEM "Previous Group",				ID_ACTION2
+        MENUITEM "View Squad",					ID_ACTION3
+        MENUITEM SEPARATOR
+        MENUITEM "Continue",                    ID_CONTINUE
+    END
+END
+
+IDR_SCREEN61OWNEDPLAYERMENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "Stats",						ID_ACTION1
+        MENUITEM "Personal",					ID_ACTION2
+        MENUITEM "Career",						ID_ACTION3
+        MENUITEM "Availability",				ID_ACTION4
+        MENUITEM SEPARATOR
+        MENUITEM "Transfer Status",             ID_ACTION_PLAYERSELL
+        MENUITEM "Release",                     ID_ACTION_FREE
+        MENUITEM "Offer Contract",              ID_ACTION_CONTRACT
+        MENUITEM SEPARATOR
+        MENUITEM "Continue",                    ID_CONTINUE
+    END
+END
+
+IDR_SCREEN61NOTOWNEDPLAYERMENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "Stats",						ID_ACTION1
+        MENUITEM "Personal",					ID_ACTION2
+        MENUITEM "Career",						ID_ACTION3
+        MENUITEM "Availability",				ID_ACTION4
+        MENUITEM SEPARATOR
+        MENUITEM "Buy Player",                  ID_ACTION_APROACHBUYPLAYER
+        MENUITEM "Loan Player",                 ID_ACTION_APROACHLOANPLAYER
+        MENUITEM SEPARATOR
+        MENUITEM "Continue",                    ID_CONTINUE
+    END
+END
+
+IDR_SCREEN61NOBUYALLOWEDMENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "Stats",						ID_ACTION1
+        MENUITEM "Personal",					ID_ACTION2
+        MENUITEM "Career",						ID_ACTION3
+        MENUITEM "Availability",				ID_ACTION4
+        MENUITEM SEPARATOR
+        MENUITEM "Loan Player",                 ID_ACTION_APROACHLOANPLAYER
+        MENUITEM SEPARATOR
+        MENUITEM "Continue",                    ID_CONTINUE
+    END
+END
+
+IDR_SCREEN61OUTOFCONTRACTPLAYERMENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "Stats",						ID_ACTION1
+        MENUITEM "Personal",					ID_ACTION2
+        MENUITEM "Career",						ID_ACTION3
+        MENUITEM "Availability",				ID_ACTION4
+        MENUITEM SEPARATOR
+        MENUITEM "Offer Contract",              ID_ACTION_OFFERCONTRACT
+        MENUITEM SEPARATOR
+        MENUITEM "Continue",                    ID_CONTINUE
+    END
+END
+
+IDR_SCREEN61NOTMANAGINGMENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "Stats",						ID_ACTION1
+        MENUITEM "Personal",					ID_ACTION2
+        MENUITEM "Career",						ID_ACTION3
+        MENUITEM "Availability",				ID_ACTION4
+        MENUITEM SEPARATOR
+        MENUITEM "Continue",                    ID_CONTINUE
+    END
+END
+
+IDR_SCREEN92MENU MENU 
+BEGIN
+    POPUP "Action"
+    BEGIN
+        MENUITEM "View Player",                 ID_ACTION3
+        MENUITEM "View Squad",					ID_ACTION4
+        MENUITEM SEPARATOR
+        MENUITEM "Continue",                    ID_CONTINUE
+    END
+END
+
+IDR_BITMAPFORMMENU MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Next Match",                  ID_NEXT_MATCH
+        MENUITEM "Next Date",                   ID_NEXT_DATE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SCREENNOCONTROLS DIALOG  0, 0, 69, 60
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "System"
+BEGIN
+END
+
+IDD_SCREENDLGNOCONTROLS DIALOG  0, 0, 122, 96
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION
+CAPTION "Dialog"
+FONT 8, "System"
+BEGIN
+END
+
+IDD_SCREEN2701 DIALOG  0, 0, 74, 101
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "System"
+BEGIN
+//     CONTROL         "",IDC_CHECK2701,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,77,9,9
+//     CONTROL         "",IDC_CHECK2702,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,90,9,9
+END
+
+IDD_SCREEN2701DLG DIALOG  0, 0, 74, 101
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION
+CAPTION "Dialog"
+FONT 8, "System"
+BEGIN
+//    CONTROL         "",IDC_CHECK2701,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,77,9,9
+  //  CONTROL         "",IDC_CHECK2702,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,90,9,9
+END
+
+IDD_SCREEN28VIEW DIALOG  0, 0, 99, 73
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "System"
+BEGIN
+END
+
+IDD_SCREEN16 DIALOG  0, 0, 93, 97
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION
+CAPTION "Dialog"
+FONT 8, "System"
+BEGIN
+END
+
+IDD_SCREEN98 DIALOG  0, 0, 106, 110
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION
+FONT 8, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT9801,4,66,93,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RCDATA
+//
+
+IDR_OWNEDPLAYER RCDATA 
+BEGIN
+    0x009b, 0x0001, 0xfffe, 0x802c, 0x0004, 0x0018, 0x802e, 0x0000, 0x0000
+
+END
+
+IDR_NOTOWNEDPLAYER RCDATA 
+BEGIN
+    0x009c, 0x0001, 0xfffe, 0x802c, 0x0004, 0x0018, 0x802e, 0x0000, 0x0000
+
+END
+
+IDR_VENUE RCDATA 
+BEGIN
+    0x009d, 0x0001, 0xfffe, 0x8039, 0x0004, 0x0018, 0x802e, 0x0000, 0x0000
+
+END
+
+IDR_OWNEDEMPLOYEE RCDATA 
+BEGIN
+    0x009e, 0x0001, 0xfffe, 0x802c, 0x0004, 0x0018, 0x802e, 0x0000, 0x0000
+
+END
+
+IDR_YOUTH RCDATA 
+BEGIN
+    0x009f, 0x0001, 0xfffe, 0x802c, 0x0004, 0x0018, 0x802e, 0x0000, 0x0000
+
+END
+
+IDR_CLUB RCDATA 
+BEGIN
+    0x00a0, 0x0001, 0xfffe, 0x802c, 0x0004, 0x0018, 0x802e, 0x0000, 0x0000
+
+END
+
+IDR_AVAILABLEYOUTH RCDATA 
+BEGIN
+    0x00a1, 0x0001, 0xfffe, 0x802c, 0x0004, 0x0018, 0x802e, 0x0000, 0x0000
+
+END
+
+IDR_NOTOWNEDEMPLOYEE RCDATA 
+BEGIN
+    0x00a2, 0x0001, 0xfffe, 0x802c, 0x0004, 0x0018, 0x802e, 0x0000, 0x0000
+
+END
+
+IDR_CLUBFIXTURE RCDATA 
+BEGIN
+    0x00a3, 0x0001, 0xfffe, 0x8039, 0x0004, 0x0018, 0x802e, 0x0000, 0x0000
+
+END
+
+IDR_CALENDARPROGRESS RCDATA 
+BEGIN
+    0x00a4, 0x0001, 0xfffe, 0x8039, 0x0004, 0x0018, 0x802e, 0x0000, 0x0000
+
+END
+
+IDR_PLAYERSQUAD RCDATA 
+BEGIN
+    0x00a5, 0x0001, 0xfffe, 0x802c, 0x0004, 0x0018, 0x802e, 0x0000, 0x0000
+
+END
+
+IDR_OUTOFCONTRACTPLAYER RCDATA 
+BEGIN
+    0x00a6, 0x0001, 0xfffe, 0x802c, 0x0004, 0x0018, 0x802e, 0x0000, 0x0000
+
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SCREENNOCONTROLS, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 48
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 30
+    END
+
+    IDD_SCREENDLGNOCONTROLS, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 120
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_SCREEN2701, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 94
+    END
+
+    IDD_SCREEN2701DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 94
+    END
+
+    IDD_SCREEN28VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 127
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+
+	IDD_SCREEN16, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 89
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_SCREEN98, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 102
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 103
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDR_PNGLOGO             PNG                     "res\\png\\Logo.png"
+IDR_PNGLOGOSL           PNG                     "res\\png\\SaveIcons.png"
+IDR_PNGLOGOFD           PNG                     "res\\png\\FDLogo.png"
+IDR_PNGTITLEBACK        PNG                     "res\\png\\TitleBackground.png"
+IDR_PNGPITCH            PNG                     "res\\png\\Pitch.png"
+IDR_PNGTITLEOVERLAY     PNG                     "res\\png\\TitleOverlay.png"
+IDR_PNGARROWDU          PNG                     "res\\png\\ArrowDU.png"
+IDR_PNGPLAYERSTATUS     PNG                     "res\\png\\PlayerStatus.png"
+IDR_PNGSMALLHOMEKITS    PNG                     "res\\png\\SmallKits.png"
+IDR_PNGLARGEHOMEKITS    PNG                     "res\\png\\LargeKits.png"
+IDR_PNGSCREEN99REGISTER PNG                     "res\\png\\Screen99Register.png"
+IDR_PNGSCREEN99CREDITS  PNG                     "res\\png\\Screen99Credits.png"
+IDR_PNGSCREEN99EXIT     PNG                     "res\\png\\Screen99Exit.png"
+IDR_PNGSCREEN99LOADGAME PNG                     "res\\png\\Screen99LoadGame.png"
+IDR_PNGSCREEN99NEWGAME  PNG                     "res\\png\\Screen99NewGame.png"
+IDR_PNGSCREEN99OPTIONS  PNG                     "res\\png\\Screen99Options.png"
+IDR_PNGSCREEN99CONTINUE PNG                     "res\\png\\Screen99Continue.png"
+IDR_PNGRIGHT            PNG                     "res\\png\\Right.png"
+IDR_PNGLEFT             PNG                     "res\\png\\Left.png"
+IDR_PNGROLES            PNG                     "res\\png\\Roles.png"
+IDR_PNGMATCHSUBS        PNG                     "res\\png\\MatchSubs.png"
+IDR_PNGHEADER           PNG                     "res\\png\\Header.png"
+IDR_PNGHEADER2          PNG                     "res\\png\\Header2.png"
+IDR_PNGHEADER3          PNG                     "res\\png\\Header3.png"
+IDR_PNGBALL             PNG                     "res\\png\\ball.png"
+IDR_PNGREDCARD          PNG                     "res\\png\\RedCard.png"
+IDR_PNGYELLOWCARD       PNG                     "res\\png\\YellowCard.png"
+IDR_PNGSCREEN87         PNG                     "res\\png\\Screen87.png"
+IDR_PNGNUMBERS			PNG                     "res\\png\\Numbers.png"
+IDR_PNGPENALTYSHOOTOUT 	PNG                     "res\\png\\PenaltyShootOut.png"
+IDR_PNGCHECKBOX 		PNG                     "res\\png\\CheckBox.png"
+IDR_PNGCALENDAR 		PNG                     "res\\png\\Calendar.png"
+IDR_PNGDAY 				PNG                     "res\\png\\Day.png"
+IDR_PNGMONTH 			PNG                     "res\\png\\Month.png"
+IDR_PNGYEAR 			PNG                     "res\\png\\Year.png"
+IDR_PNGPROGRESSBAR		PNG                     "res\\png\\ProgressBar.png"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// FDDATA
+//
+
+IDR_POPULARITY          FDDATA                  "popularity.bin"
+IDR_FIXT20              FDDATA                  "Fixt20.bin"
+IDR_FIXT24              FDDATA                  "Fixt24.bin"
+IDR_CAREERPATH          FDDATA                  "CareerPath.bin"
+IDR_SKILLMONEYVALUE     FDDATA                  "SkillMoneyValue.bin"
+IDR_DIVISIONSTRENGTH    FDDATA                  "DivisionStrength.bin"
+IDR_FEDERATION          FDDATA                  "Federation.bin"
+IDR_FEDERATIONCUP       FDDATA                  "FederationCup.bin"
+IDR_COUNTRY             FDDATA                  "Country.bin"
+IDR_DIVISION            FDDATA                  "Division.bin"
+IDR_PLAYOFF             FDDATA                  "Playoff.bin"
+IDR_CHARITYSHIELD       FDDATA                  "CharityShield.bin"
+IDR_CUP                 FDDATA                  "Cup.bin"
+IDR_INJURYEVENTTYPE     FDDATA                  "InjuryEventType.bin"
+IDR_INJURYTYPE          FDDATA                  "InjuryType.bin"
+IDR_PLAYER              FDDATA                  "Players.bin"
+IDR_STADIUM             FDDATA                  "Stadiums.bin"
+IDR_SURNAME             FDDATA                  "Surnames.bin"
+IDR_CLUB                FDDATA                  "Clubs.bin"
+IDR_MANAGER             FDDATA                  "Managers.bin"
+IDR_FORMATION           FDDATA                  "Formations.bin"
+IDR_TACTIC              FDDATA                  "Tactic.bin"
+IDR_PLAYERLOANS			FDDATA					"PlayersOnLoan.bin"
+IDR_TRANSFERDEADLINESYSTEM FDDATA				"TransferDeadlineSystem.bin"
+IDR_KITSYSTEM			FDDATA					"Kits.bin"
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Astraware DRM
+//
+	#include "aw_registration_vendor.rc"
+	#include "aw_registration_resource.rc"
+
+IDC_REGTEST ACCELERATORS DISCARDABLE
+	BEGIN
+		"Q",            IDOK,                   VIRTKEY, CONTROL, NOINVERT
+	END
+
+1997 RCDATA
+    BEGIN
+        "ABCABCABCABCABCABCABCABCABCABCAB"
+    END

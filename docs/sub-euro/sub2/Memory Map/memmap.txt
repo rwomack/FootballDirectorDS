@@ -1,0 +1,84 @@
+    +-----------------------------------------------------------------------+
+    | Product Name    | Football Director DS                                |
+    +-----------------------------------------------------------------------+
+    | Product Code    | NTR-P-CFFP(UKV)             | Version         | 0.02|
+    +-----------------------------------------------------------------------+
+    | Backup Memory   | 2 Mbit FLASH                                        |
+    +-----------------------------------------------------------------------+
+
+1.1 Overview of Backup Data
+
+    There are three blocks of save data, one for the game options, one for 'edit mode
+    data' and the other for the actual game save data. The blocks have an
+    identical header. These blocks will be referred to as OPTIONS, EDITMODE and
+    GAMESAVE.
+
+    Table 1  Header used for the OPTIONS and GAMESAVE block
+    +-------------------------------------------------------------------------+
+    |              | Offset        | Number of Bytes | Content (text or data) |
+    +-------------------------------------------------------------------------+
+    | MAGIC NUMBER | 0x0000        | 40 Bytes        | DATA=0xFEED7234 (x10)  |
+    +-------------------------------------------------------------------------+
+    | CRC32        | 0x0028        | 4 Bytes         | DATA=CHECKSUM          |
+    +-------------------------------------------------------------------------+
+    | SIZE         | 0x002C        | 4 Bytes         | DATA=SIZE OF BLOCK     |
+    +-------------------------------------------------------------------------+
+
+    The OPTIONS block has a Start Address of 0x00000.
+    The EDITMODE block has a Start Address of 0x000B4.
+    The GAMESAVE block has a Start Address of 0x02503.
+
+1.2 Support for Backup Memory in Factory Settings
+
+    If all 40bytes of the MAGIC NUMBER in Table 1 is other than the repeated 0xFEED7234 pattern then the data is handled as unformatted.
+
+1.3 Reliability of Backup Data
+
+    The CRC32 calculated for each blocks data is stored in the header shown in
+    Table 1. If the data once read doesn't match this crc then the data is
+    treated as corrupt.
+
+    NOTE: Due to varying save sizes only the actively used parts of the DATA sections listed in the memory image will be checksummed and checked.
+
+1.4 Storage Location of Backup Memory in a Game
+
+    Table 2  Storage Location of Backup Memory
+    +---------------------------------------------------------------------------------+
+    |   | Location to write                  | Target        | Save   | Display While |
+    |   | data during a game                 | Area          | Method | Writing Data  |
+    +---------------------------------------------------------------------------------+
+    | 1 | Any save point during the game     | ALL           | Auto   | NO            |
+    |   |                                    |               |        |               |
+    +---------------------------------------------------------------------------------+
+
+
+1.5 Memory Image
+    +------------------------------------------------- 0x00000
+    | MAGIC NUMBER for OPTIONS block
+    +-------------+------------+---------------------- 0x00028
+    | CRC for OPTIONS block
+    +-------------+------------+---------------------- 0x0002C
+    | SIZE for OPTIONS block
+    +-------------+------------+---------------------- 0x00030
+    | DATA for OPTIONS block
+    +-------------+------------+---------------------- 0x000B4
+    | MAGIC NUMBER for EDITMODE block
+    +-------------+------------+---------------------- 0x000DC
+    | CRC for EDITMODE block
+    +-------------+------------+---------------------- 0x000E0
+    | SIZE for EDITMODE block
+    +-------------+------------+---------------------- 0x000E4
+    | DATA for EDITMODE block
+    +-------------+------------+---------------------- 0x02503
+    | MAGIC NUMBER for GAMESAVE block
+    +-------------+------------+---------------------- 0x0252B
+    | CRC for GAMESAVE block
+    +-------------+------------+---------------------- 0x0252F
+    | SIZE for GAMESAVE block
+    +-------------+------------+---------------------- 0x02533
+    | DATA for GAMESAVE block
+    +-------------+------------+---------------------- 0x40000
+
+Copyright 2007 Nintendo                                                NTR-06-0512-001-A
+CONFIDENTIAL                                                           Released: Review
+

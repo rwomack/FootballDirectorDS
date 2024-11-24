@@ -1,0 +1,11 @@
+[default]
+textPos=CENTRE
+textScreen=TOP
+
+[1]
+text=This screen displays a list of the best performing players during the last week from all the clubs in the currently selected division.
+
+[2]
+text=The division may be changed by selecting another one from the selector at the bottom of the screen.
+highlightScreen=BOTTOM
+highlightWidgetName=tow_selectteam_divcombo

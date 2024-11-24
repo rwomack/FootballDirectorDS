@@ -1,0 +1,14 @@
+#!ver:1.1
+#!config_name: UMD Game
+#key	type	size	encoding	value	comment
+TITLE	Vs	128	-	"Football"	#!UI_CNF:"Title name","rw","m"
+PARENTAL_LEVEL	Vi	4	-	"1"	#!UI_CNF:"Parental-lock level","rw","m"
+DISC_ID	Vs	16	-	"NPEX99999"	#!UI_CNF:"Disc ID","rw","m"
+DISC_TOTAL	Vi	4	-	"1"	#!UI_CNF:"Number of discs","rw","m"
+DISC_NUMBER	Vi	4	-	"1"	#!UI_CNF:"Disc number","rw","m"
+DISC_VERSION	Vs	8	-	"1.00"	#!UI_CNF:"Disc version","rw","o"
+REGION	Vi	4	-	"32768"	#!UI_CNF:"Region","ro","m"
+BOOTABLE	Vi	4	-	"1"	#!UI_CNF:"Is bootable","ro","m"
+#!UI_OPT:DRIVER_PATH	Vs	64	-	""	#!UI_CNF:"Path to the device drivers","ro","o"
+PSP_SYSTEM_VER	Vs	8	-	"3.70"	#!UI_CNF:"PSP system version","ro","o"
+CATEGORY	Vs	4	-	"UG"	#!UI_CNF:"Category","ro","m"

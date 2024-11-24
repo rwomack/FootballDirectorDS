@@ -1,0 +1,170 @@
+---------------------------------------
+
+Loaned players don't return after the number of weeks set
+
+---------------------------------------
+Infinite loop
+
+If you choose a team from a lower division and then get to the arrange friendlies screen,
+it will hang indefinitely.
+
+looks like its due to this part of the code:
+
+CCalendar CDivision::FriendlyDate(int FriendlyNum)
+{
+	ushort FriendlyMatchTpe = FriendlyMatchType(FriendlyNum);
+	CCalendar TheDate(WorldData().GetCurrentDate());
+	DoFindStartOfSeason(TheDate);
+
+	// Assumes friendly match has not been played yet
+	while (GetMatchType(TheDate.GetMatchDay()) != FriendlyMatchTpe)
+	{
+		TheDate.NextMatchDay();	// forward a match
+	}
+	return TheDate;
+}
+
+---------------------------------------
+void CClub::DoTryCoachForManager()
+Line 5341 : delete GetCoach();
+
+Crashes
+
+---------------------------------------
+
+After reloading a save file and click continue to next match
+
+Federation Cup New Season
+DEBUG: 2 | Playing Federation Cup Matches
+DEBUG: 2 | Playing Charity Shield Matches
+DEBUG: 2 | Playing Playoffs Matches
+DEBUG: 2 | Playing Cup Matches
+DEBUG: 2 | Playing League Matches
+DEBUG: 2 | Showing match summary
+DEBUG: 2 | Cup Draws
+DEBUG: 2 | PlayOff Draw
+DEBUG: 2 | Charity Shield Draws
+DEBUG: 2 | Federation Cup Draws
+Assertion failed: false, file CCup::CreateGroupMatches:\FDL\projects\footballdirector\source\engine\sports\soccer\Cup.CPP, line 2538
+
+---------------------------------------
+
+Assert appears after click to see the results of a match.
+Happens every so often.
+
+Assertion failed: m_TheEvents.DoCountEvents(HOMEGOAL) + m_TheEvents.DoCountEvents(AWAYGOAL) < MAXIMUMGOALSINMATCH, file CFixture::DoAddMatchEvent:\FDL\projects\footballdirector\source\engine\sports\soccer\Fixture.cpp, line 1526
+
+---------------------------------------
+
+Might not be a bug
+
+OnReceiveOfferForPlayer(..) is called for both a normal bid and a loan offer which requires a different interface.
+Looking at the reference code, the screen 12 doesn't seem to deal with it being a loan offer.
+
+Our version handles the differences just incase.
+
+---------------------------------------
+
+Not sure if this is a bug
+
+Message Box screen appears after Sacking a player.
+If you select Bolton W, and sack R. Gardnir,it will say "The board will not let you sell R. Gardnir for under £995,000.."
+
+If I change his transfer list price higher on the status screen before sacking him, the message box will not appear.
+
+---------------------------------------
+
+
+Assertion failed: maxvalue > 0, file CRandomNumber::IntLessThan:\FDL\projects\footballdirector\source\engine\system\Random.cpp, line 26
+
+Game crashes if Tactics : Aggression  is set to 0
+
+---------------------------------------
+
+Club.cpp
+Assertion failed: _TheOffer.GetBidClub().AreBuyTransfersAllowed() == true, file CClub::DoSoldPlayer:\FDL\projects\footballdirector\source\engine\sports\soccer\Club.cpp, line 4793
+
+This assertion appeared after a player requested a transfer and the user accpeted. Happened on 13/10/07
+I think its the same bug as below as it happens at the end of the Country
+
+SetOnPlayerRequestTransfer
+lSpriteBank::Destruct: background1 (14)
+FDResourceManager: Purging old bank at index 13
+lSpriteBank: Converting bank to PC
+lSpriteBank::Construct: nds/player_info.LSB (14)
+FDResourceManager: GetSpriteBank: Loaded 'player_info'
+SetPlayerInfo
+DoModal: OnPlayerRequestTransfer
+OnMouseDown: border
+OnMouseDown: accept_button
+lSpriteBank::Destruct: player_info (14)
+OnMouseDown: border
+OnMouseDown: continue_button
+Continue pressed
+ OnPlayerRequestTransfer done - OK
+Assertion failed: _TheOffer.GetBidClub().AreBuyTransfersAllowed() == true, file CClub::DoSoldPlayer:\FDL\projects\footballdirector\source\engine\sports\soccer\Club.cpp, line 4793
+
+
+---------------------------------------
+
+Club.cpp
+Line 4651 : EXT_ASSERT(_TheOffer.GetBidClub().AreBuyTransfersAllowed() == true);
+
+Crashes after log,
+DEBUG: 30 | Division Daily Tasks
+DEBUG: 30 | Club Daily Tasks
+DEBUG: 30 | Country End Of Week
+
+Happens everytime
+
+---------------------------------------
+
+WorldData.cpp - Fixed
+function OnLoadPlayerOut(...) the playerId and clubId are read in the wrong sequence.
+this is probably causing the bug below
+
+Related to the bug below
+---------------------------------------
+WorldData.cpp
+Line 435 : GetPlayer(_PlayerID)->GetClub().GetFirstTeamSquad().GotPlayerOnLoan();
+Error
+---------------------------------------
+PlayerSquad.cpp
+Line 436 : EXT_ASSERT(iRet < PLAYERSINSQUAD);
+
+Fails if the number of squad members is equal to the maximum.
+It should fail if greater than the maximum.
+
+EXT_ASSERT(iRet <= PLAYERSINSQUAD);
+
+---------------------------------------
+
+Youth Squad Screen
+When first hiring a youth into the Youth Squad, there isn't a negotiation screen to say that a contract has been entered into. The gamer may mistake the Youth Squad as a team without pay.
+
+----------------------------------------------------------------------------------------------
+*FIXED*
+----------------------------------------------------------------------------------------------
+PlayerSquad.cpp
+Line 348 : EXT_ASSERT(TotalSquadSize() < PLAYERSINSQUAD)
+
+Looking at the data it looks as if the CPlayerSquad::m_PlayersOutOnLoan is not equal to zero but equals 7 instead. Even though no players are on loan. So even though there are enough spaces left it sometimes believes TotalSquadSize() > 30
+
+This happens after buying a new player from the transferlist, waiting for the negotiation day and accepting player negotiations. Also when trying to promote a youth into the first squad.
+
+
+--
+
+During match
+
+Taking off same player as bringing on
+b¦¦UG: Taking Off M.Nobli, Bringing On ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦?
+  Message wrong?
+
+
+---
+
+Community shield fixture not added till after first advance date
+ - shows premiership as first match then flicks
+
+

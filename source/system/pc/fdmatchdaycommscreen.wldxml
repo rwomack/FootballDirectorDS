@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="yes" ?>
+<FDGameWorldXMLArchive version="1">
+    <node_store store_version="0">
+        <node id="1">
+            <object class="FDTeleprinterWidget" version="0">
+                <object_properties>
+                    <class name="lUIWidget">
+                        <property name="Name" value="commtable" />
+                        <property name="Pos" m_x="25.000000" m_y="201.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="231.000000" m_y="174.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <world>
+            <gamenode id="1" />
+        </world>
+    </node_store>
+</FDGameWorldXMLArchive>

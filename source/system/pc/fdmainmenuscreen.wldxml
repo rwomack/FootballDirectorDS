@@ -1,0 +1,135 @@
+<?xml version="1.0" standalone="yes" ?>
+<FDGameWorldXMLArchive version="1">
+    <node_store store_version="0">
+        <node id="1">
+            <object class="FDButtonWidget" version="0">
+                <object_properties>
+                    <class name="FDButtonWidget">
+                        <property name="Sprite" m_name="continue_game" m_bank="ui" />
+                        <property name="Sprite On" m_name="continue_game-on" m_bank="ui" />
+                        <property name="Sprite Disabled" m_name="continue_game_greyed_out" m_bank="ui" />
+                    </class>
+                    <class name="lUIButtonWidget">
+                        <property name="Text" str="" id="" />
+                        <property name="Align" value="CenterCenter" />
+                        <property name="Stylus One Click" value="0" />
+                        <property name="Check box" value="0" />
+                        <property name="RESERVED" value="1" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="Continue_Game_Button" />
+                        <property name="Pos" m_x="56.500000" m_y="222.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="143.000000" m_y="26.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="1" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="1" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="2">
+            <object class="FDButtonWidget" version="0">
+                <object_properties>
+                    <class name="FDButtonWidget">
+                        <property name="Sprite" m_name="create_new_game" m_bank="ui" />
+                        <property name="Sprite On" m_name="create_new_game-on" m_bank="ui" />
+                        <property name="Sprite Disabled" m_name="" m_bank="" />
+                    </class>
+                    <class name="lUIButtonWidget">
+                        <property name="Text" str="" id="" />
+                        <property name="Align" value="CenterCenter" />
+                        <property name="Stylus One Click" value="0" />
+                        <property name="Check box" value="0" />
+                        <property name="RESERVED" value="1" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="New_Game_Button" />
+                        <property name="Pos" m_x="56.500000" m_y="257.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="143.000000" m_y="26.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="2" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="1" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="3">
+            <object class="FDButtonWidget" version="0">
+                <object_properties>
+                    <class name="FDButtonWidget">
+                        <property name="Sprite" m_name="options" m_bank="ui" />
+                        <property name="Sprite On" m_name="options_on" m_bank="ui" />
+                        <property name="Sprite Disabled" m_name="" m_bank="" />
+                    </class>
+                    <class name="lUIButtonWidget">
+                        <property name="Text" str="" id="" />
+                        <property name="Align" value="CenterCenter" />
+                        <property name="Stylus One Click" value="0" />
+                        <property name="Check box" value="0" />
+                        <property name="RESERVED" value="1" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="Options_Button" />
+                        <property name="Pos" m_x="56.500000" m_y="292.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="143.000000" m_y="26.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="3" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="1" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="4">
+            <object class="FDButtonWidget" version="0">
+                <object_properties>
+                    <class name="FDButtonWidget">
+                        <property name="Sprite" m_name="edit_mode" m_bank="ui" />
+                        <property name="Sprite On" m_name="edit_mode_on" m_bank="ui" />
+                        <property name="Sprite Disabled" m_name="" m_bank="" />
+                    </class>
+                    <class name="lUIButtonWidget">
+                        <property name="Text" str="" id="" />
+                        <property name="Align" value="CenterCenter" />
+                        <property name="Stylus One Click" value="0" />
+                        <property name="Check box" value="0" />
+                        <property name="RESERVED" value="1" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="Edit_Mode_Button" />
+                        <property name="Pos" m_x="56.500000" m_y="327.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="143.000000" m_y="26.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="4" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="1" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <world>
+            <gamenode id="1" />
+            <gamenode id="2" />
+            <gamenode id="3" />
+            <gamenode id="4" />
+        </world>
+    </node_store>
+</FDGameWorldXMLArchive>

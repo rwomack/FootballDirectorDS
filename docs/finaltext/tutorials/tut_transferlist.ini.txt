@@ -1,0 +1,50 @@
+[default]
+textPos=CENTRE
+textScreen=TOP
+spritePos=LEFTTEXT
+
+[1]
+text=In order to improve your squad, you may want to buy new players from the transfer market. A list of players fitting the current filter criteria is shown on the bottom screen.
+highlightScreen=BOTTOM
+highlightX=20
+highlightW=256
+highlightY=10
+highlightH=144
+
+[2]
+text=The table can be sorted by tapping a column header.
+highlightScreen=BOTTOM
+highlightX=20
+highlightW=256
+highlightY=10
+highlightH=12
+
+[3]
+text=You can change the filters by using the selector in the bottom-right part of the screen.
+highlightScreen=BOTTOM
+highlightWidgetName=tlfilter_combo
+
+[4]
+text=To edit a filter touch the Edit Filter button – this will allow you to set the parameters of a particular filter.
+highlightScreen=BOTTOM
+highlightWidgetName=tleditfilter
+spriteBank="uiicon"
+spriteName="editfilter"
+
+[5]
+text=To view more information on any player, touch their name and their information will appear on the top screen.
+
+[6]
+text=To loan a player, highlight their name by touching it, and touch the Loan button. This will spawn the loan negotiations screens.
+highlightScreen=BOTTOM
+highlightWidgetName=tlloan
+spriteBank="uiicon"
+spriteName="loanplayer"
+
+[7]
+text=To buy a player, highlight their name by touching it, and touch the Buy button. This will spawn the purchase negotiations screens.
+highlightScreen=BOTTOM
+highlightWidgetName=tlbuy
+spriteBank="uiicon"
+spriteName="buyplayer"
+

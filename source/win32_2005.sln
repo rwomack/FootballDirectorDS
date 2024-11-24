@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "game_lib_static_win32_vs2005", "build\toolchain\rogerbuild\game_lib_static_win32_vs2005.vcproj", "{5255996C-BC62-4839-AAAC-806059207B04}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "engine_sports_lib_static_win32_vs2005", "build\toolchain\rogerbuild\engine_sports_lib_static_win32_vs2005.vcproj", "{1A717D62-C2DF-4624-B924-69B167B512A5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "exe_exe_static_win32_vs2005", "build\toolchain\rogerbuild\exe_exe_static_win32_vs2005.vcproj", "{F676D18B-895A-4228-9D7C-2DCAFE4A26B4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1A717D62-C2DF-4624-B924-69B167B512A5} = {1A717D62-C2DF-4624-B924-69B167B512A5}
+		{1A717D62-C2DF-4624-B924-69B167B512A5} = {1A717D62-C2DF-4624-B924-69B167B512A5}
+		{1A717D62-C2DF-4624-B924-69B167B512A5} = {1A717D62-C2DF-4624-B924-69B167B512A5}
+		{5255996C-BC62-4839-AAAC-806059207B04} = {5255996C-BC62-4839-AAAC-806059207B04}
+		{5255996C-BC62-4839-AAAC-806059207B04} = {5255996C-BC62-4839-AAAC-806059207B04}
+		{5255996C-BC62-4839-AAAC-806059207B04} = {5255996C-BC62-4839-AAAC-806059207B04}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		debug|Win32 = debug|Win32
+		devrelease|Win32 = devrelease|Win32
+		release|Win32 = release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5255996C-BC62-4839-AAAC-806059207B04}.debug|Win32.ActiveCfg = debug|Win32
+		{5255996C-BC62-4839-AAAC-806059207B04}.debug|Win32.Build.0 = debug|Win32
+		{5255996C-BC62-4839-AAAC-806059207B04}.devrelease|Win32.ActiveCfg = devrelease|Win32
+		{5255996C-BC62-4839-AAAC-806059207B04}.devrelease|Win32.Build.0 = devrelease|Win32
+		{5255996C-BC62-4839-AAAC-806059207B04}.release|Win32.ActiveCfg = release|Win32
+		{5255996C-BC62-4839-AAAC-806059207B04}.release|Win32.Build.0 = release|Win32
+		{1A717D62-C2DF-4624-B924-69B167B512A5}.debug|Win32.ActiveCfg = debug|Win32
+		{1A717D62-C2DF-4624-B924-69B167B512A5}.debug|Win32.Build.0 = debug|Win32
+		{1A717D62-C2DF-4624-B924-69B167B512A5}.devrelease|Win32.ActiveCfg = devrelease|Win32
+		{1A717D62-C2DF-4624-B924-69B167B512A5}.devrelease|Win32.Build.0 = devrelease|Win32
+		{1A717D62-C2DF-4624-B924-69B167B512A5}.release|Win32.ActiveCfg = release|Win32
+		{1A717D62-C2DF-4624-B924-69B167B512A5}.release|Win32.Build.0 = release|Win32
+		{F676D18B-895A-4228-9D7C-2DCAFE4A26B4}.debug|Win32.ActiveCfg = debug|Win32
+		{F676D18B-895A-4228-9D7C-2DCAFE4A26B4}.debug|Win32.Build.0 = debug|Win32
+		{F676D18B-895A-4228-9D7C-2DCAFE4A26B4}.devrelease|Win32.ActiveCfg = devrelease|Win32
+		{F676D18B-895A-4228-9D7C-2DCAFE4A26B4}.devrelease|Win32.Build.0 = devrelease|Win32
+		{F676D18B-895A-4228-9D7C-2DCAFE4A26B4}.release|Win32.ActiveCfg = release|Win32
+		{F676D18B-895A-4228-9D7C-2DCAFE4A26B4}.release|Win32.Build.0 = release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,40 @@
+// sfx.c
+
+const char * const sfxFiles[] = {
+   "crowd_card_approval",
+   "crowd_card_dontagree",
+   "crowd_chant1_loop_837",
+   "crowd_chant2_loop_7015",
+   "crowd_chant3_loop_1325",
+   "crowd_closeshot1",
+   "crowd_closeshot2",
+   "crowd_disappointed_reaction",
+   "crowd_excited_loop_351",
+   "crowd_general1_loop_3029",
+   "crowd_general1_loop_886",
+   "crowd_goal1",
+   "crowd_goal2",
+   "crowd_happy_loop_15436",
+   "crowd_jubilant_loop_3554",
+   "crowd_prematch_loop_3003",
+   "crowd_upset_loop_17490",
+   "MATCH_pause",
+   "MATCH_resume",
+   "ref_whistle",
+   "ref_whistle_fulltime",
+   "ref_whistle_halftime",
+   "UI_advance_time",
+   "UI_back_button",
+   "UI_click",
+   "UI_disable",
+   "UI_kerching",
+   "UI_keyboard_backspace",
+   "UI_keyboard_click",
+   "UI_scroll",
+   "UI_scroll_negative",
+   "UI_side_button",
+   "vidiprinter",
+   (const char *)0
+};
+
+// ---=[EOF]=---------------------------------------------------------------

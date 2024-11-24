@@ -1,0 +1,823 @@
+<?xml version="1.0" standalone="yes" ?>
+<FDGameWorldXMLArchive version="1">
+    <node_store store_version="0">
+        <node id="1">
+            <object class="FDBackingWidget" version="0">
+                <object_properties>
+                    <class name="FDBackingWidget">
+                        <property name="Background Colour" m_colour="2130706432" />
+                        <property name="Line Colour" m_colour="2130706432" />
+                        <property name="Line Width" value="0" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="back" />
+                        <property name="Pos" m_x="20.000000" m_y="195.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="236.000000" m_y="116.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="2">
+            <object class="FDBackingWidget" version="0">
+                <object_properties>
+                    <class name="FDBackingWidget">
+                        <property name="Background Colour" m_colour="2130706432" />
+                        <property name="Line Colour" m_colour="2130706432" />
+                        <property name="Line Width" value="0" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="back" />
+                        <property name="Pos" m_x="20.000000" m_y="313.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="236.000000" m_y="40.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="3">
+            <object class="lUISpriteWidget" version="0">
+                <object_properties>
+                    <class name="lUISpriteWidget">
+                        <property name="Sprite" m_name="grad_grey1" m_bank="uiicon" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="bars" />
+                        <property name="Pos" m_x="20.000000" m_y="197.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="32.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="4">
+            <object class="lUISpriteWidget" version="0">
+                <object_properties>
+                    <class name="lUISpriteWidget">
+                        <property name="Sprite" m_name="grad_grey1" m_bank="uiicon" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="bars" />
+                        <property name="Pos" m_x="20.000000" m_y="226.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="32.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="5">
+            <object class="lUISpriteWidget" version="0">
+                <object_properties>
+                    <class name="lUISpriteWidget">
+                        <property name="Sprite" m_name="grad_grey1" m_bank="uiicon" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="bars" />
+                        <property name="Pos" m_x="20.000000" m_y="255.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="32.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="6">
+            <object class="lUISpriteWidget" version="0">
+                <object_properties>
+                    <class name="lUISpriteWidget">
+                        <property name="Sprite" m_name="grad_grey1" m_bank="uiicon" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="bars" />
+                        <property name="Pos" m_x="20.000000" m_y="284.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="32.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="7">
+            <object class="lUISpriteWidget" version="0">
+                <object_properties>
+                    <class name="lUISpriteWidget">
+                        <property name="Sprite" m_name="grad_grey2" m_bank="uiicon" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="bars" />
+                        <property name="Pos" m_x="138.000000" m_y="197.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="32.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="8">
+            <object class="lUISpriteWidget" version="0">
+                <object_properties>
+                    <class name="lUISpriteWidget">
+                        <property name="Sprite" m_name="grad_grey2" m_bank="uiicon" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="bars" />
+                        <property name="Pos" m_x="138.000000" m_y="226.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="32.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="9">
+            <object class="lUISpriteWidget" version="0">
+                <object_properties>
+                    <class name="lUISpriteWidget">
+                        <property name="Sprite" m_name="grad_grey2" m_bank="uiicon" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="bars" />
+                        <property name="Pos" m_x="116.000000" m_y="255.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="32.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="10">
+            <object class="lUISpriteWidget" version="0">
+                <object_properties>
+                    <class name="lUISpriteWidget">
+                        <property name="Sprite" m_name="grad_grey2" m_bank="uiicon" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="bars" />
+                        <property name="Pos" m_x="234.000000" m_y="255.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="32.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="11">
+            <object class="lUISpriteWidget" version="0">
+                <object_properties>
+                    <class name="lUISpriteWidget">
+                        <property name="Sprite" m_name="grad_grey2" m_bank="uiicon" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="bars" />
+                        <property name="Pos" m_x="116.000000" m_y="284.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="32.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="12">
+            <object class="lUISpriteWidget" version="0">
+                <object_properties>
+                    <class name="lUISpriteWidget">
+                        <property name="Sprite" m_name="grad_grey2" m_bank="uiicon" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="bars" />
+                        <property name="Pos" m_x="234.000000" m_y="284.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="32.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="13">
+            <object class="FDSliderWidget" version="0">
+                <object_properties>
+                    <class name="FDSliderWidget">
+                        <property name="Label" str="MIN VALUE" id="IDS_MINVALUE" />
+                        <property name="Slider Sprite" m_name="slider_bar" m_bank="uiicon" />
+                        <property name="Button Sprite" m_name="slider_bar_button" m_bank="uiicon" />
+                        <property name="Value" value="0.000000" />
+                        <property name="Value Scale" value="40000000.000000" />
+                        <property name="Value Offset" value="0.000000" />
+                        <property name="Increment" value="250000.000000" />
+                        <property name="Slider Offset" value="20" />
+                        <property name="Percentage" value="0" />
+                        <property name="Pound" value="1" />
+                        <property name="X" value="0" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="tle_min_cost_slider" />
+                        <property name="Pos" m_x="98.000000" m_y="211.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="100.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="14">
+            <object class="FDSliderWidget" version="0">
+                <object_properties>
+                    <class name="FDSliderWidget">
+                        <property name="Label" str="MAX VALUE" id="IDS_MAXVALUE" />
+                        <property name="Slider Sprite" m_name="slider_bar" m_bank="uiicon" />
+                        <property name="Button Sprite" m_name="slider_bar_button" m_bank="uiicon" />
+                        <property name="Value" value="1.000000" />
+                        <property name="Value Scale" value="40000000.000000" />
+                        <property name="Value Offset" value="0.000000" />
+                        <property name="Increment" value="250000.000000" />
+                        <property name="Slider Offset" value="20" />
+                        <property name="Percentage" value="0" />
+                        <property name="Pound" value="1" />
+                        <property name="X" value="0" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="tle_max_cost_slider" />
+                        <property name="Pos" m_x="98.000000" m_y="240.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="100.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="15">
+            <object class="FDSliderWidget" version="0">
+                <object_properties>
+                    <class name="FDSliderWidget">
+                        <property name="Label" str="MIN AGE" id="IDS_MINAGE" />
+                        <property name="Slider Sprite" m_name="slider_bar" m_bank="uiicon" />
+                        <property name="Button Sprite" m_name="slider_bar_button" m_bank="uiicon" />
+                        <property name="Value" value="0.000000" />
+                        <property name="Value Scale" value="30.000000" />
+                        <property name="Value Offset" value="16.000000" />
+                        <property name="Increment" value="1.000000" />
+                        <property name="Slider Offset" value="0" />
+                        <property name="Percentage" value="0" />
+                        <property name="Pound" value="0" />
+                        <property name="X" value="0" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="tle_min_age_slider" />
+                        <property name="Pos" m_x="31.000000" m_y="269.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="100.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="16">
+            <object class="FDSliderWidget" version="0">
+                <object_properties>
+                    <class name="FDSliderWidget">
+                        <property name="Label" str="MAX AGE" id="IDS_MAXAGE" />
+                        <property name="Slider Sprite" m_name="slider_bar" m_bank="uiicon" />
+                        <property name="Button Sprite" m_name="slider_bar_button" m_bank="uiicon" />
+                        <property name="Value" value="1.000000" />
+                        <property name="Value Scale" value="30.000000" />
+                        <property name="Value Offset" value="16.000000" />
+                        <property name="Increment" value="1.000000" />
+                        <property name="Slider Offset" value="0" />
+                        <property name="Percentage" value="0" />
+                        <property name="Pound" value="0" />
+                        <property name="X" value="0" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="tle_max_age_slider" />
+                        <property name="Pos" m_x="149.000000" m_y="269.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="100.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="17">
+            <object class="FDSliderWidget" version="0">
+                <object_properties>
+                    <class name="FDSliderWidget">
+                        <property name="Label" str="MIN SKILL" id="IDS_MINSKILL" />
+                        <property name="Slider Sprite" m_name="slider_bar" m_bank="uiicon" />
+                        <property name="Button Sprite" m_name="slider_bar_button" m_bank="uiicon" />
+                        <property name="Value" value="0.000000" />
+                        <property name="Value Scale" value="89.000000" />
+                        <property name="Value Offset" value="10.000000" />
+                        <property name="Increment" value="1.000000" />
+                        <property name="Slider Offset" value="0" />
+                        <property name="Percentage" value="0" />
+                        <property name="Pound" value="0" />
+                        <property name="X" value="0" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="tle_min_skill_slider" />
+                        <property name="Pos" m_x="31.000000" m_y="298.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="100.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="18">
+            <object class="FDSliderWidget" version="0">
+                <object_properties>
+                    <class name="FDSliderWidget">
+                        <property name="Label" str="MAX SKILL" id="IDS_MAXSKILL" />
+                        <property name="Slider Sprite" m_name="slider_bar" m_bank="uiicon" />
+                        <property name="Button Sprite" m_name="slider_bar_button" m_bank="uiicon" />
+                        <property name="Value" value="1.000000" />
+                        <property name="Value Scale" value="89.000000" />
+                        <property name="Value Offset" value="10.000000" />
+                        <property name="Increment" value="1.000000" />
+                        <property name="Slider Offset" value="0" />
+                        <property name="Percentage" value="0" />
+                        <property name="Pound" value="0" />
+                        <property name="X" value="0" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="tle_max_skill_slider" />
+                        <property name="Pos" m_x="149.000000" m_y="298.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="100.000000" m_y="12.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="19">
+            <object class="FDCheckBoxWidget" version="0">
+                <object_properties>
+                    <class name="FDCheckBoxWidget">
+                        <property name="Sprite On" m_name="tick_1" m_bank="uiicon" />
+                        <property name="Sprite Off" m_name="tick_0" m_bank="uiicon" />
+                    </class>
+                    <class name="lUIButtonWidget">
+                        <property name="Text" str="Inc. Listed" id="IDS_INC_LISTED" />
+                        <property name="Align" value="CenterCenter" />
+                        <property name="Stylus One Click" value="1" />
+                        <property name="Check box" value="1" />
+                        <property name="RESERVED" value="0" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="listed_players" />
+                        <property name="Pos" m_x="154.000000" m_y="311.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="12.000000" m_y="14.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="20">
+            <object class="FDCheckBoxWidget" version="0">
+                <object_properties>
+                    <class name="FDCheckBoxWidget">
+                        <property name="Sprite On" m_name="tick_1" m_bank="uiicon" />
+                        <property name="Sprite Off" m_name="tick_0" m_bank="uiicon" />
+                    </class>
+                    <class name="lUIButtonWidget">
+                        <property name="Text" str="Inc. Injured" id="IDS_INC_INJURED" />
+                        <property name="Align" value="CenterCenter" />
+                        <property name="Stylus One Click" value="1" />
+                        <property name="Check box" value="1" />
+                        <property name="RESERVED" value="0" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="injured_players" />
+                        <property name="Pos" m_x="26.000000" m_y="311.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="12.000000" m_y="14.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="21">
+            <object class="FDCheckBoxWidget" version="0">
+                <object_properties>
+                    <class name="FDCheckBoxWidget">
+                        <property name="Sprite On" m_name="tick_1" m_bank="uiicon" />
+                        <property name="Sprite Off" m_name="tick_0" m_bank="uiicon" />
+                    </class>
+                    <class name="lUIButtonWidget">
+                        <property name="Text" str="Inc. Non Listed" id="IDS_INC_NONLISTED" />
+                        <property name="Align" value="CenterCenter" />
+                        <property name="Stylus One Click" value="1" />
+                        <property name="Check box" value="1" />
+                        <property name="RESERVED" value="0" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="nonlisted_players" />
+                        <property name="Pos" m_x="154.000000" m_y="324.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="12.000000" m_y="14.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="22">
+            <object class="FDCheckBoxWidget" version="0">
+                <object_properties>
+                    <class name="FDCheckBoxWidget">
+                        <property name="Sprite On" m_name="tick_1" m_bank="uiicon" />
+                        <property name="Sprite Off" m_name="tick_0" m_bank="uiicon" />
+                    </class>
+                    <class name="lUIButtonWidget">
+                        <property name="Text" str="Inc. Suspended" id="IDS_INC_SUSPENDED" />
+                        <property name="Align" value="CenterCenter" />
+                        <property name="Stylus One Click" value="1" />
+                        <property name="Check box" value="1" />
+                        <property name="RESERVED" value="0" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="suspended_players" />
+                        <property name="Pos" m_x="26.000000" m_y="324.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="12.000000" m_y="14.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="23">
+            <object class="FDCheckBoxWidget" version="0">
+                <object_properties>
+                    <class name="FDCheckBoxWidget">
+                        <property name="Sprite On" m_name="tick_1" m_bank="uiicon" />
+                        <property name="Sprite Off" m_name="tick_0" m_bank="uiicon" />
+                    </class>
+                    <class name="lUIButtonWidget">
+                        <property name="Text" str="Inc. Loan Listed" id="IDS_INC_LOANLISTED" />
+                        <property name="Align" value="CenterCenter" />
+                        <property name="Stylus One Click" value="1" />
+                        <property name="Check box" value="1" />
+                        <property name="RESERVED" value="0" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="loanlisted_players" />
+                        <property name="Pos" m_x="154.000000" m_y="338.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="12.000000" m_y="14.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="24">
+            <object class="FDCheckBoxWidget" version="0">
+                <object_properties>
+                    <class name="FDCheckBoxWidget">
+                        <property name="Sprite On" m_name="tick_1" m_bank="uiicon" />
+                        <property name="Sprite Off" m_name="tick_0" m_bank="uiicon" />
+                    </class>
+                    <class name="lUIButtonWidget">
+                        <property name="Text" str="Inc. Out Of Contract" id="IDS_INC_OUTOFCONTRACT" />
+                        <property name="Align" value="CenterCenter" />
+                        <property name="Stylus One Click" value="1" />
+                        <property name="Check box" value="1" />
+                        <property name="RESERVED" value="0" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="outofcontract_players" />
+                        <property name="Pos" m_x="26.000000" m_y="338.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="12.000000" m_y="14.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="25">
+            <object class="FDComboWidget" version="0">
+                <object_properties>
+                    <class name="FDComboWidget">
+                        <property name="Label" str="" id="" />
+                        <property name="Left" m_name="combo_left" m_bank="uiicon" />
+                        <property name="Right" m_name="combo_right" m_bank="uiicon" />
+                        <property name="Left On" m_name="combo_left_on" m_bank="uiicon" />
+                        <property name="Right On" m_name="combo_right_on" m_bank="uiicon" />
+                        <property name="Middle" m_name="combo_middle" m_bank="uiicon" />
+                        <property name="Upper" value="1" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="tle_position_combo" />
+                        <property name="Pos" m_x="128.000000" m_y="355.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="46.000000" m_y="19.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="26">
+            <object class="FDButtonWidget" version="0">
+                <object_properties>
+                    <class name="FDButtonWidget">
+                        <property name="Sprite" m_name="button45" m_bank="ui" />
+                        <property name="Sprite On" m_name="" m_bank="" />
+                        <property name="Sprite Disabled" m_name="" m_bank="" />
+                    </class>
+                    <class name="lUIButtonWidget">
+                        <property name="Text" str="SAVE" id="IDS_SAVE_CAPS" />
+                        <property name="Align" value="CenterCenter" />
+                        <property name="Stylus One Click" value="1" />
+                        <property name="Check box" value="0" />
+                        <property name="RESERVED" value="0" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="tle_search" />
+                        <property name="Pos" m_x="46.500000" m_y="355.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="45.000000" m_y="22.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="27">
+            <object class="FDTableWidget" version="0">
+                <object_properties>
+                    <class name="FDTableWidget">
+                        <property name="Auto Scroll Up" value="0" />
+                        <property name="Fixed Row Height" value="0" />
+                        <property name="Row Gap" value="0" />
+                        <property name="Gradient" m_name="grad_white" m_bank="uiicon" />
+                        <property name="Row lines" value="0" />
+                        <property name="Column lines" value="0" />
+                        <property name="Cell select" value="0" />
+                        <property name="Row select" value="0" />
+                        <property name="Border" value="1" />
+                        <property name="Background" value="1" />
+                        <property name="Cell Background" value="1" />
+                        <property name="Fixed First Row" value="1" />
+                        <property name="Word wrap" value="0" />
+                        <property name="Cut off" value="1" />
+                        <property name="Cap first row" value="1" />
+                        <property name="Flat background" value="0" />
+                        <property name="Multiple row select" value="0" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="resulttable" />
+                        <property name="Pos" m_x="0.000000" m_y="65.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="255.000000" m_y="125.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="28">
+            <object class="FDBackingWidget" version="0">
+                <object_properties>
+                    <class name="FDBackingWidget">
+                        <property name="Background Colour" m_colour="2130706432" />
+                        <property name="Line Colour" m_colour="2130706432" />
+                        <property name="Line Width" value="0" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="back" />
+                        <property name="Pos" m_x="0.000000" m_y="43.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="256.000000" m_y="18.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <node id="29">
+            <object class="lUITextWidget" version="0">
+                <object_properties>
+                    <class name="lUITextWidget">
+                        <property name="Text" str="" id="" />
+                        <property name="Align" value="CenterCenter" />
+                        <property name="Colour" m_colour="4294967295" />
+                        <property name="Shadow" value="1" />
+                        <property name="ShadowColour" m_colour="4278190080" />
+                    </class>
+                    <class name="lUIWidget">
+                        <property name="Name" value="prevtext" />
+                        <property name="Pos" m_x="128.500000" m_y="61.000000" m_positionFlags="0" />
+                        <property name="Size" m_x="-1.000000" m_y="-1.000000" m_positionFlags="0" />
+                        <property name="Focus Index" value="0" />
+                        <property name="MouseHotFocus" value="0" />
+                        <property name="MouseDownFocus" value="0" />
+                        <property name="MouseTransparent" value="0" />
+                        <property name="FocusKeysEnabled" value="0" />
+                        <property name="FocusComplex" value="0" />
+                        <property name="Hidden" value="0" />
+                        <property name="Disabled" value="0" />
+                    </class>
+                </object_properties>
+            </object>
+        </node>
+        <world>
+            <gamenode id="1" />
+            <gamenode id="2" />
+            <gamenode id="3" />
+            <gamenode id="4" />
+            <gamenode id="5" />
+            <gamenode id="6" />
+            <gamenode id="7" />
+            <gamenode id="8" />
+            <gamenode id="9" />
+            <gamenode id="10" />
+            <gamenode id="11" />
+            <gamenode id="12" />
+            <gamenode id="13" />
+            <gamenode id="14" />
+            <gamenode id="15" />
+            <gamenode id="16" />
+            <gamenode id="17" />
+            <gamenode id="18" />
+            <gamenode id="19" />
+            <gamenode id="20" />
+            <gamenode id="21" />
+            <gamenode id="22" />
+            <gamenode id="23" />
+            <gamenode id="24" />
+            <gamenode id="25" />
+            <gamenode id="26" />
+            <gamenode id="27" />
+            <gamenode id="28" />
+            <gamenode id="29" />
+        </world>
+    </node_store>
+</FDGameWorldXMLArchive>

@@ -1,0 +1,7 @@
+* Review all screens for minor modifications 
+ - tactics screen combo boxes overlap slightly
+
+* Adjusting menu button behaviour?
+
+* Player available for 'this' match due to injury after playing a match
+

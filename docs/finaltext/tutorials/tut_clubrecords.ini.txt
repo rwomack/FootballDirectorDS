@@ -1,0 +1,48 @@
+[default]
+textPos=CENTRE
+textScreen=TOP
+
+[1]
+text=This is the club records screen. Historical information and records are displayed on the top screen.
+textScreen=BOTTOM
+highlightScreen=TOP
+highlightX=0
+highlightW=256
+highlightY=50
+highlightH=112
+
+[2]
+text=Change the information shown by using the highlighted selector.
+highlightScreen=BOTTOM
+highlightWidgetName=recordtype_combo
+
+[3]
+text=You can view information in the following categories:
+highlightScreen=BOTTOM
+highlightWidgetName=recordtype_combo
+
+[4]
+text=General: Club information, including the date it was formed, the manager, stadium name, stadium capacity, attendance figures and club nickname.
+highlightScreen=BOTTOM
+highlightWidgetName=recordtype_combo
+
+[5]
+text=Players: Largest transfer fees in / out, record appearances and goals.
+highlightScreen=BOTTOM
+highlightWidgetName=recordtype_combo
+
+[6]
+text=Team: Record victory and defeat plus the highest and lowest league points achieved.
+highlightScreen=BOTTOM
+highlightWidgetName=recordtype_combo
+
+
+[7]
+text=You can also view other clubs' information by selecting the desired division..
+highlightScreen=BOTTOM
+highlightWidgetName=clubrecordsdivision_combo
+
+[8]
+text=..and then the club.
+highlightScreen=BOTTOM
+highlightWidgetName=clubrecordsclub_combo

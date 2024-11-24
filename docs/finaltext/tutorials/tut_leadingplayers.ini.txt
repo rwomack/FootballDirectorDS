@@ -1,0 +1,21 @@
+[default]
+textPos=CENTRE
+textScreen=TOP
+
+[1]
+text=The table on this screen shows the division leaders in goals scored and the players with the highest number of disciplinary points.
+highlightScreen=BOTTOM
+highlightX=20
+highlightY=9
+highlightW=256
+highlightH=120
+
+[2]
+text=You can select the division being viewed with the highlighted selector.
+highlightScreen=BOTTOM
+highlightWidgetName=lpdivisionselect
+
+[3]
+text=You can also toggle between viewing goals and disciplinary information using the highlighted selector.
+highlightScreen=BOTTOM
+highlightWidgetName=lpviewselect

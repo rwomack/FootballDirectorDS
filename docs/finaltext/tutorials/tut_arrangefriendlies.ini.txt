@@ -1,0 +1,37 @@
+
+[default]
+textPos=CENTRE
+textScreen=TOP
+
+[1]
+text=Here you can set up friendly matches with other teams. This is useful for working on your tactics before the start of the season.
+
+[2]
+text=First, select a division to choose an opponent.
+highlightScreen=BOTTOM
+highlightWidgetName=artableinfo_combo_divisions
+
+[3]
+text=Then, select the team that you wish to play.
+highlightScreen=BOTTOM
+highlightWidgetName=ar_clubstable
+
+[4]
+text=Select the date you wish to play the match. Then, select Home or Away using the buttons on the right-hand side.
+highlightScreen=BOTTOM
+highlightWidgetName=artableinfo_combo_dates
+
+[6]
+text=Finally, touch the Confirm button to add the match to your schedule.
+highlightScreen=BOTTOM
+highlightWidgetName=arconfirm_button
+
+[7]
+text=If you change your mind and no longer want to play a friendly on a certain date, touch the Clear button.
+highlightScreen=BOTTOM
+highlightWidgetName=arclear_button
+
+[8]
+text=When you have finished, touch the Continue button.
+highlightScreen=BOTTOM
+highlightWidgetName=arcontinue_button

@@ -1,0 +1,109 @@
+    +-----------------------------------------------------------------------+
+    | Product Name    | Nintendo Brothers ~Sub-title~                       |
+    +-----------------------------------------------------------------------+
+    | Product Code    | NTR-***J            | Version         | 0.0         |
+    +-----------------------------------------------------------------------+
+    | Backup Memory   | 512 Kbit EEPROM                                     |
+    +-----------------------------------------------------------------------+
+
+1.1 Overview of Backup Data
+    There are two blocks (BLOCK0 and BLOCK1). Determine, starting from the top, if data is loadable and load it if it is.
+
+1.2 Support for Backup Memory in Factory Settings
+    
+    Table 1  Magic Number
+    +-------------------------------------------------------------------------+
+    |              | Start Address | Number of Bytes | Content (text or data) |
+    +-------------------------------------------------------------------------+
+    | MAGIC NUMBER | 0x0000        | 16 Bytes        | NINTENDOSAVEDATA       |
+    +-------------------------------------------------------------------------+
+    Note: If the MAGIC NUMBER is other than NINTENDOSAVEDATA, the data is handled as unformatted.
+
+1.3 Reliability of Backup Data
+
+    Table 2  CRC (or Checksum) Information
+    +---------------------------------------------------------------------------------+
+    |   | Type    | Start Address  | Number of Bytes | Target Area                    |
+    +---------------------------------------------------------------------------------+
+    | 1 | CRC32   | 0x0068         | 4 Bytes         | BLOCK 0 -> SYSTEM ->           |
+    |   |         |                |                 | COMMON_DATA                    |
+    +---------------------------------------------------------------------------------+
+    | 2 | CRC32   | 0x006C         | 4 Bytes         | BLOCK 0 -> SYSTEM -> GAME_DATA |
+    +---------------------------------------------------------------------------------+
+    | 3 | CRC32   | 0x5068         | 4 Bytes         | BLOCK 1 -> SYSTEM ->           |
+    |   |         |                |                 | COMMON_DATA                    |
+    +---------------------------------------------------------------------------------+
+    | 4 | CRC32   | 0x506C         | 4 Bytes         | BLOCK 1 -> SYSTEM -> GAME_DATA |
+    +---------------------------------------------------------------------------------+
+    Note: If the CRC value in the FILE_HEADER differs from the CRC of the target, the data is handled as corrupted data.
+
+1.4 Storage Location of Backup Memory in a Game
+
+    Table 3  Storage Location of Backup Memory
+    +---------------------------------------------------------------------------------+
+    |   | Location to write                  | Target        | Save   | Display While |
+    |   | data during a game                 | Area          | Method | Writing Data  |
+    +---------------------------------------------------------------------------------+
+    | 1 | Immediately after initial startup  | SYSTEM        | Auto   | Yes           |
+    |   |                                    |               |        |               |
+    +---------------------------------------------------------------------------------+
+    | 2 | When "Start" is selected on the    | GAME 1        | Auto   | Yes           |
+    |   | menu screen                        |               |        |               |
+    +---------------------------------------------------------------------------------+
+    | 3 | When "SAVE" is selected on the     | GAME 1        | Manual | Yes           |
+    |   | Pause screen                       |               |        |               |
+    +---------------------------------------------------------------------------------+
+    | 4 | When options are changed           | SYSTEM ->     | Auto   | No            |
+    |   |                                    | COMMON_DATA   |        |               |
+    +---------------------------------------------------------------------------------+
+    Note: BLOCK 0 and BLOCK 1 are written at the same time.
+
+1.5 Memory Image
+    +------------------------------------------------- 0x0000
+    | MAGIC NUMBER
+    +-------------+------------+---------------------- 0x0010
+    |             |            | FILE_INFO SYSTEM
+    |             |            +---------------------- 0x0020
+    |             |            | FILE_INFO GAME 1
+    |             |            +---------------------- 0x0030
+    |             |            | FILE_INFO GAME 2
+    |             |            +---------------------- 0x0040
+    |             |            | FILE_INFO GAME 3
+    |             |   SYSTEM   +---------------------- 0x0050
+    |             |            | FILE_INFO GAME 4
+    |             |            +---------------------- 0x0060
+    |             |            | FILE_HEADER
+    |             |            +---------------------- 0x0070
+    |             |            | COMMON_DATA
+    |   BLOCK 0   |            +---------------------- 0x0460
+    |             |            | Unused
+    |             +------------+---------------------- 0x0500
+    |             |            | FILE_HEADER
+    |             |            +---------------------- 0x0510
+    |             |   GAME 1   | GAME_DATA
+    |             |            +---------------------- 0x1510
+    |             |            | Unused
+    |             +------------+---------------------- 0x1600
+    |             |   GAME 2
+    |             +----------------------------------- 0x2700
+    |             |   GAME 3
+    |             +----------------------------------- 0x3800
+    |             |   GAME 4
+    +-------------+----------------------------------- 0x4900
+    | Unused
+    +------------------------------------------------- 0x5010
+    |             |   SYSTEM
+    |             +----------------------------------- 0x5500
+    |             |   GAME 1
+    |             +----------------------------------- 0x6600
+    |   BLOCK 1   |   GAME 2
+    |             +----------------------------------- 0x7700
+    |             |   GAME 3
+    |             +----------------------------------- 0x8800
+    |             |   GAME 4
+    +-------------+----------------------------------- 0x9900
+    |  Unused
+    +------------------------------------------------- 0xFFFF
+
+Copyright 2007 Nintendo                                                NTR-06-0512-001-A
+CONFIDENTIAL                                                           Released: Review

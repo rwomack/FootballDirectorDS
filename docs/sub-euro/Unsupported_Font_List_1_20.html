@@ -1,0 +1,1503 @@
+<HTML><HEAD>
+<META http-equiv=Content-Script-Type content="text/html; charset=ISO-8859-1">
+<META NAME="save" CONTENT="snapshot">
+<TITLE>Unsupported Characters List</TITLE>
+<STYLE>.saveSnapshot {
+	BEHAVIOR: url(#default#savesnapshot)
+
+}
+</STYLE>
+<script Language="JavaScript"><!--
+function deleteSFORM()
+{
+	for (i=0; i<29; i++) document.SFORM.elements["SCHK"+i].checked = false;
+}
+function checkSFORM()
+{
+	for (i=0; i<29; i++) document.SFORM.elements["SCHK"+i].checked = true;
+}
+function deleteAFORM()
+{
+	for (i=0; i<94; i++) document.AFORM.elements["ACHK"+i].checked = false;
+}
+function checkAFORM()
+{
+	for (i=0; i<94; i++) document.AFORM.elements["ACHK"+i].checked = true;
+}
+function deleteEFORM()
+{
+	for (i=0; i<65; i++) document.EFORM.elements["ECHK"+i].checked = false;
+}
+function checkEFORM()
+{
+	for (i=0; i<65; i++) document.EFORM.elements["ECHK"+i].checked = true;
+}
+function deleteUFORM()
+{
+	for (i=0; i<46; i++) document.UFORM.elements["UCHK"+i].checked = false;
+}
+function checkUFORM()
+{
+	for (i=0; i<46; i++) document.UFORM.elements["UCHK"+i].checked = true;
+}
+function deleteRFORM()
+{
+	for (i=0; i<165; i++) document.RFORM.elements["RCHK"+i].checked = false;
+}
+function checkRFORM()
+{
+	for (i=0; i<165; i++) document.RFORM.elements["RCHK"+i].checked = true;
+}
+
+
+function CHECK()        
+  {
+      var SF = "";
+      var AF = "";
+      var EF = "";
+      var UF = "";
+      var RF = "";
+      var j;
+      var count = 1;
+      for( j = 0 ; j < document.SFORM.elements.length ; j++) { 
+            if( document.SFORM.elements[j].checked ) {            
+                SF += "(" + count + ")" + document.SFORM.elements[j].value + "<BR>";
+                count++;     
+            }
+      }
+      if( SF=="" ) {
+          SF = " None ";
+      }
+
+      var k;
+      for( k = 0 ; k < document.AFORM.elements.length ; k++) { 
+            if( document.AFORM.elements[k].checked ) {            
+                AF += "(" + count + ")" + document.AFORM.elements[k].value + "<BR>"; 
+                count++;  
+            }
+      }
+
+      if( AF=="" ) {
+          AF = " None ";
+      }
+
+      var l;
+      for( l = 0 ; l < document.EFORM.elements.length ; l++) { 
+            if( document.EFORM.elements[l].checked ) {            
+                EF += "(" + count + ")" + document.EFORM.elements[l].value + "<BR>"; 
+                count++;  
+            }
+      }
+
+      if( EF=="" ) {
+          EF = " None ";
+      }
+
+      var m;
+      for( m = 0 ; m < document.UFORM.elements.length ; m++) { 
+            if( document.UFORM.elements[m].checked ) {            
+                UF += "(" + count + ")" + document.UFORM.elements[m].value + "<BR>"; 
+                count++;  
+            }
+      }
+
+      if( UF=="" ) {
+          UF = " None ";
+      }
+
+      var n;
+      for( n = 0 ; n < document.RFORM.elements.length ; n++) { 
+            if( document.RFORM.elements[n].checked ) {            
+                RF += "(" + count + ")" + document.RFORM.elements[n].value + "<BR>"; 
+                count++;  
+            }
+      }
+
+      if( RF=="" ) {
+          RF = " None ";
+      }
+
+      var GAME_TITLE = document.IFORM.GAME_TITLE.value;
+      var GAME_CODE = document.IFORM.GAME_CODE.value;
+      var REMASTER_VERSION = document.IFORM.REMASTER_VERSION.value;
+      var SUBMISSION_VERSION = document.IFORM.SUBMISSION_VERSION.value;
+      var YEAR = document.IFORM.YEAR.value;
+      var MONTH = document.IFORM.MONTH.value;
+      var DAY = document.IFORM.DAY.value;
+      var COMPANY_NAME = document.IFORM.COMPANY_NAME.value;
+      var NAME = document.IFORM.NAME.value;
+      var TEL_NUMBER = document.IFORM.TEL_NUMBER.value;
+      var MAIL_ADDRESS = document.IFORM.MAIL_ADDRESS.value;
+      var SUBSTITUTE_FONT = document.IFORM.SUBSTITUTE_FONT.value;
+      var COMMENT = document.IFORM.COMMENT.value;
+
+      if( SF==" None " && AF==" None " && EF==" None " && UF==" None " && RF==" None " ){
+      alert( " Unsupported characters have not been selected. " );
+      }
+      
+      else{
+      document.open();       
+      document.write( "<HTML><HEAD>" );
+      document.write( "<META http-equiv='Content-Style-Type' content='text/html; charset=ISO-8859-1'>" );
+      document.write( "<TITLE>Unsupported Character List Version 1.20</TITLE>" );
+      document.write( "<STYLE>" );
+      document.write( "<!--TABLE {border:1px solid; border-collapse:collapse; border-color:blue;}TD{ border:1px solid; border-color:blue;}-->" ); 
+      document.write( "</STYLE>" );
+      document.write( "</HEAD><BODY>" );
+      document.write( "<FONT SIZE 1 color=red><P><B>Saving and Submitting this Document.</B><BR><BR>" );
+      document.write( "<P>To edit this information, click &quot;Back&quot; on the tool bar. <BR><BR>If the information is correct, save this file. <BR><BR>" );
+      document.write( "<FONT size=2 color=red> &lt;File&gt; &lt;Save As&gt;</FONT><BR>" );
+      document.write( "<FONT size=2 color=red>      Enter File Name: 4-digit Game Code + 2-digit ROM version.html (e.g., ABCE01.html)</FONT><BR>" );
+      document.write( "<FONT size=2 color=red>      Check that File Type is &quot;Web Page, Only HTML&quot;</FONT><BR>" );
+      document.write( "<FONT size=2 color=red>      Encoding should be set to &quot;Unicode&quot;</FONT><BR>     &lt;Save&gt;<BR></P></FONT>" );
+      document.write( "<TABLE CELLPADDING=3>" );
+      document.write( "<TR><TD WIDTH=150><B>Game Title</B></TD><TD>" );
+      document.write(GAME_TITLE);
+      document.write( "</TD><TD WIDTH=150><B>Game Code</B></TD><TD>" );
+      document.write(GAME_CODE);
+      document.write( "</TD></TR><TR><TD><B>Remaster Version Number</B></TD><TD>" );
+      document.write(REMASTER_VERSION);
+      document.write( "</TD><TD><B>Submission Version Number</B></TD><TD>" );
+      document.write(SUBMISSION_VERSION);
+      document.write( "</TD></TR><TR><TD><B>Submission Date</B></TD><TD COLSPAN='3'>" );
+      document.write(MONTH);
+      document.write( "/" );
+      document.write(DAY);
+      document.write( "/" );
+      document.write("20");
+      document.write(YEAR);
+      document.write( "</TD></TR><TR><TD><B>Company/Department Name</B></TD><TD COLSPAN='3'>" );
+      document.write(COMPANY_NAME);
+      document.write( "</TD></TR><TR><TD><B>Name</B></TD><TD COLSPAN='3'>" );
+      document.write(NAME);
+      document.write( "</TD></TR><TR><TD><B>Phone</B></TD><TD COLSPAN='3'>" );
+      document.write(TEL_NUMBER);
+      document.write( "</TD></TR><TR><TD><B>E-mail address</B></TD><TD COLSPAN='3'>" );
+      document.write(MAIL_ADDRESS);
+      document.write( "</TD></TR></TABLE><BR>" );
+
+      document.write( "<TABLE CELLPADDING=3><TR><TD WIDTH=150><B>Substitute Characters</B></TD><TD WIDTH=450>" );
+      document.write(SUBSTITUTE_FONT);
+      document.write( "</TD></TR><TR><TD><B>Comments</B></TD><TD>" );
+      document.write(COMMENT);
+      document.write( "<BR><BR><BR><BR></TD></TR></TABLE>" );
+      document.write( "<BR><BR><P><B>Unsupported Character List </B><BR><FONT size=2>*1 The number shown in the parentheses is a count for the number of unsupported characters and does not apply to the character itself. </FONT></P>" );
+
+      document.write( "<TABLE BORDER=1 CELLSPACING=0 BORDERCOLOR='BLUE' CELLPADDING=3><TR><TH WIDTH=200>Special Characters</TH><TH WIDTH=200>ASCII Characters</TH><TH WIDTH=200>European Characters</TH><TH WIDTH=200>Double-byte Characters 1<BR>(Irregular Region)</TH><TH WIDTH=200>Double-byte Characters 2</TH></TR><TR VALIGN=TOP><TD>" );
+      document.write(SF);
+      document.write( "</TD><TD>" );
+      document.write(AF);
+      document.write( "</TD><TD>" );
+      document.write(EF);
+      document.write( "</TD><TD>" );
+      document.write(UF);
+      document.write( "</TD><TD>" );
+      document.write(RF);
+      document.write( "</TD></TR></TABLE></BODY></HTML>" );
+      document.close();      
+      }  
+  }
+
+
+// --></script>
+
+</HEAD>
+<BODY><!-- Title -->
+<H1><A NAME=TOP>
+<B>Unsupported Characters List</B></A></h1>
+<p><FONT size=3> Version 1.20 </FONT></A></p>
+
+<P>Complete this form when you have checked both <b>Y</b> for <b>IPL User Name/Comment Use</b> 
+AND <b>N</b> for <b>Displays all IPL compatible fonts</b>
+ in the <i>Nintendo DS Master ROM Submission Sheet</i>. This form 
+is used to indicate those characters that are not available in your game.</P>
+
+<P><b>Notes:</b>
+<OL>
+    <LI>Because this page uses JavaScript, be sure to enable JavaScript.</LI>
+    <LI>This application is designed to be used with Internet Explorer.</LI>
+</OL></P>
+
+<P><B>Updates</B><BR>
+<P>Version 1.20</P>
+<UL>
+<LI>The following ususable characters were found in the Character List for IPL menu, and have been deleted.<BR>
+	  0x02c6, 0x02dc, 0xff5b, 0xff5d, 0x0022, 0xff3e
+<LI>The following characters had multiple check items in the Character List, which have been consolidated to one.<BR>
+	  0x00b1, 0x00d7, 0x00f7, 0x00b0, 0x2026, 0x201c, 0x201d
+</UL>
+<P>Version 1.10</P>
+<UL>
+<LI>European characters are now displayed on the confirmation screens.
+</UL>
+
+<P><B>Completing this form:</B><BR>
+<OL>
+   <LI>Fill in all of the fields in <B>Product &amp; Contact Information</B> below.</LI>
+   <LI>Check all characters that are not supported in your game.</LI>
+   <LI>If substitute characters are used, fill in the <b>Substitute Characters</b> field.</LI>
+   <LI>Use the <b>Comments</b> field to provide any other information that needs to be noted.</LI>
+   <LI>Click on the <b>Create Submisson Document</b> button to confirm that all unsupported characters have been checked.</LI>
+   <LI>If the output information is correct, save the file.</LI>
+   <LI>Submit the saved HTML file to Nintendo when submitting the Master ROM. </LI>
+</OL></P>
+
+<TABLE BORDER=0 width="406" height="80">
+  <TR>
+    <TD COLSPAN=2 width="340" height="19"><B>Item Description</B></TD>
+  <TR>
+    <TD ROWSPAN=3 width="56">
+      <TABLE BORDER=1>
+        <TR>
+          <TD ALIGN=CENTER>
+            <input type="checkbox" class="saveSnapshot" id="ex" name="ex" Checked VALUE="1"><BR>
+            <IMG SRC="picture/0xe000.BMP" alt="0xe000[A Button]" width="22" height="25"><BR>
+            <FONT color=blue size=2>0xe000</FONT>
+          </TD>
+        </TR>
+      </TABLE>
+    </TD>
+    <TD width="350" height="17"><FONT size=2>Top: Check box for unsupported characters</FONT></TD>
+  </TR>
+  <TR>
+    <TD width="350" height="17"><FONT size=2>Middle: Font image.</FONT></TD>
+  </TR>
+  <TR>
+    <TD width="350" height="17"><FONT size=2>Bottom: Font code.</FONT></TD>
+  </TR>
+</TABLE>
+
+<TABLE BORDER=0 width="406" height="80">
+  <TR>
+  <TR>
+    <TD ROWSPAN=3 width="56">
+      <TABLE BORDER=1>
+        <TR>
+          <TD ALIGN=CENTER BGCOLOR="gray"><BR><BR>
+              <FONT color=blue size=2>0xe000</FONT>
+          </TD>
+        </TR>
+      </TABLE>
+    </TD>
+    <TD width="350" height="17"><FONT size=2>&nbsp;</FONT>
+    </TD>
+  </TR>
+  <TR>
+    <TD width="350" height="17">
+        <FONT size=2>Gray background: Character that cannot be set in IPL</FONT>
+    </TD>
+  </TR>
+  <TR>
+    <TD width="350" height="17"><FONT size=2>&nbsp;</FONT>
+    </TD>
+  </TR>
+</TABLE>
+
+<FONT size=2 color=blue>Blue: Nintendo Font</FONT><BR>
+<FONT size=2 color=green>Green: Sharp LC Font</FONT>
+<BR><BR>
+<B>Reference </B><BR><FONT size=2>
+- <i>Nintendo DS Programming Guidelines</i> <b>Paragraph 3.1 Owner Information</b><BR>
+- <b>DS_fontcodeList</b> and <b>DS_font&code</b> in <i>DS Banner Guidelines</i>.</FONT></P>
+<HR>
+<A NAME=SEIHIN><B>Product &amp; Contact Information</B></A>
+
+<form name="IFORM">
+<TABLE border=2>
+<TR>
+<TH><font size=2>Game Title</font></TH>
+<TD><input class="saveSnapshot" id="GAME_TITLE" size="70" name="GAME_TITLE" value=""></TD></TR>
+<TH><font size=2>Game Code</font></TH>
+<TD><input class="saveSnapshot" id="GAME_CODE" size="70" name="GAME_CODE" value="NTR-P-"></TD></TR>
+<TH><font size=2>Remaster Version Number</font></TH>
+<TD><input class="saveSnapshot" id="REMASTER_VERSION" size="5" name="REMASTER_VERSION" value=""></TD></TR>
+<TH><font size=2>Submission Version Number</font></TH>
+<TD><input class="saveSnapshot" id="SUBMISSION_VERSION" size="5" name="SUBMISSION_VERSION" value=""></TD></TR>
+<TH><font size=2>Submission Date</font></TH>
+<TD> <input class="saveSnapshot" id="MONTH" size="5" name="MONTH" value=""> / <input class="saveSnapshot" id="DAY" size="5" name="DAY" value=""> / 20<input class="saveSnapshot" id="YEAR" size="5" name="YEAR" value=""><font size=2> (MM/DD/20YY)</FONT></TD></TR>
+<TH><font size=2>Company/Department Name</font></TH>
+<TD><input class="saveSnapshot" id="COMPANY_NAME" size="70" name="COMPANY_NAME" value=""></TD></TR>
+<TH><font size=2>Name</font></TH>
+<TD><input class="saveSnapshot" id="NAME" size="70" name="NAME" value=""></TD></TR>
+<TH><font size=2>Phone</font></TH><TD><input class=saveSnapshot id="TEL_NUMBER" size="70" name="TEL_NUMBER" value=""></TD></TR>
+<TH><font size=2>E-mail address</font></TH><TD><input class=saveSnapshot id="MAIL_ADDRESS" size=70" name="MAIL_ADDRESS" value=""></TD></TR>
+</TABLE><BR>
+
+<TABLE BORDER=2>
+<TR>
+<TH WIDTH=130><font size="2">Substitute&nbspCharacters</font></TD>
+
+<TD><FONT size=2>When substitute characters are available, <BR><input class="saveSnapshot" id="SUBSTITUTE_FONT" size="23" name="SUBSTITUTE_FONT" value=""> is displayed </FONT> <FONT size=2 color=red>(e.g., "?, <IMG SRC="picture/dot.gif" width="12" height="12">, -")</FONT>.</TD></TR>
+<TR>
+<TH><font size=2>Comments </font></TD>
+<TD><textarea class="saveSnapshot" id="COMMENT" name="COMMENT" rows="3" cols="49" value=""></textarea></TD></TR>
+</TABLE>
+</FORM>
+
+<P><A href="#TOP">TOP</A>&nbsp;&nbsp;
+<A href="#SEIHIN">Product &amp; Contact Information</A>&nbsp;&nbsp;
+<A href="#SFONT">Special Characters</A>&nbsp;&nbsp;
+<A href="#AFONT">ASCII Characters</A>&nbsp;&nbsp;
+<A href="#EFONT">European Characters</A>&nbsp;&nbsp;
+<A href="#UFONT">Double-byte Characters 1 (irregular)</A>&nbsp;&nbsp;
+<A href="#RFONT">Double-byte Characters 2</A></P>
+<HR>
+
+
+<!-- Special Characters --><A NAME="SFONT"><FONT size=5><B>[Special Characters] 0xe000 -- 0xe03f </B></FONT></A><BR><BR>
+
+<form name="SFORM">
+
+<input type="button"   value="Deselect All Special Characters" onClick="deleteSFORM()"><input type="button"  value="Select All Special Characters" onClick="checkSFORM()"><INPUT TYPE="button" VALUE="Create Submission Document" ONCLICK="CHECK();">
+<TABLE BORDER=1 CELLSPACING=5>
+<TR ALIGN=CENTER><!-- 1st line -->
+<TD><input type="checkbox" class="saveSnapshot" id="SCHK0" name="SCHK0" value="0xe000[A Button]"><BR>
+<IMG SRC="picture/0xe000.BMP" alt="0xe000[A Button]" width="22" height="25"><BR><font color=blue size=2>0xe000</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="SCHK1" name="SCHK1" value="0xe001[B Button]"><BR>
+<IMG SRC="picture/0xe001.BMP" alt="0xe001[B Button]" width="22" height="25"><BR><font color=blue size=2>0xe001</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="SCHK2" name="SCHK2" value="0xe002[X Button]"><BR>
+<IMG SRC="picture/0xe002.BMP" alt="0xe002[X Button]" width="21" height="24"><BR><font size=2 color=blue>0xe002</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="SCHK3" name="SCHK3" value="0xe003[Y Button]"><BR>
+<IMG SRC="picture/0xe003.BMP" alt="0xe003[Y Button]" width="21" height="24"><BR><font size=2 color=blue>0xe003</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="SCHK4" name="SCHK4" value="0xe004[L Button]"><BR>
+<IMG SRC="picture/0xe004.BMP" alt="0xe004[L Button]" width="22" height="24"><BR><font size=2 color=blue>0xe004</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="SCHK5" name="SCHK5" value="0xe005[R Button]"><BR>
+<IMG SRC="picture/0xe005.BMP" alt="0xe005[R Button]" width="21" height="24"><BR><font size=2 color=blue>0xe005</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="SCHK6" name="SCHK6" value="0xe006[+Control Pad]"><BR>
+<IMG SRC="picture/0xe006.BMP" alt="0xe006[+Control Pad]" width="21" height="24"><BR><font size=2 color=blue>0xe006</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="SCHK7" name="SCHK7" value="0xe007[Alarm]"><BR>
+<IMG SRC="picture/0xe007.BMP" alt="0xe007[Alarm]" width="23" height="26"><BR><font size=2 color=blue>0xe007</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="SCHK8" name="SCHK8" value="0xe008[Face 1]"><BR>
+<IMG SRC="picture/0xe008.BMP" alt="0xe008[Face 1]" width="22" height="25"><BR><font size=2 color=blue>0xe008</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="SCHK9" name="SCHK9" value="0xe009[Face 2]"><BR>
+<IMG SRC="picture/0xe009.BMP" alt="0xe009[Face 2]" width="22" height="25"><BR><font size=2 color=blue>0xe009</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="SCHK10" name="SCHK10" value="0xe00a[Face 3]"><BR>
+<IMG SRC="picture/0xe00a.BMP" alt="0xe00a[Face 3]" width="21" height="25"><BR><font size=2 color=blue>0xe00a</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="SCHK11" name="SCHK11" value="0xe00b[Face 4]"><BR>
+<IMG SRC="picture/0xe00b.BMP" alt="0xe00b[Face 4]" width="20" height="25"><BR><font size=2 color=blue>0xe00b</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="SCHK12" name="SCHK12" value="0xe00c[Sunny]"><BR>
+<IMG SRC="picture/0xe00c.BMP" alt="0xe00c[Sunny]" width="22" height="25"><BR><font size=2 color=blue>0xe00c</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="SCHK13" name="SCHK13" value="0xe00d[Cloudy]"><BR>
+<IMG SRC="picture/0xe00d.BMP" alt="0xe00d[Cloudy]" width="21" height="25"><BR><font size=2 color=blue>0xe00d</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="SCHK14" name="SCHK14" value="0xe00e[Rain]"><BR>
+<IMG SRC="picture/0xe00e.BMP" alt="0xe00e[Rain]" width="23" height="25"><BR><font size=2 color=blue>0xe00e</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="SCHK15" name="SCHK15" value="0xe00f[Snow]"><BR>
+<IMG SRC="picture/0xe00f.BMP" alt="0xe00f[Snow]" width="23" height="25"><BR><font size=2 color=blue>0xe00f</font></TD>
+</TR>
+<TR ALIGN=CENTER><!-- 2nd line -->
+<TD><input type="checkbox" class="saveSnapshot" id="SCHK16" name="SCHK16" value="0xe010[Exclamation Point]"><BR>
+<IMG SRC="picture/0xe010.BMP"alt="0xe010[Exclamation Point]" width="22" height="25"><BR><font size=2 color=blue>0xe010</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="SCHK17" name="SCHK17" value="0xe011[Question Mark]"><BR>
+<IMG SRC="picture/0xe011.BMP"alt="0xe011[Question Mark]" width="22" height="25"><BR><font size=2 color=blue>0xe011</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="SCHK18" name="SCHK18" value="0xe012[Mail]"><BR>
+<IMG SRC="picture/0xe012.BMP"alt="0xe012[Mail]" width="21" height="24"><BR><font size=2 color=blue>0xe012</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="SCHK19" name="SCHK19" value="0xe013[Cell Phone]"><BR>
+<IMG SRC="picture/0xe013.BMP"alt="0xe013[Cell Phone]" width="22" height="25"><BR><font size=2 color=blue>0xe013</font></TD>
+<TD bgcolor=gray></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="SCHK20" name="SCHK20" value="0xe015[Spade]"><BR>
+<IMG SRC="picture/0xe015.BMP"alt="0xe015[Spade]" width="22" height="25"><BR><font size=2 color=blue>0xe015</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="SCHK21" name="SCHK21" value="0xe016[Diamond]"><BR>
+<IMG SRC="picture/0xe016.BMP"alt="0xe016[Diamond]" width="21" height="25"><BR><font size=2 color=blue>0xe016</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="SCHK22" name="SCHK22" value="0xe017[Heart]"><BR>
+<IMG SRC="picture/0xe017.BMP"alt="0xe017[Heart]" width="21" height="24"><BR><font size=2 color=blue>0xe017</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="SCHK23" name="SCHK23" value="0xe018[Club]"><BR>
+<IMG SRC="picture/0xe018.BMP"alt="0xe018[Club]" width="22" height="25"><BR><font size=2 color=blue>0xe018</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="SCHK24" name="SCHK24" value="0xe019[Large Arrow - Right]"><BR>
+<IMG SRC="picture/0xe019.BMP"alt="0xe019[Large Arrow - Right]" width="21" height="25"><BR><font size=2 color=blue>0xe019</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="SCHK25" name="SCHK25" value="0xe01a[Large Arrow - Left]"><BR>
+<IMG SRC="picture/0xe01a.BMP"alt="0xe01a[Large Arrow - Left]" width="21" height="25"><BR><font size=2 color=blue>0xe01a</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="SCHK26" name="SCHK26" value="0xe01b[Large Arrow - Up]"><BR>
+<IMG SRC="picture/0xe01b.BMP"alt="0xe01b[Large Arrow - Up]" width="21" height="25"><BR><font size=2 color=blue>0xe01b</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="SCHK27" name="SCHK27" value="0xe01c[Large Arrow - Down]"><BR>
+<IMG SRC="picture/0xe01c.BMP"alt="0xe01c[Large Arrow - Down]" width="22" height="25"><BR><font size=2 color=blue>0xe01c</font></TD>
+<TD bgcolor=gray></TD>
+<TD bgcolor=gray></TD>
+<TD bgcolor=gray></TD>
+</TR>
+<TR ALIGN=CENTER><!-- 3rd line -->
+<TD bgcolor=gray></TD>
+<TD bgcolor=gray></TD>
+<TD bgcolor=gray></TD>
+<TD bgcolor=gray></TD>
+<TD bgcolor=gray></TD>
+<TD bgcolor=gray></TD>
+<TD bgcolor=gray></TD>
+<TD>
+<input type="checkbox" class="saveSnapshot" id="SCHK28" name="SCHK28" value="0xe028[cross mark]"><BR>
+<IMG SRC="picture/0xe028.BMP"alt="0xe028[cross mark]" width="20" height="26"><BR><font size=2 color=blue>0xe028</font></TD>
+<TD bgcolor=gray></TD>
+<TD bgcolor=gray></TD>
+<TD bgcolor=gray></TD>
+<TD bgcolor=gray></TD>
+<TD bgcolor=gray></TD>
+<TD bgcolor=gray></TD>
+<TD bgcolor=gray></TD>
+<TD bgcolor=gray></TD>
+</TR>
+<TR ALIGN=CENTER><!-- 4th line -->
+<TD bgcolor=gray>
+<font color=black>0xe30</font></TD>
+<TD bgcolor=gray></TD>
+<TD bgcolor=gray></TD>
+<TD bgcolor=gray></TD>
+<TD bgcolor=gray></TD>
+<TD bgcolor=gray></TD>
+<TD bgcolor=gray></TD>
+<TD bgcolor=gray></TD>
+<TD bgcolor=gray></TD>
+<TD bgcolor=gray></TD>
+<TD bgcolor=gray></TD>
+<TD bgcolor=gray></TD>
+<TD bgcolor=gray></TD>
+<TD bgcolor=gray></TD>
+<TD bgcolor=gray></TD>
+<TD bgcolor=gray></TD>
+</TR>
+
+
+</TABLE>
+</FORM>
+
+<P><A href="#TOP">TOP</A>&nbsp;&nbsp;
+<A href="#SEIHIN">Product &amp; Contact Information</A>&nbsp;&nbsp;
+<A href="#SFONT">Special Characters</A>&nbsp;&nbsp;
+<A href="#AFONT">ASCII Characters</A>&nbsp;&nbsp;
+<A href="#EFONT">European Characters</A>&nbsp;&nbsp;
+<A href="#UFONT">Double-byte Characters 1 (irregular)</A>&nbsp;&nbsp;
+<A href="#RFONT">Double-byte Characters 2</A></P>
+<HR>
+<!-- ASCII Characters --><A NAME="AFONT"><FONT size=5><B>[ASCII Characters] 0x0020-- 0x007f</B></FONT></A><BR><BR>
+
+<form name="AFORM">
+<input type="button"   value="Deselect All ASCII Characters" onClick="deleteAFORM()"><input type="button"   value="Select All ASCII characters" onClick="checkAFORM()"><INPUT TYPE="button" VALUE="Create Submission Document" ONCLICK="CHECK();">
+<TABLE BORDER=1 CELLSPACING=5>
+<TR ALIGN=CENTER><!-- 1st line -->
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK0" name="ACHK0" value="0x0020[ ]"><BR>
+<IMG SRC="picture/0x0020.BMP" alt="0x0020[ ]" width="21" height="25"><BR><font size=2 color=blue>0x0020</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK1" name="ACHK1" value="0x0021[!]"><BR>
+<IMG SRC="picture/0x0021.BMP" alt="0x0021[!]" width="22" height="25"><BR><font size=2 color=blue>0x0021</font></TD>
+<TD bgcolor=gray></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK2" name="ACHK2" value="0x0023[#]"><BR>
+<IMG SRC="picture/0x0023.BMP" alt="0x0023[#]" width="21" height="25"><BR><font size=2 color=blue>0x0023</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK3" name="ACHK3" value="0x0024[$]"><BR>
+<IMG SRC="picture/0x0024.BMP" alt="0x0024[$]" width="22" height="24"><BR><font size=2 color=blue>0x0024</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK4" name="ACHK4" value="0x0025[%]"><BR>
+<IMG SRC="picture/0x0025.BMP" alt="0x0025[%]" width="23" height="24"><BR><font size=2 color=blue>0x0025</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK5" name="ACHK5" value="0x0026[&]"><BR>
+<IMG SRC="picture/0x0026.BMP" alt="0x0026[&]" width="22" height="24"><BR><font size=2 color=blue>0x0026</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK6" name="ACHK6" value="0x0027[']"><BR>
+<IMG SRC="picture/0x0027.BMP" alt="0x0027[']" width="21" height="24"><BR><font size=2 color=blue>0x0027</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK7" name="ACHK7" value="0x0028[(]"><BR>
+<IMG SRC="picture/0x0028.BMP" alt="0x0028[(]" width="19" height="26"><BR><font size=2 color=blue>0x0028</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK8" name="ACHK8" value="0x0029[)]"><BR>
+<IMG SRC="picture/0x0029.BMP" alt="0x0029[)]" width="21" height="26"><BR><font size=2 color=blue>0x0029</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK9" name="ACHK9" value="0x002a[*]"><BR>
+<IMG SRC="picture/0x002a.BMP" alt="0x002a[*]" width="21" height="24"><BR><font size=2 color=blue>0x002a</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK10" name="ACHK10" value="0x002b[+]"><BR>
+<IMG SRC="picture/0x002b.BMP" alt="0x002b[+]" width="20" height="24"><BR><font size=2 color=blue>0x002b</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK11" name="ACHK11" value="0x002c[,]"><BR>
+<IMG SRC="picture/0x002c.BMP" alt="0x002c[,]" width="20" height="25"><BR><font size=2 color=blue>0x002c</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK12" name="ACHK12" value="0x002d[-]"><BR>
+<IMG SRC="picture/0x002d.BMP" alt="0x002d[-]" width="21" height="24"><BR><font size=2 color=blue>0x002d</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK13" name="ACHK13" value="0x002e[.]"><BR>
+<IMG SRC="picture/0x002e.BMP" alt="0x002e[.]" width="21" height="25"><BR><font size=2 color=blue>0x002e</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK14" name="ACHK14" value="0x002f[/]"><BR>
+<IMG SRC="picture/0x002f.BMP" alt="0x002f[/]" width="20" height="25"><BR><font size=2 color=blue>0x002f</font></TD>
+</TR>
+<TR ALIGN=CENTER><!-- 2nd line -->
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK15" name="ACHK15" value="0x0030[0]"><BR>
+<IMG SRC="picture/0x0030.BMP" alt="0x0030[0]" width="20" height="26"><BR><font size=2 color=blue>0x0030</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK16" name="ACHK16" value="0x0031[1]"><BR>
+<IMG SRC="picture/0x0031.BMP" alt="0x0031[1]" width="22" height="25"><BR><font size=2 color=blue>0x0031</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK17" name="ACHK17" value="0x0032[2]"><BR>
+<IMG SRC="picture/0x0032.BMP" alt="0x0032[2]" width="21" height="26"><BR><font size=2 color=blue>0x0032</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK18" name="ACHK18" value="0x0033[3]"><BR>
+<IMG SRC="picture/0x0033.BMP" alt="0x0033[3]" width="21" height="26"><BR><font size=2 color=blue>0x0033</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK19" name="ACHK19" value="0x0034[4]"><BR>
+<IMG SRC="picture/0x0034.BMP" alt="0x0034[4]" width="21" height="26"><BR><font size=2 color=blue>0x0034</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK20" name="ACHK20" value="0x0035[5]"><BR>
+<IMG SRC="picture/0x0035.BMP" alt="0x0035[5]" width="22" height="26"><BR><font size=2 color=blue>0x0035</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK21" name="ACHK21" value="0x0036[6]"><BR>
+<IMG SRC="picture/0x0036.BMP" alt="0x0036[6]" width="21" height="25"><BR><font size=2 color=blue>0x0036</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK22" name="ACHK22" value="0x0037[7]"><BR>
+<IMG SRC="picture/0x0037.BMP" alt="0x0037[7]" width="21" height="27"><BR><font size=2 color=blue>0x0037</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK23" name="ACHK23" value="0x0038[8]"><BR>
+<IMG SRC="picture/0x0038.BMP" alt="0x0038[8]" width="22" height="27"><BR><font size=2 color=blue>0x0038</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK24" name="ACHK24" value="0x0039[9]"><BR>
+<IMG SRC="picture/0x0039.BMP" alt="0x0039[9]" width="22" height="26"><BR><font size=2 color=blue>0x0039</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK25" name="ACHK25" value="0x003a[:]"><BR>
+<IMG SRC="picture/0x003a.BMP" alt="0x003a[:]" width="21" height="24"><BR><font size=2 color=blue>0x003a</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK26" name="ACHK26" value="0x003b[;]"><BR>
+<IMG SRC="picture/0x003b.BMP" alt="0x003b[;]" width="23" height="25"><BR><font size=2 color=blue>0x003b</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK27" name="ACHK27" value="0x003c[<]"><BR>
+<IMG SRC="picture/0x003c.BMP" alt="0x003c[<]" width="20" height="25"><BR><font size=2 color=blue>0x003c</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK28" name="ACHK28" value="0x003d[=]"><BR>
+<IMG SRC="picture/0x003d.BMP" alt="0x003d[=]" width="21" height="25"><BR><font size=2 color=blue>0x003d</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK29" name="ACHK29" value="0x003e[>]"><BR>
+<IMG SRC="picture/0x003e.BMP" alt="0x003e[>]" width="21" height="25"><BR><font size=2 color=blue>0x003e</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK30" name="ACHK30" value="0x003f[?]"><BR>
+<IMG SRC="picture/0x003f.BMP" alt="0x003f[?]" width="22" height="26"><BR><font size=2 color=blue>0x003f</font></TD>
+</TR>
+<TR ALIGN=CENTER><!-- 3rd line -->
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK31" name="ACHK31" value="0x0040[@]"><BR>
+<IMG SRC="picture/0x0040.BMP" alt="0x0040[@]" width="23" height="26"><BR><font size=2 color=blue>0x0040</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK32" name="ACHK32" value="0x0041[A]"><BR>
+<IMG SRC="picture/0x0041.BMP" alt="0x0041[A]" width="20" height="26"><BR><font size=2 color=blue>0x0041</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK33" name="ACHK33" value="0x0042[B]"><BR>
+<IMG SRC="picture/0x0042.BMP" alt="0x0042[B]" width="23" height="26"><BR><font size=2 color=blue>0x0042</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK34" name="ACHK34" value="0x0043[C]"><BR>
+<IMG SRC="picture/0x0043.BMP" alt="0x0043[C]" width="22" height="26"><BR><font size=2 color=blue>0x0043</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK35" name="ACHK35" value="0x0044[D]"><BR>
+<IMG SRC="picture/0x0044.BMP" alt="0x0044[D]" width="20" height="26"><BR><font size=2 color=blue>0x0044</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK36" name="ACHK36" value="0x0045[E]"><BR>
+<IMG SRC="picture/0x0045.BMP" alt="0x0045[E]" width="22" height="26"><BR><font size=2 color=blue>0x0045</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK37" name="ACHK37" value="0x0046[F]"><BR>
+<IMG SRC="picture/0x0046.BMP" alt="0x0046[F]" width="19" height="26"><BR><font size=2 color=blue>0x0046</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK38" name="ACHK38" value="0x0047[G]"><BR>
+<IMG SRC="picture/0x0047.BMP" alt="0x0047[G]" width="19" height="26"><BR><font size=2 color=blue>0x0047</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK39" name="ACHK39" value="0x0048[H]"><BR>
+<IMG SRC="picture/0x0048.BMP" alt="0x0048[H]" width="22" height="26"><BR><font size=2 color=blue>0x0048</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK40" name="ACHK40" value="0x0049[I]"><BR>
+<IMG SRC="picture/0x0049.BMP" alt="0x0049[I]" width="23" height="26"><BR><font size=2 color=blue>0x0049</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK41" name="ACHK41" value="0x004a[J]"><BR>
+<IMG SRC="picture/0x004a.BMP" alt="0x004a[J]" width="21" height="26"><BR><font size=2 color=blue>0x004a</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK42" name="ACHK42" value="0x004b[K]"><BR>
+<IMG SRC="picture/0x004b.BMP" alt="0x004b[K]" width="20" height="26"><BR><font size=2 color=blue>0x004b</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK43" name="ACHK43" value="0x004c[L]"><BR>
+<IMG SRC="picture/0x004c.BMP" alt="0x004c[L]" width="20" height="26"><BR><font size=2 color=blue>0x004c</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK44" name="ACHK44" value="0x004d[M]"><BR>
+<IMG SRC="picture/0x004d.BMP" alt="0x004d[M]" width="22" height="26"><BR><font size=2 color=blue>0x004d</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK45" name="ACHK45" value="0x004e[N]"><BR>
+<IMG SRC="picture/0x004e.BMP" alt="0x004e[N]" width="21" height="26"><BR><font size=2 color=blue>0x004e</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK46" name="ACHK46" value="0x004f[O]"><BR>
+<IMG SRC="picture/0x004f.BMP" alt="0x004f[O]" width="20" height="25"><BR><font size=2 color=blue>0x004f</font></TD>
+</TR>
+<TR ALIGN=CENTER><!-- 4th line -->
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK47" name="ACHK47" value="0x0050[P]"><BR>
+<IMG SRC="picture/0x0050.BMP" alt="0x0050[P]" width="22" height="26"><BR><font size=2 color=blue>0x0050</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK48" name="ACHK48" value="0x0051[Q]"><BR>
+<IMG SRC="picture/0x0051.BMP" alt="0x0051[Q]" width="20" height="26"><BR><font size=2 color=blue>0x0051</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK49" name="ACHK49" value="0x0052[R]"><BR>
+<IMG SRC="picture/0x0052.BMP" alt="0x0052[R]" width="21" height="27"><BR><font size=2 color=blue>0x0052</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK50" name="ACHK50" value="0x0053[S]"><BR>
+<IMG SRC="picture/0x0053.BMP" alt="0x0053[S]" width="20" height="26"><BR><font size=2 color=blue>0x0053</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK51" name="ACHK51" value="0x0054[T]"><BR>
+<IMG SRC="picture/0x0054.BMP" alt="0x0054[T]" width="20" height="25"><BR><font size=2 color=blue>0x0054</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK52" name="ACHK52" value="0x0055[U]"><BR>
+<IMG SRC="picture/0x0055.BMP" alt="0x0055[U]" width="20" height="27"><BR><font size=2 color=blue>0x0055</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK53" name="ACHK53" value="0x0056[V]"><BR>
+<IMG SRC="picture/0x0056.BMP" alt="0x0056[V]" width="20" height="27"><BR><font size=2 color=blue>0x0056</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK54" name="ACHK54" value="0x0057[W]"><BR>
+<IMG SRC="picture/0x0057.BMP" alt="0x0057[W]" width="20" height="26"><BR><font size=2 color=blue>0x0057</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK55" name="ACHK55" value="0x0058[X]"><BR>
+<IMG SRC="picture/0x0058.BMP" alt="0x0058[X]" width="20" height="26"><BR><font size=2 color=blue>0x0058</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK56" name="ACHK56" value="0x0059[Y]"><BR>
+<IMG SRC="picture/0x0059.BMP" alt="0x0059[Y]" width="23" height="26"><BR><font size=2 color=blue>0x0059</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK57" name="ACHK57" value="0x005a[Z]"><BR>
+<IMG SRC="picture/0x005a.BMP" alt="0x005a[Z]" width="19" height="25"><BR><font size=2 color=blue>0x005a</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK58" name="ACHK58" value="0x005b[[]"><BR>
+<IMG SRC="picture/0x005b.BMP" alt="0x005b[[]" width="20" height="26"><BR><font size=2 color=blue>0x005b</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK59" name="ACHK59" value="0x005c[&#x005c]"><BR>
+<IMG SRC="picture/0x005c.BMP" alt="0x005c[_(Half-width)]" width="20" height="26"><BR><font size=2 color=blue>0x005c</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK60" name="ACHK60" value="0x005d[]]"><BR>
+<IMG SRC="picture/0x005d.BMP" alt="0x005d[]]" width="22" height="26"><BR><font size=2 color=blue>0x005d</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK61" name="ACHK61" value="0x005e[^]"><BR>
+<IMG SRC="picture/0x005e.BMP" alt="0x005e[^]" width="21" height="26"><BR><font size=2 color=blue>0x005e</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK62" name="ACHK62" value="0x005f[_]"><BR>
+<IMG SRC="picture/0x005f.BMP" alt="0x005f[_]" width="20" height="26"><BR><font size=2 color=blue>0x005f</font></TD>
+</TR>
+<TR ALIGN=CENTER><!-- 5th line -->
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK63" name="ACHK63" value="0x0060[&#x0060]"><BR>
+<IMG SRC="picture/0x0060.BMP" alt="0x0060[`(Reversed )]" width="21" height="25"><BR><font size=2 color=blue>0x0060</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK64" name="ACHK64" value="0x0061[a]"><BR>
+<IMG SRC="picture/0x0061.BMP" alt="0x0061[a]" width="20" height="25"><BR><font size=2 color=blue>0x0061</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK65" name="ACHK65" value="0x0062[b]"><BR>
+<IMG SRC="picture/0x0062.BMP" alt="0x0062[b]" width="21" height="26"><BR><font size=2 color=blue>0x0062</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK66" name="ACHK66" value="0x0063[c]"><BR>
+<IMG SRC="picture/0x0063.BMP" alt="0x0063[c]" width="21" height="25"><BR><font size=2 color=blue>0x0063</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK67" name="ACHK67" value="0x0064[d]"><BR>
+<IMG SRC="picture/0x0064.BMP" alt="0x0064[d]" width="20" height="25"><BR><font size=2 color=blue>0x0064</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK68" name="ACHK68" value="0x0065[e]"><BR>
+<IMG SRC="picture/0x0065.BMP" alt="0x0065[e]" width="20" height="26"><BR><font size=2 color=blue>0x0065</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK69" name="ACHK69" value="0x0066[f]"><BR>
+<IMG SRC="picture/0x0066.BMP" alt="0x0066[f]" width="20" height="26"><BR><font size=2 color=blue>0x0066</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK70" name="ACHK70" value="0x0067[g]"><BR>
+<IMG SRC="picture/0x0067.BMP" alt="0x0067[g]" width="21" height="25"><BR><font size=2 color=blue>0x0067</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK71" name="ACHK71" value="0x0068[h]"><BR>
+<IMG SRC="picture/0x0068.BMP" alt="0x0068[h]" width="22" height="26"><BR><font size=2 color=blue>0x0068</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK72" name="ACHK72" value="0x0069[i]"><BR>
+<IMG SRC="picture/0x0069.BMP" alt="0x0069[i]" width="23" height="25"><BR><font size=2 color=blue>0x0069</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK73" name="ACHK73" value="0x006a[j]"><BR>
+<IMG SRC="picture/0x006a.BMP" alt="0x006a[j]" width="22" height="25"><BR><font size=2 color=blue>0x006a</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK74" name="ACHK74" value="0x006b[k]"><BR>
+<IMG SRC="picture/0x006b.BMP" alt="0x006b[k]" width="18" height="25"><BR><font size=2 color=blue>0x006b</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK75" name="ACHK75" value="0x006c[l]"><BR>
+<IMG SRC="picture/0x006c.BMP" alt="0x006c[l]" width="20" height="24"><BR><font size=2 color=blue>0x006c</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK76" name="ACHK76" value="0x006d[m]"><BR>
+<IMG SRC="picture/0x006d.BMP" alt="0x006d[m]" width="22" height="25"><BR><font size=2 color=blue>0x006d</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK77" name="ACHK77" value="0x006e[n]"><BR>
+<IMG SRC="picture/0x006e.BMP" alt="0x006e[n]" width="21" height="25"><BR><font size=2 color=blue>0x006e</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK78" name="ACHK78" value="0x006f[o]"><BR>
+<IMG SRC="picture/0x006f.BMP" alt="0x006f[o]" width="22" height="24"><BR><font size=2 color=blue>0x006f</font></TD>
+</TR>
+<TR ALIGN=CENTER><!-- 6th line -->
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK79" name="ACHK79" value="0x0070[p]"><BR>
+<IMG SRC="picture/0x0070.BMP" alt="0x0070[p]" width="20" height="27"><BR><font size=2 color=blue>0x0070</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK80" name="ACHK80" value="0x0071[q]"><BR>
+<IMG SRC="picture/0x0071.BMP" alt="0x0071[q]" width="22" height="26"><BR><font size=2 color=blue>0x0071</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK81" name="ACHK81" value="0x0072[r]"><BR>
+<IMG SRC="picture/0x0072.BMP" alt="0x0072[r]" width="19" height="26"><BR><font size=2 color=blue>0x0072</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK82" name="ACHK82" value="0x0073[s]"><BR>
+<IMG SRC="picture/0x0073.BMP" alt="0x0073[s]" width="19" height="26"><BR><font size=2 color=blue>0x0073</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK83" name="ACHK83" value="0x0074[t]"><BR>
+<IMG SRC="picture/0x0074.BMP" alt="0x0074[t]" width="22" height="26"><BR><font size=2 color=blue>0x0074</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK84" name="ACHK84" value="0x0075[u]"><BR>
+<IMG SRC="picture/0x0075.BMP" alt="0x0075[u]" width="22" height="26"><BR><font size=2 color=blue>0x0075</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK85" name="ACHK85" value="0x0076[v]"><BR>
+<IMG SRC="picture/0x0076.BMP" alt="0x0076[v]" width="22" height="26"><BR><font size=2 color=blue>0x0076</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK86" name="ACHK86" value="0x0077[w]"><BR>
+<IMG SRC="picture/0x0077.BMP" alt="0x0077[w]" width="21" height="26"><BR><font size=2 color=blue>0x0077</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK87" name="ACHK87" value="0x0078[x]"><BR>
+<IMG SRC="picture/0x0078.BMP" alt="0x0078[x]" width="20" height="25"><BR><font size=2 color=blue>0x0078</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK88" name="ACHK88" value="0x0079[y]"><BR>
+<IMG SRC="picture/0x0079.BMP" alt="0x0079[y]" width="20" height="24"><BR><font size=2 color=blue>0x0079</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK89" name="ACHK89" value="0x007a[z]"><BR>
+<IMG SRC="picture/0x007a.BMP" alt="0x007a[z]" width="23" height="25"><BR><font size=2 color=blue>0x007a</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK90" name="ACHK90" value="0x007b[{]"><BR>
+<IMG SRC="picture/0x007b.BMP" alt="0x007b[{]" width="21" height="26"><BR><font size=2 color=blue>0x007b</font></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK91" name="ACHK91" value="0x007d[}]"><BR>
+<IMG SRC="picture/0x007d.BMP" alt="0x007d[}]" width="21" height="25"><BR><font size=2 color=blue>0x007d</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ACHK92" name="ACHK92" value="0x007e[~]"><BR>
+<IMG SRC="picture/0x007e.BMP" alt="0x007e[~]" width="21" height="25"><BR><font size=2 color=blue>0x007e</font></TD>
+<TD BGCOLOR=GRAY></TD>
+</TR>
+</TABLE>
+</FORM>
+
+<P><A href="#TOP">TOP</A>&nbsp;&nbsp;
+<A href="#SEIHIN">Product &amp; Contact Information</A>&nbsp;&nbsp;
+<A href="#SFONT">Special Characters</A>&nbsp;&nbsp;
+<A href="#AFONT">ASCII Characters</A>&nbsp;&nbsp;
+<A href="#EFONT">European Characters</A>&nbsp;&nbsp;
+<A href="#UFONT">Double-byte Characters 1 (irregular)</A>&nbsp;&nbsp;
+<A href="#RFONT">Double-byte Characters 2</A></P>
+<HR>
+
+
+<!-- European Characters --><A NAME="EFONT"><FONT size=5><B>[European Characters] 0x00a0--0x00ff</B></FONT></A><BR><BR>
+
+<form name="EFORM">
+<input type="button"   value="Deselect All European Characters" onClick="deleteEFORM()"><input type="button"   value="Select All European characters" onClick="checkEFORM()"><INPUT TYPE="button"   VALUE="Create Submission Document" ONCLICK="CHECK();">
+<TABLE BORDER=1 CELLSPACING=5>
+<TR ALIGN=CENTER><!-- 1st line -->
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK0" name="ECHK0" value="0x20ac[&#x20ac]"><BR>
+<IMG SRC="picture/0x20ac.BMP" alt="0x20ac[]" width="20" height="24"><BR><font size=2 color=blue>0x20ac</font></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK1" name="ECHK1" value="0x2026[&#x2026]"><BR>
+<IMG SRC="picture/0x2026.BMP" alt="0x2026[]" width="21" height="24"><BR><font size=2 color=blue>0x2026</font></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK2" name="ECHK2" value="0x0152[&#x0152]"><BR>
+<IMG SRC="picture/0x0152.BMP" alt="0x0152[]" width="20" height="26"><BR><font size=2 color=blue>0x0152</font></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+</TR>
+<TR ALIGN=CENTER><!-- 2nd line -->
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK3" name="ECHK3" value="0x201c[&#x201c]"><BR>
+<IMG SRC="picture/0x201c.BMP" alt="0x201c[]" width="21" height="24"><BR><font size=2 color=blue>0x201c</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK4" name="ECHK4" value="0x201d[&#x201d]"><BR>
+<IMG SRC="picture/0x201d.BMP" alt="0x201d[]" width="21" height="25"><BR><font size=2 color=blue>0x201d</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK5" name="ECHK5" value="0x2022[&#x2022]"><BR>
+<IMG SRC="picture/0x2022.BMP" alt="0x2022[]" width="21" height="24"><BR><font size=2 color=blue>0x2022</font></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK6" name="ECHK6" value="0x2122[&#x2122]"><BR>
+<IMG SRC="picture/0x2122.BMP" alt="0x2122[]" width="22" height="25"><BR><font size=2 color=blue>0x2122</font></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK7" name="ECHK7" value="0x0153[&#x0153]"><BR>
+<IMG SRC="picture/0x0153.BMP" alt="0x0153[]" width="21" height="26"><BR><font size=2 color=blue>0x0153</font></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+</TR>
+<TR ALIGN=CENTER><!-- 3rd line -->
+<TD BGCOLOR=GRAY></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK8" name="ECHK8" value="0x00a1[&#x00a1]"><BR>
+<IMG SRC="picture/0x00a1.BMP" alt="0x00a1[]" width="21" height="25"><BR><font size=2 color=blue>0x00a1</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK9" name="ECHK9" value="0x00a2[&#x00a2]"><BR>
+<IMG SRC="picture/0x00a2.BMP" alt="0x00a2[]" width="21" height="25"><BR><font size=2 color=blue>0x00a2</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK10" name="ECHK10" value="0x00a3[&#x00a3]"><BR>
+<IMG SRC="picture/0x00a3.BMP" alt="0x00a3[]" width="21" height="25"><BR><font size=2 color=blue>0x00a3</font></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK11" name="ECHK11" value="0x00a9[&#x00a9]"><BR>
+<IMG SRC="picture/0x00a9.BMP" alt="0x00a9[]" width="23" height="24"><BR><font size=2 color=blue>0x00a9</font></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK12" name="ECHK12" value="0x00ae[&#x00ae]"><BR>
+<IMG SRC="picture/0x00ae.BMP" alt="0x00ae[]" width="23" height="26"><BR><font size=2 color=blue>0x00ae</font></TD>
+<TD BGCOLOR=GRAY></TD>
+</TR>
+<TR ALIGN=CENTER><!-- 4th line -->
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK13" name="ECHK13" value="0x00b0[&#x00b0]"><BR>
+<IMG SRC="picture/0x00b0.BMP" alt="0x00b0[]" width="20" height="25"><BR><font size=2 color=blue>0x00b0</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK14" name="ECHK14" value="0x00b1[&#x00b1]"><BR>
+<IMG SRC="picture/0x00b1.BMP" alt="0x00b1[]" width="21" height="25"><BR><font size=2 color=blue>0x00b1</font></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK15" name="ECHK15" value="0x00bf[&#x00bf]"><BR>
+<IMG SRC="picture/0x00bf.BMP" alt="0x00bf[]" width="21" height="25"><BR><font size=2 color=blue>0x00bf</font></TD>
+</TR>
+<TR ALIGN=CENTER><!-- 5th line -->
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK16" name="ECHK16" value="0x00c0[&#x00c0]"><BR>
+<IMG SRC="picture/0x00c0.BMP" alt="0x00c0[]" width="21" height="28"><BR><font size=2 color=blue>0x00c0</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK17" name="ECHK17" value="0x00c1[&#x00c1]"><BR>
+<IMG SRC="picture/0x00c1.BMP" alt="0x00c1[]" width="21" height="28"><BR><font size=2 color=blue>0x00c1</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK18" name="ECHK18" value="0x00c2[&#x00c2]"><BR>
+<IMG SRC="picture/0x00c2.BMP" alt="0x00c2[]" width="22" height="28"><BR><font size=2 color=blue>0x00c2</font></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK19" name="ECHK19" value="0x00c4[&#x00c4]"><BR>
+<IMG SRC="picture/0x00c4.BMP" alt="0x00c4[]" width="21" height="27"><BR><font size=2 color=blue>0x00c4</font></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK20" name="ECHK20" value="0x00c7[&#x00c7]"><BR>
+<IMG SRC="picture/0x00c7.BMP" alt="0x00c7[]" width="22" height="27"><BR><font size=2 color=blue>0x00c7</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK21" name="ECHK21" value="0x00c8[&#x00c8]"><BR>
+<IMG SRC="picture/0x00c8.BMP" alt="0x00c8[]" width="21" height="28"><BR><font size=2 color=blue>0x00c8</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK22" name="ECHK22" value="0x00c9[&#x00c9]"><BR>
+<IMG SRC="picture/0x00c9.BMP" alt="0x00c9[]" width="21" height="28"><BR><font size=2 color=blue>0x00c9</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK23" name="ECHK23" value="0x00ca[&#x00ca]"><BR>
+<IMG SRC="picture/0x00ca.BMP" alt="0x00ca[]" width="21" height="28"><BR><font size=2 color=blue>0x00ca</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK24" name="ECHK24" value="0x00cb[&#x00cb]"><BR>
+<IMG SRC="picture/0x00cb.BMP" alt="0x00cb[]" width="21" height="28"><BR><font size=2 color=blue>0x00cb</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK25" name="ECHK25" value="0x00cc[&#x00cc]"><BR>
+<IMG SRC="picture/0x00cc.BMP" alt="0x00cc[]" width="21" height="29"><BR><font size=2 color=blue>0x00cc</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK26" name="ECHK26" value="0x00cd[&#x00cd]"><BR>
+<IMG SRC="picture/0x00cd.BMP" alt="0x00cd[]" width="20" height="29"><BR><font size=2 color=blue>0x00cd</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK27" name="ECHK27" value="0x00ce[&#x00ce]"><BR>
+<IMG SRC="picture/0x00ce.BMP" alt="0x00ce[]" width="21" height="26"><BR><font size=2 color=blue>0x00ce</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK28" name="ECHK28" value="0x00cf[&#x00cf]"><BR>
+<IMG SRC="picture/0x00cf.BMP" alt="0x00cf[]" width="21" height="28"><BR><font size=2 color=blue>0x00cf</font></TD>
+</TR>
+<TR ALIGN=CENTER><!-- 6th line -->
+<TD BGCOLOR=GRAY></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK29" name="ECHK29" value="0x00d1[&#x00d1]"><BR>
+<IMG SRC="picture/0x00d1.BMP" alt="0x00d1[]" width="20" height="26"><BR><font size=2 color=blue>0x00d1</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK30" name="ECHK30" value="0x00d2[&#x00d2]"><BR>
+<IMG SRC="picture/0x00d2.BMP" alt="0x00d2[]" width="17" height="26"><BR><font size=2 color=blue>0x00d2</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK31" name="ECHK31" value="0x00d3[&#x00d3]"><BR>
+<IMG SRC="picture/0x00d3.BMP" alt="0x00d3[]" width="18" height="27"><BR><font size=2 color=blue>0x00d3</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK32" name="ECHK32" value="0x00d4[&#x00d4]"><BR>
+<IMG SRC="picture/0x00d4.BMP" alt="0x00d4[]" width="16" height="26"><BR><font size=2 color=blue>0x00d4</font></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK33" name="ECHK33" value="0x00d6[&#x00d6]"><BR>
+<IMG SRC="picture/0x00d6.BMP" alt="0x00d6[]" width="17" height="26"><BR><font size=2 color=blue>0x00d6</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK34" name="ECHK34" value="0x00d7[&#x00d7]"><BR>
+<IMG SRC="picture/0x00d7.BMP" alt="0x00d7[]" width="20" height="25"><BR><font size=2 color=blue>0x00d7</font></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK35" name="ECHK35" value="0x00d9[&#x00d9]"><BR>
+<IMG SRC="picture/0x00d9.BMP" alt="0x00d9[]" width="20" height="26"><BR><font size=2 color=blue>0x00d9</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK36" name="ECHK36" value="0x00da[&#x00da]"><BR>
+<IMG SRC="picture/0x00da.BMP" alt="0x00da[]" width="19" height="27"><BR><font size=2 color=blue>0x00da</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK37" name="ECHK37" value="0x00db[&#x00db]"><BR>
+<IMG SRC="picture/0x00db.BMP" alt="0x00db[]" width="18" height="26"><BR><font size=2 color=blue>0x00db</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK38" name="ECHK38" value="0x00dc[&#x00dc]"><BR>
+<IMG SRC="picture/0x00dc.BMP" alt="0x00dc[]" width="18" height="27"><BR><font size=2 color=blue>0x00dc</font></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK39" name="ECHK39" value="0x00df[&#x00df]"><BR>
+<IMG SRC="picture/0x00df.BMP" alt="0x00df[]" width="18" height="26"><BR><font size=2 color=blue>0x00df</font></TD>
+</TR>
+<TR ALIGN=CENTER><!-- 7th line -->
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK40" name="ECHK40" value="0x00e0[&#x00e0]"><BR>
+<IMG SRC="picture/0x00e0.BMP" alt="0x00e0[]" width="20" height="26"><BR><font size=2 color=blue>0x00e0</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK41" name="ECHK41" value="0x00e1[&#x00e1]"><BR>
+<IMG SRC="picture/0x00e1.BMP" alt="0x00e1[]" width="19" height="25"><BR><font size=2 color=blue>0x00e1</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK42" name="ECHK42" value="0x00e2[&#x00e2]"><BR>
+<IMG SRC="picture/0x00e2.BMP" alt="0x00e2[]" width="20" height="27"><BR><font size=2 color=blue>0x00e2</font></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK43" name="ECHK43" value="0x00e4[&#x00e4]"><BR>
+<IMG SRC="picture/0x00e4.BMP" alt="0x00e4[]" width="20" height="26"><BR><font size=2 color=blue>0x00e4</font></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK44" name="ECHK44" value="0x00e7[&#x00e7]"><BR>
+<IMG SRC="picture/0x00e7.BMP" alt="0x00e7[]" width="22" height="24"><BR><font size=2 color=blue>0x00e7</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK45" name="ECHK45" value="0x00e8[&#x00e8]"><BR>
+<IMG SRC="picture/0x00e8.BMP" alt="0x00e8[]" width="20" height="25"><BR><font size=2 color=blue>0x00e8</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK46" name="ECHK46" value="0x00e9[&#x00e9]"><BR>
+<IMG SRC="picture/0x00e9.BMP" alt="0x00e9[]" width="20" height="26"><BR><font size=2 color=blue>0x00e9</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK47" name="ECHK47" value="0x00ea[&#x00ea]"><BR>
+<IMG SRC="picture/0x00ea.BMP" alt="0x00ea[]" width="19" height="26"><BR><font size=2 color=blue>0x00ea</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK48" name="ECHK48" value="0x00eb[&#x00eb]"><BR>
+<IMG SRC="picture/0x00eb.BMP" alt="0x00eb[]" width="21" height="26"><BR><font size=2 color=blue>0x00eb</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK49" name="ECHK49" value="0x00ec[&#x00ec]"><BR>
+<IMG SRC="picture/0x00ec.BMP" alt="0x00ec[]" width="21" height="26"><BR><font size=2 color=blue>0x00ec</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK50" name="ECHK50" value="0x00ed[&#x00ed]"><BR>
+<IMG SRC="picture/0x00ed.BMP" alt="0x00ed[]" width="20" height="26"><BR><font size=2 color=blue>0x00ed</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK51" name="ECHK51" value="0x00ee[&#x00ee]"><BR>
+<IMG SRC="picture/0x00ee.BMP" alt="0x00ee[]" width="19" height="27"><BR><font size=2 color=blue>0x00ee</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK52" name="ECHK52" value="0x00ef[&#x00ef]"><BR>
+<IMG SRC="picture/0x00ef.BMP" alt="0x00ef[]" width="22" height="26"><BR><font size=2 color=blue>0x00ef</font></TD>
+</TR>
+<TR ALIGN=CENTER><!-- 8th line -->
+<TD BGCOLOR=GRAY></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK53" name="ECHK53" value="0x00f1[&#x00f1]"><BR>
+<IMG SRC="picture/0x00f1.BMP" alt="0x00f1[]" width="21" height="27"><BR><font size=2 color=blue>0x00f1</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK54" name="ECHK54" value="0x00f2[&#x00f2]"><BR>
+<IMG SRC="picture/0x00f2.BMP" alt="0x00f2[]" width="20" height="27"><BR><font size=2 color=blue>0x00f2</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK55" name="ECHK55" value="0x00f3[&#x00f3]"><BR>
+<IMG SRC="picture/0x00f3.BMP" alt="0x00f3[]" width="21" height="28"><BR><font size=2 color=blue>0x00f3</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK56" name="ECHK56" value="0x00f4[&#x00f4]"><BR>
+<IMG SRC="picture/0x00f4.BMP" alt="0x00f4[]" width="20" height="27"><BR><font size=2 color=blue>0x00f4</font></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK57" name="ECHK57" value="0x00f6[&#x00f6]"><BR>
+<IMG SRC="picture/0x00f6.BMP" alt="0x00f6[]" width="17" height="27"><BR><font size=2 color=blue>0x00f6</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK58" name="ECHK58" value="0x00f7[&#x00f7]"><BR>
+<IMG SRC="picture/0x00f7.BMP" alt="0x00f7[]" width="21" height="25"><BR><font size=2 color=blue>0x00f7</font></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK59" name="ECHK59" value="0x00f9[&#x00f9]"><BR>
+<IMG SRC="picture/0x00f9.BMP" alt="0x00f9[]" width="18" height="27"><BR><font size=2 color=blue>0x00f9</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK60" name="ECHK60" value="0x00fa[&#x00fa]"><BR>
+<IMG SRC="picture/0x00fa.BMP" alt="0x00fa[]" width="19" height="26"><BR><font size=2 color=blue>0x00fa</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK61" name="ECHK61" value="0x00fb[&#x00fb]"><BR>
+<IMG SRC="picture/0x00fb.BMP" alt="0x00fb[]" width="19" height="26"><BR><font size=2 color=blue>0x00fb</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="ECHK62" name="ECHK62" value="0x00fc[&#x00fc]"><BR>
+<IMG SRC="picture/0x00fc.BMP" alt="0x00fc[]" width="21" height="26"><BR><font size=2 color=blue>0x00fc</font></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+</TR>
+</TABLE>
+</FORM>
+
+<P><A href="#TOP">TOP</A>&nbsp;&nbsp;
+<A href="#SEIHIN">Product &amp; Contact Information</A>&nbsp;&nbsp;
+<A href="#SFONT">Special Characters</A>&nbsp;&nbsp;
+<A href="#AFONT">ASCII Characters</A>&nbsp;&nbsp;
+<A href="#EFONT">European Characters</A>&nbsp;&nbsp;
+<A href="#UFONT">Double-byte Characters 1 (irregular)</A>&nbsp;&nbsp;
+<A href="#RFONT">Double-byte Characters 2</A></P>
+<HR>
+
+
+<!-- Double-byte Characters 1 --><A NAME="UFONT"><FONT size=5><B>[Double-byte Characters 1] Irregular Region </B></FONT></A><BR><BR>
+
+<form name="UFORM">
+<input type="button"   value="Deselect All Double-byte Characters 1" onClick="deleteUFORM()"><input type="button"   value="Select All Double-byte Characters 1" onClick="checkUFORM()"><INPUT TYPE="button" VALUE="Create Submisssion Document" ONCLICK="CHECK();">
+<TABLE BORDER=1 CELLSPACING=5>
+<TR ALIGN=CENTER><!-- 1st line -->
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK0" name="UCHK0" value="0x3000[&#x3000]"><BR>
+<IMG SRC="picture/0x3000.BMP" alt="0x3000[&#x3000]" width="20" height="26"><BR><font size=2 color=green>0x3000</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK1" name="UCHK1" value="0x3001[&#x3001]"><BR>
+<IMG SRC="picture/0x3001.BMP" alt="0x3001[A]" width="19" height="26"><BR><font size=2 color=green>0x3001</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK2" name="UCHK2" value="0x3002[&#x3002]"><BR>
+<IMG SRC="picture/0x3002.BMP" alt="0x3002[B]" width="20" height="26"><BR><font size=2 color=green>0x3002</font></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK3" name="UCHK3" value="0xff1f[&#xff1f]"><BR>
+<IMG SRC="picture/0xff1f.BMP" alt="0xff1f[H]" width="19" height="25"><BR><font size=2 color=green>0xff1f</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK4" name="UCHK4" value="0xff01[&#xff01]"><BR>
+<IMG SRC="picture/0xff01.BMP" alt="0xff01[I]" width="20" height="26"><BR><font size=2 color=green>0xff01</font></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+</TR>
+<TR ALIGN=CENTER><!-- 2nd line -->
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK5" name="UCHK5" value="0x30fc[&#x30fc]"><BR>
+<IMG SRC="picture/0x30fc.BMP" alt="0x30fc[[]" width="21" height="26"><BR><font size=2 color=green>0x30fc</font></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK6" name="UCHK6" value="0xff0f[&#xff0f]"><BR>
+<IMG SRC="picture/0xff0f.BMP" alt="0xff0f[^]" width="21" height="26"><BR><font size=2 color=green>0xff0f</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK7" name="UCHK7" value="0xff3c[&#xff3c]"><BR>
+<IMG SRC="picture/0xff3c.BMP" alt="0xff3c[_]" width="21" height="25"><BR><font size=2 color=green>0xff3c</font></TD>
+</TR>
+<TR ALIGN=CENTER><!-- 3rd line -->
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK8" name="UCHK8" value="0xff5e[&#xff5e]"><BR>
+<IMG SRC="picture/0xff5e.BMP" alt="0xff5e[`]" width="22" height="25"><BR><font size=2 color=green>0xff5e</font></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK9" name="UCHK9" value="0xff5c[&#xff5c]"><BR>
+<IMG SRC="picture/0xff5c.BMP" alt="0xff5c[b]" width="20" height="25"><BR><font size=2 color=green>0xff5c</font></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+</TR>
+<TR ALIGN=CENTER><!-- 4th line -->
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK10" name="UCHK10" value="0x300c[&#x300c]"><BR>
+<IMG SRC="picture/0x300c.BMP" alt="0x300c[u]" width="20" height="25"><BR><font size=2 color=green>0x300c</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK11" name="UCHK11" value="0x300d[&#x300d]"><BR>
+<IMG SRC="picture/0x300d.BMP" alt="0x300d[v]" width="19" height="25"><BR><font size=2 color=green>0x300d</font></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+</TR>
+<TR ALIGN=CENTER><!-- 5th line -->
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK12" name="UCHK12" value="0x221e[&#x221e]"><BR>
+<IMG SRC="picture/0x221e.BMP" alt="0x221e[‡]" width="21" height="26"><BR><font size=2 color=green>0x221e</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK13" name="UCHK13" value="0x2234[&#x2234]"><BR>
+<IMG SRC="picture/0x2234.BMP" alt="0x2234[ˆ]" width="22" height="26"><BR><font size=2 color=green>0x2234</font></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK14" name="UCHK14" value="0x2033[&#x2033]"><BR>
+<IMG SRC="picture/0x2033.BMP" alt="0x2033[]" width="21" height="26"><BR><font size=2 color=green>0x2033</font></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+</TR>
+<TR ALIGN=CENTER><!-- 6th line -->
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK15" name="UCHK15" value="0x2606[&#x2606]"><BR>
+<IMG SRC="picture/0x2606.BMP" alt="0x2606[™]" width="22" height="25"><BR><font size=2 color=green>0x2606</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK16" name="UCHK16" value="0x2605[&#x2605]"><BR>
+<IMG SRC="picture/0x2605.BMP" alt="0x2605[š]" width="23" height="27"><BR><font size=2 color=green>0x2605</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK17" name="UCHK17" value="0x25cb[&#x25cb]"><BR>
+<IMG SRC="picture/0x25cb.BMP" alt="0x25cb[›]" width="23" height="26"><BR><font size=2 color=green>0x25cb</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK18" name="UCHK18" value="0x25cf[&#x25cf]"><BR>
+<IMG SRC="picture/0x25cf.BMP" alt="0x25cf[œ]" width="21" height="25"><BR><font size=2 color=green>0x25cf</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK19" name="UCHK19" value="0x25ce[&#x25ce]"><BR>
+<IMG SRC="picture/0x25ce.BMP" alt="0x25ce[]" width="22" height="25"><BR><font size=2 color=green>0x25ce</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK20" name="UCHK20" value="0x25c7[&#x25c7]"><BR>
+<IMG SRC="picture/0x25c7.BMP" alt="0x25c7[ž]" width="23" height="26"><BR><font size=2 color=green>0x25c7</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK21" name="UCHK21" value="0x25c6[&#x25c6]"><BR>
+<IMG SRC="picture/0x25c6.BMP" alt="0x25c6[Ÿ]" width="21" height="26"><BR><font size=2 color=green>0x25c6</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK22" name="UCHK22" value="0x25a1[&#x25a1]"><BR>
+<IMG SRC="picture/0x25a1.BMP" alt="0x25a1[E]" width="22" height="26"><BR><font size=2 color=green>0x25a1</font></TD>
+</TR>
+<TR ALIGN=CENTER><!-- 7th line -->
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK23" name="UCHK23" value="0x25a0[&#x25a0]"><BR>
+<IMG SRC="picture/0x25a0.BMP" alt="0x25a0[¡]" width="22" height="24"><BR><font size=2 color=green>0x25a0</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK24" name="UCHK24" value="0x25b3[&#x25b3]"><BR>
+<IMG SRC="picture/0x25b3.BMP" alt="0x25b3[¢]" width="22" height="25"><BR><font size=2 color=green>0x25b3</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK25" name="UCHK25" value="0x25b2[&#x25b2]"><BR>
+<IMG SRC="picture/0x25b2.BMP" alt="0x25b2[£]" width="23" height="26"><BR><font size=2 color=green>0x25b2</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK26" name="UCHK26" value="0x25bd[&#x25bd]"><BR>
+<IMG SRC="picture/0x25bd.BMP" alt="0x25bd[¤]" width="21" height="25"><BR><font size=2 color=green>0x25bd</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK27" name="UCHK27" value="0x25bc[&#x25bc]"><BR>
+<IMG SRC="picture/0x25bc.BMP" alt="0x25bc[¥]" width="22" height="26"><BR><font size=2 color=green>0x25bc</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK28" name="UCHK28" value="0x203b[&#x203b]"><BR>
+<IMG SRC="picture/0x203b.BMP" alt="0x203b[¦]" width="22" height="26"><BR><font size=2 color=green>0x203b</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK29" name="UCHK29" value="0x3012[&#x3012]"><BR>
+<IMG SRC="picture/0x3012.BMP" alt="0x3012[§]" width="21" height="26"><BR><font size=2 color=green>0x3012</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK30" name="UCHK30" value="0x2192[&#x2192]"><BR>
+<IMG SRC="picture/0x2192.BMP" alt="0x2192[¨]" width="21" height="26"><BR><font size=2 color=green>0x2192</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK31" name="UCHK31" value="0x2190[&#x2190]"><BR>
+<IMG SRC="picture/0x2190.BMP" alt="0x2190[©]" width="21" height="26"><BR><font size=2 color=green>0x2190</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK32" name="UCHK32" value="0x2191[&#x2191]"><BR>
+<IMG SRC="picture/0x2191.BMP" alt="0x2191[ª]" width="22" height="26"><BR><font size=2 color=green>0x2191</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK33" name="UCHK33" value="0x2193[&#x2193]"><BR>
+<IMG SRC="picture/0x2193.BMP" alt="0x2193[«]" width="21" height="26"><BR><font size=2 color=green>0x2193</font></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+</TR>
+<TR ALIGN=CENTER><!-- 8th line -->
+<TD BGCOLOR=GRAY>
+<font color=gray>0x</font></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+</TR>
+<TR ALIGN=CENTER><!-- 9th line -->
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK34" name="UCHK34" value="0x266d[&#x266d]"><BR>
+<IMG SRC="picture/0x266d.BMP" alt="0x266d[ó]" width="19" height="28"><BR><font size=2 color=green>0x266d</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="UCHK35" name="UCHK35" value="0x266a[&#x266a]"><BR>
+<IMG SRC="picture/0x266a.BMP" alt="0x266a[ô]" width="20" height="26"><BR><font size=2 color=green>0x266a</font></TD>
+<TD BGCOLOR=GRAY></TD>
+</TR>
+</TABLE>
+</FORM>
+
+<P><A href="#TOP">TOP</A>&nbsp;&nbsp;
+<A href="#SEIHIN">Product &amp; Contact Information</A>&nbsp;&nbsp;
+<A href="#SFONT">Special Characters</A>&nbsp;&nbsp;
+<A href="#AFONT">ASCII Characters</A>&nbsp;&nbsp;
+<A href="#EFONT">European Characters</A>&nbsp;&nbsp;
+<A href="#UFONT">Double-byte Characters 1 (irregular)</A>&nbsp;&nbsp;
+<A href="#RFONT">Double-byte Characters 2</A></P>
+<HR>
+
+
+<!-- Double-byte Characters 2 --><A NAME="RFONT"><FONT size=5><B>[Double-byte Characters 2]</B></FONT></A><BR><BR>
+
+<form name="RFORM">
+<input type="button"   value="Deselect All Double-byte Characters 2" onClick="deleteRFORM()"><input type="button"   value="Select All Double-byte Characters 2" onClick="checkRFORM()"><INPUT TYPE="button" VALUE="Create Submission Document" ONCLICK="CHECK();">
+
+<TABLE BORDER=1 CELLSPACING=5>
+<TR ALIGN=CENTER><!-- 1st line -->
+<TD BGCOLOR=GRAY></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK0" name="RCHK0" value="0x3041[&#x3041]"><BR>
+<IMG SRC="picture/0x3041.BMP" alt="0x3041[‚Ÿ]" width="21" height="26"><BR><font size=2 color=green>0x3041</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK1" name="RCHK1" value="0x3042[&#x3042]"><BR>
+<IMG SRC="picture/0x3042.BMP" alt="0x3042[E]" width="22" height="26"><BR><font size=2 color=green>0x3042</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK2" name="RCHK2" value="0x3043[&#x3043]"><BR>
+<IMG SRC="picture/0x3043.BMP" alt="0x3043[‚¡]" width="22" height="26"><BR><font size=2 color=green>0x3043</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK3" name="RCHK3" value="0x3044[&#x3044]"><BR>
+<IMG SRC="picture/0x3044.BMP" alt="0x3044[‚¢]" width="22" height="26"><BR><font size=2 color=green>0x3044</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK4" name="RCHK4" value="0x3045[&#x3045]"><BR>
+<IMG SRC="picture/0x3045.BMP" alt="0x3045[‚£]" width="21" height="27"><BR><font size=2 color=green>0x3045</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK5" name="RCHK5" value="0x3046[&#x3046]"><BR>
+<IMG SRC="picture/0x3046.BMP" alt="0x3046[‚¤]" width="22" height="27"><BR><font size=2 color=green>0x3046</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK6" name="RCHK6" value="0x3047[&#x3047]"><BR>
+<IMG SRC="picture/0x3047.BMP" alt="0x3047[‚¥]" width="22" height="27"><BR><font size=2 color=green>0x3047</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK7" name="RCHK7" value="0x3048[&#x3048]"><BR>
+<IMG SRC="picture/0x3048.BMP" alt="0x3048[‚¦]" width="22" height="26"><BR><font size=2 color=green>0x3048</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK8" name="RCHK8" value="0x3049[&#x3049]"><BR>
+<IMG SRC="picture/0x3049.BMP" alt="0x3049[‚§]" width="21" height="26"><BR><font size=2 color=green>0x3049</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK9" name="RCHK9" value="0x304a[&#x304a]"><BR>
+<IMG SRC="picture/0x304a.BMP" alt="0x304a[‚¨]" width="22" height="27"><BR><font size=2 color=green>0x304a</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK10" name="RCHK10" value="0x304b[&#x304b]"><BR>
+<IMG SRC="picture/0x304b.BMP" alt="0x304b[‚©]" width="21" height="27"><BR><font size=2 color=green>0x304b</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK11" name="RCHK11" value="0x304c[&#x304c]"><BR>
+<IMG SRC="picture/0x304c.BMP" alt="0x304c[‚ª]" width="22" height="26"><BR><font size=2 color=green>0x304c</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK12" name="RCHK12" value="0x304d[&#x304d]"><BR>
+<IMG SRC="picture/0x304d.BMP" alt="0x304d[‚«]" width="22" height="26"><BR><font size=2 color=green>0x304d</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK13" name="RCHK13" value="0x304e[&#x304e]"><BR>
+<IMG SRC="picture/0x304e.BMP" alt="0x304e[E" width="21" height="27"><BR><font size=2 color=green>0x304e</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK14" name="RCHK14" value="0x304f[&#x304f]"><BR>
+<IMG SRC="picture/0x304f.BMP" alt="0x304f[‚­]" width="21" height="26"><BR><font size=2 color=green>0x304f</font></TD>
+</TR>
+<TR ALIGN=CENTER><!-- 2nd line -->
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK15" name="RCHK15" value="0x3050[&#x3050]"><BR>
+<IMG SRC="picture/0x3050.BMP" alt="0x3050[‚®]" width="22" height="27"><BR><font size=2 color=green>0x3050</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK16" name="RCHK16" value="0x3051[&#x3051]"><BR>
+<IMG SRC="picture/0x3051.BMP" alt="0x3051[‚¯]" width="21" height="27"><BR><font size=2 color=green>0x3051</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK17" name="RCHK17" value="0x3052[&#x3052]"><BR>
+<IMG SRC="picture/0x3052.BMP" alt="0x3052[‚°]" width="21" height="25"><BR><font size=2 color=green>0x3052</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK18" name="RCHK18" value="0x3053[&#x3053]"><BR>
+<IMG SRC="picture/0x3053.BMP" alt="0x3053[‚±]" width="21" height="25"><BR><font size=2 color=green>0x3053</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK19" name="RCHK19" value="0x3054[&#x3054]"><BR>
+<IMG SRC="picture/0x3054.BMP" alt="0x3054[‚²]" width="21" height="26"><BR><font size=2 color=green>0x3054</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK20" name="RCHK20" value="0x3055[&#x3055]"><BR>
+<IMG SRC="picture/0x3055.BMP" alt="0x3055[‚³]" width="21" height="25"><BR><font size=2 color=green>0x3055</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK21" name="RCHK21" value="0x3056[&#x3056]"><BR>
+<IMG SRC="picture/0x3056.BMP" alt="0x3056[‚´]" width="21" height="26"><BR><font size=2 color=green>0x3056</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK22" name="RCHK22" value="0x3057[&#x3057]"><BR>
+<IMG SRC="picture/0x3057.BMP" alt="0x3057[‚µ]" width="21" height="26"><BR><font size=2 color=green>0x3057</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK23" name="RCHK23" value="0x3058[&#x3058]"><BR>
+<IMG SRC="picture/0x3058.BMP" alt="0x3058[E" width="20" height="27"><BR><font size=2 color=green>0x3058</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK24" name="RCHK24" value="0x3059[&#x3059]"><BR>
+<IMG SRC="picture/0x3059.BMP" alt="0x3059[‚•]" width="23" height="25"><BR><font size=2 color=green>0x3059</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK25" name="RCHK25" value="0x305a[&#x305a]"><BR>
+<IMG SRC="picture/0x305a.BMP" alt="0x305a[‚¸]" width="22" height="26"><BR><font size=2 color=green>0x305a</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK26" name="RCHK26" value="0x305b[&#x305b]"><BR>
+<IMG SRC="picture/0x305b.BMP" alt="0x305b[‚¹]" width="23" height="25"><BR><font size=2 color=green>0x305b</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK27" name="RCHK27" value="0x305c[&#x305c]"><BR>
+<IMG SRC="picture/0x305c.BMP" alt="0x305c[‚º]" width="22" height="25"><BR><font size=2 color=green>0x305c</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK28" name="RCHK28" value="0x305d[&#x305d]"><BR>
+<IMG SRC="picture/0x305d.BMP" alt="0x305d[‚»]" width="22" height="26"><BR><font size=2 color=green>0x305d</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK29" name="RCHK29" value="0x305e[&#x305e]"><BR>
+<IMG SRC="picture/0x305e.BMP" alt="0x305e[‚¼]" width="21" height="27"><BR><font size=2 color=green>0x305e</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK30" name="RCHK30" value="0x305f[&#x305f]"><BR>
+<IMG SRC="picture/0x305f.BMP" alt="0x305f[‚½]" width="19" height="26"><BR><font size=2 color=green>0x305f</font></TD>
+</TR>
+<TR ALIGN=CENTER><!-- 3rd line -->
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK31" name="RCHK31" value="0x3060[&#x3060]"><BR>
+<IMG SRC="picture/0x3060.BMP" alt="0x3060[‚¾]" width="22" height="26"><BR><font size=2 color=green>0x3060</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK32" name="RCHK32" value="0x3061[&#x3061]"><BR>
+<IMG SRC="picture/0x3061.BMP" alt="0x3061[‚¿]" width="21" height="25"><BR><font size=2 color=green>0x3061</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK33" name="RCHK33" value="0x3062[&#x3062]"><BR>
+<IMG SRC="picture/0x3062.BMP" alt="0x3062[‚À]" width="22" height="26"><BR><font size=2 color=green>0x3062</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK34" name="RCHK34" value="0x3063[&#x3063]"><BR>
+<IMG SRC="picture/0x3063.BMP" alt="0x3063[‚Á]" width="22" height="25"><BR><font size=2 color=green>0x3063</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK35" name="RCHK35" value="0x3064[&#x3064]"><BR>
+<IMG SRC="picture/0x3064.BMP" alt="0x3064[‚Â]" width="21" height="26"><BR><font size=2 color=green>0x3064</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK36" name="RCHK36" value="0x3065[&#x3065]"><BR>
+<IMG SRC="picture/0x3065.BMP" alt="0x3065[‚Ã]" width="22" height="26"><BR><font size=2 color=green>0x3065</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK37" name="RCHK37" value="0x3066[&#x3066]"><BR>
+<IMG SRC="picture/0x3066.BMP" alt="0x3066[‚Ä]" width="21" height="25"><BR><font size=2 color=green>0x3066</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK38" name="RCHK38" value="0x3067[&#x3067]"><BR>
+<IMG SRC="picture/0x3067.BMP" alt="0x3067[‚Å]" width="21" height="25"><BR><font size=2 color=green>0x3067</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK39" name="RCHK39" value="0x3068[&#x3068]"><BR>
+<IMG SRC="picture/0x3068.BMP" alt="0x3068[‚Æ]" width="21" height="26"><BR><font size=2 color=green>0x3068</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK40" name="RCHK40" value="0x3069[&#x3069]"><BR>
+<IMG SRC="picture/0x3069.BMP" alt="0x3069[‚Ç]" width="21" height="25"><BR><font size=2 color=green>0x3069</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK41" name="RCHK41" value="0x306a[&#x306a]"><BR>
+<IMG SRC="picture/0x306a.BMP" alt="0x306a[‚È]" width="22" height="26"><BR><font size=2 color=green>0x306a</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK42" name="RCHK42" value="0x306b[&#x306b]"><BR>
+<IMG SRC="picture/0x306b.BMP" alt="0x306b[‚É]" width="23" height="26"><BR><font size=2 color=green>0x306b</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK43" name="RCHK43" value="0x306c[&#x306c]"><BR>
+<IMG SRC="picture/0x306c.BMP" alt="0x306c[‚Ê]" width="22" height="26"><BR><font size=2 color=green>0x306c</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK44" name="RCHK44" value="0x306d[&#x306d]"><BR>
+<IMG SRC="picture/0x306d.BMP" alt="0x306d[‚Ë]" width="22" height="25"><BR><font size=2 color=green>0x306d</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK45" name="RCHK45" value="0x306e[&#x306e]"><BR>
+<IMG SRC="picture/0x306e.BMP" alt="0x306e[‚Ì]" width="21" height="25"><BR><font size=2 color=green>0x306e</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK46" name="RCHK46" value="0x306f[&#x306f]"><BR>
+<IMG SRC="picture/0x306f.BMP" alt="0x306f[‚Í]" width="22" height="25"><BR><font size=2 color=green>0x306f</font></TD>
+</TR>
+<TR ALIGN=CENTER><!-- 4th line -->
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK47" name="RCHK47" value="0x3070[&#x3070]"><BR>
+<IMG SRC="picture/0x3070.BMP" alt="0x3070[‚Î]" width="22" height="26"><BR><font size=2 color=green>0x3070</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK48" name="RCHK48" value="0x3071[&#x3071]"><BR>
+<IMG SRC="picture/0x3071.BMP" alt="0x3071[‚Ï]" width="21" height="26"><BR><font size=2 color=green>0x3071</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK49" name="RCHK49" value="0x3072[&#x3072]"><BR>
+<IMG SRC="picture/0x3072.BMP" alt="0x3072[‚Ð]" width="22" height="25"><BR><font size=2 color=green>0x3072</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK50" name="RCHK50" value="0x3073[&#x3073]"><BR>
+<IMG SRC="picture/0x3073.BMP" alt="0x3073[‚Ñ]" width="22" height="25"><BR><font size=2 color=green>0x3073</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK51" name="RCHK51" value="0x3074[&#x3074]"><BR>
+<IMG SRC="picture/0x3074.BMP" alt="0x3074[‚Ò]" width="21" height="25"><BR><font size=2 color=green>0x3074</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK52" name="RCHK52" value="0x3075[&#x3075]"><BR>
+<IMG SRC="picture/0x3075.BMP" alt="0x3075[‚Ó]" width="23" height="25"><BR><font size=2 color=green>0x3075</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK53" name="RCHK53" value="0x3076[&#x3076]"><BR>
+<IMG SRC="picture/0x3076.BMP" alt="0x3076[‚Ô]" width="21" height="26"><BR><font size=2 color=green>0x3076</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK54" name="RCHK54" value="0x3077[&#x3077]"><BR>
+<IMG SRC="picture/0x3077.BMP" alt="0x3077[‚Õ]" width="22" height="25"><BR><font size=2 color=green>0x3077</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK55" name="RCHK55" value="0x3078[&#x3078]"><BR>
+<IMG SRC="picture/0x3078.BMP" alt="0x3078[‚Ö]" width="21" height="24"><BR><font size=2 color=green>0x3078</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK56" name="RCHK56" value="0x3079[&#x3079]"><BR>
+<IMG SRC="picture/0x3079.BMP" alt="0x3079[‚×]" width="21" height="24"><BR><font size=2 color=green>0x3079</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK57" name="RCHK57" value="0x307a[&#x307a]"><BR>
+<IMG SRC="picture/0x307a.BMP" alt="0x307a[‚Ø]" width="22" height="25"><BR><font size=2 color=green>0x307a</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK58" name="RCHK58" value="0x307b[&#x307b]"><BR>
+<IMG SRC="picture/0x307b.BMP" alt="0x307b[‚Ù]" width="21" height="25"><BR><font size=2 color=green>0x307b</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK59" name="RCHK59" value="0x307c[&#x307c]"><BR>
+<IMG SRC="picture/0x307c.BMP" alt="0x307c[‚Ú]" width="21" height="26"><BR><font size=2 color=green>0x307c</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK60" name="RCHK60" value="0x307d[&#x307d]"><BR>
+<IMG SRC="picture/0x307d.BMP" alt="0x307d[‚Û]" width="20" height="26"><BR><font size=2 color=green>0x307d</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK61" name="RCHK61" value="0x307e[&#x307e]"><BR>
+<IMG SRC="picture/0x307e.BMP" alt="0x307e[‚Ü]" width="21" height="25"><BR><font size=2 color=green>0x307e</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK62" name="RCHK62" value="0x307f[&#x307f]"><BR>
+<IMG SRC="picture/0x307f.BMP" alt="0x307f[‚Ý]" width="21" height="25"><BR><font size=2 color=green>0x307f</font></TD>
+</TR>
+<TR ALIGN=CENTER><!-- 5th line -->
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK63" name="RCHK63" value="0x3080[&#x3080]"><BR>
+<IMG SRC="picture/0x3080.BMP" alt="0x3080[‚Þ]" width="22" height="26"><BR><font size=2 color=green>0x3080</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK64" name="RCHK64" value="0x3081[&#x3081]"><BR>
+<IMG SRC="picture/0x3081.BMP" alt="0x3081[‚ß]" width="21" height="25"><BR><font size=2 color=green>0x3081</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK65" name="RCHK65" value="0x3082[&#x3082]"><BR>
+<IMG SRC="picture/0x3082.BMP" alt="0x3082[‚à]" width="20" height="26"><BR><font size=2 color=green>0x3082</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK66" name="RCHK66" value="0x3083[&#x3083]"><BR>
+<IMG SRC="picture/0x3083.BMP" alt="0x3083[‚á]" width="20" height="26"><BR><font size=2 color=green>0x3083</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK67" name="RCHK67" value="0x3084[&#x3084]"><BR>
+<IMG SRC="picture/0x3084.BMP" alt="0x3084[‚â]" width="22" height="25"><BR><font size=2 color=green>0x3084</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK68" name="RCHK68" value="0x3085[&#x3085]"><BR>
+<IMG SRC="picture/0x3085.BMP" alt="0x3085[‚ã]" width="21" height="26"><BR><font size=2 color=green>0x3085</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK69" name="RCHK69" value="0x3086[&#x3086]"><BR>
+<IMG SRC="picture/0x3086.BMP" alt="0x3086[‚ä]" width="23" height="25"><BR><font size=2 color=green>0x3086</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK70" name="RCHK70" value="0x3087[&#x3087]"><BR>
+<IMG SRC="picture/0x3087.BMP" alt="0x3087[‚å]" width="21" height="26"><BR><font size=2 color=green>0x3087</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK71" name="RCHK71" value="0x3088[&#x3088]"><BR>
+<IMG SRC="picture/0x3088.BMP" alt="0x3088[‚æ]" width="20" height="26"><BR><font size=2 color=green>0x3088</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK72" name="RCHK72" value="0x3089[&#x3089]"><BR>
+<IMG SRC="picture/0x3089.BMP" alt="0x3089[‚ç]" width="21" height="25"><BR><font size=2 color=green>0x3089</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK73" name="RCHK73" value="0x308a[&#x308a]"><BR>
+<IMG SRC="picture/0x308a.BMP" alt="0x308a[‚è]" width="20" height="25"><BR><font size=2 color=green>0x308a</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK74" name="RCHK74" value="0x308b[&#x308b]"><BR>
+<IMG SRC="picture/0x308b.BMP" alt="0x308b[‚é]" width="21" height="24"><BR><font size=2 color=green>0x308b</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK75" name="RCHK75" value="0x308c[&#x308c]"><BR>
+<IMG SRC="picture/0x308c.BMP" alt="0x308c[‚ê]" width="21" height="25"><BR><font size=2 color=green>0x308c</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK76" name="RCHK76" value="0x308d[&#x308d]"><BR>
+<IMG SRC="picture/0x308d.BMP" alt="0x308d[‚ë]" width="22" height="25"><BR><font size=2 color=green>0x308d</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK77" name="RCHK77" value="0x308e[&#x308e]"><BR>
+<IMG SRC="picture/0x308e.BMP" alt="0x308e[‚ì]" width="20" height="26"><BR><font size=2 color=green>0x308e</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK78" name="RCHK78" value="0x308f[&#x308f]"><BR>
+<IMG SRC="picture/0x308f.BMP" alt="0x308f[‚í]" width="22" height="26"><BR><font size=2 color=green>0x308f</font></TD>
+</TR>
+<TR ALIGN=CENTER><!-- 6th line -->
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK79" name="RCHK79" value="0x3092[&#x3092]"><BR>
+<IMG SRC="picture/0x3092.BMP" alt="0x3092[‚ð]" width="21" height="25"><BR><font size=2 color=green>0x3092</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK80" name="RCHK80" value="0x3093[&#x3093]"><BR>
+<IMG SRC="picture/0x3093.BMP" alt="0x3093[‚ñ]" width="21" height="26"><BR><font size=2 color=green>0x3093</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK81" name="RCHK81" value="0x30a1[&#x30a1]"><BR>
+<IMG SRC="picture/0x30a1.BMP" alt="0x30a1[ƒ@]" width="22" height="25"><BR><font size=2 color=green>0x30a1</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK82" name="RCHK82" value="0x30a2[&#x30a2]"><BR>
+<IMG SRC="picture/0x30a2.BMP" alt="0x30a2[ƒA]" width="22" height="25"><BR><font size=2 color=green>0x30a2</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK83" name="RCHK83" value="0x30a3[&#x30a3]"><BR>
+<IMG SRC="picture/0x30a3.BMP" alt="0x30a3[ƒB]" width="21" height="26"><BR><font size=2 color=green>0x30a3</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK84" name="RCHK84" value="0x30a4[&#x30a4]"><BR>
+<IMG SRC="picture/0x30a4.BMP" alt="0x30a4[ƒC]" width="21" height="26"><BR><font size=2 color=green>0x30a4</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK85" name="RCHK85" value="0x30a5[&#x30a5]"><BR>
+<IMG SRC="picture/0x30a5.BMP" alt="0x30a5[ƒD]" width="21" height="26"><BR><font size=2 color=green>0x30a5</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK86" name="RCHK86" value="0x30a6[&#x30a6]"><BR>
+<IMG SRC="picture/0x30a6.BMP" alt="0x30a6[ƒE]" width="21" height="26"><BR><font size=2 color=green>0x30a6</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK87" name="RCHK87" value="0x30a7[&#x30a7]"><BR>
+<IMG SRC="picture/0x30a7.BMP" alt="0x30a7[ƒF]" width="20" height="25"><BR><font size=2 color=green>0x30a7</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK88" name="RCHK88" value="0x30a8[&#x30a8]"><BR>
+<IMG SRC="picture/0x30a8.BMP" alt="0x30a8[ƒG]" width="21" height="21"><BR><font size=2 color=green>0x30a8</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK89" name="RCHK89" value="0x30a9[&#x30a9]"><BR>
+<IMG SRC="picture/0x30a9.BMP" alt="0x30a9[ƒH]" width="21" height="24"><BR><font size=2 color=green>0x30a9</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK90" name="RCHK90" value="0x30aa[&#x30aa]"><BR>
+<IMG SRC="picture/0x30aa.BMP" alt="0x30aa[ƒI]" width="21" height="24"><BR><font size=2 color=green>0x30aa</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK91" name="RCHK91" value="0x30ab[&#x30ab]"><BR>
+<IMG SRC="picture/0x30ab.BMP" alt="0x30ab[ƒJ]" width="21" height="25"><BR><font size=2 color=green>0x30ab</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK92" name="RCHK92" value="0x30ac[&#x30ac]"><BR>
+<IMG SRC="picture/0x30ac.BMP" alt="0x30ac[ƒK]" width="22" height="25"><BR><font size=2 color=green>0x30ac</font></TD>
+</TR>
+<TR ALIGN=CENTER><!-- 7th line -->
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK93" name="RCHK93" value="0x30ad[&#x30ad]"><BR>
+<IMG SRC="picture/0x30ad.BMP" alt="0x30ad[ƒL]" width="20" height="25"><BR><font size=2 color=green>0x30ad</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK94" name="RCHK94" value="0x30ae[&#x30ae]"><BR>
+<IMG SRC="picture/0x30ae.BMP" alt="0x30ae[ƒM]" width="21" height="25"><BR><font size=2 color=green>0x30ae</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK95" name="RCHK95" value="0x30af[&#x30af]"><BR>
+<IMG SRC="picture/0x30af.BMP" alt="0x30af[ƒN]" width="20" height="25"><BR><font size=2 color=green>0x30af</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK96" name="RCHK96" value="0x30b0[&#x30b0]"><BR>
+<IMG SRC="picture/0x30b0.BMP" alt="0x30b0[ƒO]" width="20" height="26"><BR><font size=2 color=green>0x30b0</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK97" name="RCHK97" value="0x30b1[&#x30b1]"><BR>
+<IMG SRC="picture/0x30b1.BMP" alt="0x30b1[ƒP]" width="21" height="25"><BR><font size=2 color=green>0x30b1</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK98" name="RCHK98" value="0x30b2[&#x30b2]"><BR>
+<IMG SRC="picture/0x30b2.BMP" alt="0x30b2[ƒQ]" width="22" height="25"><BR><font size=2 color=green>0x30b2</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK99" name="RCHK99" value="0x30b3[&#x30b3]"><BR>
+<IMG SRC="picture/0x30b3.BMP" alt="0x30b3[ƒR]" width="21" height="23"><BR><font size=2 color=green>0x30b3</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK100" name="RCHK100" value="0x30b4[&#x30b4]"><BR>
+<IMG SRC="picture/0x30b4.BMP" alt="0x30b4[ƒS]" width="21" height="25"><BR><font size=2 color=green>0x30b4</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK101" name="RCHK101" value="0x30b5[&#x30b5]"><BR>
+<IMG SRC="picture/0x30b5.BMP" alt="0x30b5[ƒT]" width="22" height="25"><BR><font size=2 color=green>0x30b5</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK102" name="RCHK102" value="0x30b6[&#x30b6]"><BR>
+<IMG SRC="picture/0x30b6.BMP" alt="0x30b6[ƒU]" width="21" height="25"><BR><font size=2 color=green>0x30b6</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK103" name="RCHK103" value="0x30b7[&#x30b7]"><BR>
+<IMG SRC="picture/0x30b7.BMP" alt="0x30b7[ƒV]" width="21" height="25"><BR><font size=2 color=green>0x30b7</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK104" name="RCHK104" value="0x30b8[&#x30b8]"><BR>
+<IMG SRC="picture/0x30b8.BMP" alt="0x30b8[ƒW]" width="21" height="25"><BR><font size=2 color=green>0x30b8</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK105" name="RCHK105" value="0x30b9[&#x30b9]"><BR>
+<IMG SRC="picture/0x30b9.BMP" alt="0x30b9[ƒX]" width="22" height="26"><BR><font size=2 color=green>0x30b9</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK106" name="RCHK106" value="0x30ba[&#x30ba]"><BR>
+<IMG SRC="picture/0x30ba.BMP" alt="0x30ba[ƒY]" width="20" height="26"><BR><font size=2 color=green>0x30ba</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK107" name="RCHK107" value="0x30bb[&#x30bb]"><BR>
+<IMG SRC="picture/0x30bb.BMP" alt="0x30bb[ƒZ]" width="21" height="25"><BR><font size=2 color=green>0x30bb</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK108" name="RCHK108" value="0x30bc[&#x30bc]"><BR>
+<IMG SRC="picture/0x30bc.BMP" alt="0x30bc[ƒ[]" width="20" height="25"><BR><font size=2 color=green>0x30ac</font></TD>
+</TR>
+<TR ALIGN=CENTER><!-- 8th line -->
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK109" name="RCHK109" value="0x30bd[&#x30bd]"><BR>
+<IMG SRC="picture/0x30bd.BMP" alt="0x30bd[ƒ\]" width="22" height="26"><BR><font size=2 color=green>0x30bd</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK110" name="RCHK110" value="0x30be[&#x30be]"><BR>
+<IMG SRC="picture/0x30be.BMP" alt="0x30be[ƒ]]" width="21" height="25"><BR><font size=2 color=green>0x30be</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK111" name="RCHK111" value="0x30bf[&#x30bf]"><BR>
+<IMG SRC="picture/0x30bf.BMP" alt="0x30bf[ƒ^]" width="21" height="24"><BR><font size=2 color=green>0x30bf</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK112" name="RCHK112" value="0x30c0[&#x30c0]"><BR>
+<IMG SRC="picture/0x30c0.BMP" alt="0x30c0[ƒ_]" width="20" height="25"><BR><font size=2 color=green>0x30c0</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK113" name="RCHK113" value="0x30c1[&#x30c1]"><BR>
+<IMG SRC="picture/0x30c1.BMP" alt="0x30c1[ƒ`]" width="21" height="25"><BR><font size=2 color=green>0x30c1</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK114" name="RCHK114" value="0x30c2[&#x30c2]"><BR>
+<IMG SRC="picture/0x30c2.BMP" alt="0x30c2[ƒa]" width="21" height="24"><BR><font size=2 color=green>0x30c2</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK115" name="RCHK115" value="0x30c3[&#x30c3]"><BR>
+<IMG SRC="picture/0x30c3.BMP" alt="0x30c3[ƒb]" width="21" height="24"><BR><font size=2 color=green>0x30c3</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK116" name="RCHK116" value="0x30c4[&#x30c4]"><BR>
+<IMG SRC="picture/0x30c4.BMP" alt="0x30c4[ƒc]" width="21" height="24"><BR><font size=2 color=green>0x30c4</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK117" name="RCHK117" value="0x30c5[&#x30c5]"><BR>
+<IMG SRC="picture/0x30c5.BMP" alt="0x30c5[ƒd]" width="21" height="24"><BR><font size=2 color=green>0x30c5</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK118" name="RCHK118" value="0x30c6[&#x30c6]"><BR>
+<IMG SRC="picture/0x30c6.BMP" alt="0x30c6[ƒe]" width="21" height="25"><BR><font size=2 color=green>0x30c6</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK119" name="RCHK119" value="0x30c7[&#x30c7]"><BR>
+<IMG SRC="picture/0x30c7.BMP" alt="0x30c7[ƒf]" width="21" height="25"><BR><font size=2 color=green>0x30c7</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK120" name="RCHK120" value="0x30c8[&#x30c8]"><BR>
+<IMG SRC="picture/0x30c8.BMP" alt="0x30c8[ƒg]" width="19" height="25"><BR><font size=2 color=green>0x30c8</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK121" name="RCHK121" value="0x30c9[&#x30c9]"><BR>
+<IMG SRC="picture/0x30c9.BMP" alt="0x30c9[ƒh]" width="21" height="25"><BR><font size=2 color=green>0x30c9</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK122" name="RCHK122" value="0x30ca[&#x30ca]"><BR>
+<IMG SRC="picture/0x30ca.BMP" alt="0x30ca[ƒi]" width="22" height="26"><BR><font size=2 color=green>0x30ca</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK123" name="RCHK123" value="0x30cb[&#x30cb]"><BR>
+<IMG SRC="picture/0x30cb.BMP" alt="0x30cb[ƒj]" width="20" height="23"><BR><font size=2 color=green>0x30cb</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK124" name="RCHK124" value="0x30cc[&#x30cc]"><BR>
+<IMG SRC="picture/0x30cc.BMP" alt="0x30cc[ƒk]" width="20" height="24"><BR><font size=2 color=green>0x30cc</font></TD>
+</TR>
+<TR ALIGN=CENTER><!-- 9th line -->
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK125" name="RCHK125" value="0x30cd[&#x30cd]"><BR>
+<IMG SRC="picture/0x30cd.BMP" alt="0x30cd[ƒl]" width="22" height="25"><BR><font size=2 color=green>0x30cd</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK126" name="RCHK126" value="0x30ce[&#x30ce]"><BR>
+<IMG SRC="picture/0x30ce.BMP" alt="0x30ce[ƒm]" width="20" height="25"><BR><font size=2 color=green>0x30ce</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK127" name="RCHK127" value="0x30cf[&#x30cf]"><BR>
+<IMG SRC="picture/0x30cf.BMP" alt="0x30cf[ƒn]" width="21" height="24"><BR><font size=2 color=green>0x30cf</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK128" name="RCHK128" value="0x30d0[&#x30d0]"><BR>
+<IMG SRC="picture/0x30d0.BMP" alt="0x30d0[ƒo]" width="22" height="24"><BR><font size=2 color=green>0x30d0</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK129" name="RCHK129" value="0x30d1[&#x30d1]"><BR>
+<IMG SRC="picture/0x30d1.BMP" alt="0x30d1[ƒp]" width="21" height="25"><BR><font size=2 color=green>0x30d1</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK130" name="RCHK130" value="0x30d2[&#x30d2]"><BR>
+<IMG SRC="picture/0x30d2.BMP" alt="0x30d2[ƒq]" width="21" height="24"><BR><font size=2 color=green>0x30d2</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK131" name="RCHK131" value="0x30d3[&#x30d3]"><BR>
+<IMG SRC="picture/0x30d3.BMP" alt="0x30d3[ƒr]" width="21" height="24"><BR><font size=2 color=green>0x30d3</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK132" name="RCHK132" value="0x30d4[&#x30d4]"><BR>
+<IMG SRC="picture/0x30d4.BMP" alt="0x30d4[ƒs]" width="21" height="26"><BR><font size=2 color=green>0x30d4</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK133" name="RCHK133" value="0x30d5[&#x30d5]"><BR>
+<IMG SRC="picture/0x30d5.BMP" alt="0x30d5[ƒt]" width="21" height="25"><BR><font size=2 color=green>0x30d5</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK134" name="RCHK134" value="0x30d6[&#x30d6]"><BR>
+<IMG SRC="picture/0x30d6.BMP" alt="0x30d6[ƒu]" width="20" height="23"><BR><font size=2 color=green>0x30d6</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK135" name="RCHK135" value="0x30d7[&#x30d7]"><BR>
+<IMG SRC="picture/0x30d7.BMP" alt="0x30d7[ƒv]" width="20" height="25"><BR><font size=2 color=green>0x30d7</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK136" name="RCHK136" value="0x30d8[&#x30d8]"><BR>
+<IMG SRC="picture/0x30d8.BMP" alt="0x30d8[ƒw]" width="21" height="24"><BR><font size=2 color=green>0x30d8</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK137" name="RCHK137" value="0x30d9[&#x30d9]"><BR>
+<IMG SRC="picture/0x30d9.BMP" alt="0x30d9[ƒx]" width="21" height="24"><BR><font size=2 color=green>0x30d9</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK138" name="RCHK138" value="0x30da[&#x30da]"><BR>
+<IMG SRC="picture/0x30da.BMP" alt="0x30da[ƒy]" width="21" height="24"><BR><font size=2 color=green>0x30da</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK139" name="RCHK139" value="0x30db[&#x30db]"><BR>
+<IMG SRC="picture/0x30db.BMP" alt="0x30db[ƒz]" width="21" height="25"><BR><font size=2 color=green>0x30db</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK140" name="RCHK140" value="0x30dc[&#x30dc]"><BR>
+<IMG SRC="picture/0x30dc.BMP" alt="0x30dc[ƒ{]" width="20" height="24"><BR><font size=2 color=green>0x30dc</font></TD>
+</TR>
+<TR ALIGN=CENTER><!-- 10th line -->
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK141" name="RCHK141" value="0x30dd[&#x30dd]"><BR>
+<IMG SRC="picture/0x30dd.BMP" alt="0x30dd[ƒ|]" width="21" height="25"><BR><font size=2 color=green>0x30dd</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK142" name="RCHK142" value="0x30de[&#x30de]"><BR>
+<IMG SRC="picture/0x30de.BMP" alt="0x30de[ƒ}]" width="23" height="25"><BR><font size=2 color=green>0x30de</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK143" name="RCHK143" value="0x30df[&#x30df]"><BR>
+<IMG SRC="picture/0x30df.BMP" alt="0x30df[ƒ~]" width="20" height="25"><BR><font size=2 color=green>0x30df</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK144" name="RCHK144" value="0x30e0[&#x30e0]"><BR>
+<IMG SRC="picture/0x30e0.BMP" alt="0x30e0[ƒ€]" width="20" height="24"><BR><font size=2 color=green>0x30e0</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK145" name="RCHK145" value="0x30e1[&#x30e1]"><BR>
+<IMG SRC="picture/0x30e1.BMP" alt="0x30e1[ƒ]" width="21" height="26"><BR><font size=2 color=green>0x30e1</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK146" name="RCHK146" value="0x30e2[&#x30e2]"><BR>
+<IMG SRC="picture/0x30e2.BMP" alt="0x30e2[ƒ‚]" width="22" height="26"><BR><font size=2 color=green>0x30e2</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK147" name="RCHK147" value="0x30e3[&#x30e3]"><BR>
+<IMG SRC="picture/0x30e3.BMP" alt="0x30e3[ƒƒ]" width="20" height="26"><BR><font size=2 color=green>0x30e3</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK148" name="RCHK148" value="0x30e4[&#x30e4]"><BR>
+<IMG SRC="picture/0x30e4.BMP" alt="0x30e4[ƒ„]" width="22" height="25"><BR><font size=2 color=green>0x30e4</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK149" name="RCHK149" value="0x30e5[&#x30e5]"><BR>
+<IMG SRC="picture/0x30e5.BMP" alt="0x30e5[ƒ…]" width="21" height="25"><BR><font size=2 color=green>0x30e5</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK150" name="RCHK150" value="0x30e6[&#x30e6]"><BR>
+<IMG SRC="picture/0x30e6.BMP" alt="0x30e6[ƒ†]" width="21" height="24"><BR><font size=2 color=green>0x30e6</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK151" name="RCHK151" value="0x30e7[&#x30e7]"><BR>
+<IMG SRC="picture/0x30e7.BMP" alt="0x30e7[ƒ‡]" width="21" height="24"><BR><font size=2 color=green>0x30e7</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK152" name="RCHK152" value="0x30e8[&#x30e8]"><BR>
+<IMG SRC="picture/0x30e8.BMP" alt="0x30e8[ƒˆ]" width="21" height="27"><BR><font size=2 color=green>0x30e8</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK153" name="RCHK153" value="0x30e9[&#x30e9]"><BR>
+<IMG SRC="picture/0x30e9.BMP" alt="0x30e9[ƒ‰]" width="19" height="26"><BR><font size=2 color=green>0x30e9</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK154" name="RCHK154" value="0x30ea[&#x30ea]"><BR>
+<IMG SRC="picture/0x30ea.BMP" alt="0x30ea[ƒŠ]" width="22" height="25"><BR><font size=2 color=green>0x30ea</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK155" name="RCHK155" value="0x30eb[&#x30eb]"><BR>
+<IMG SRC="picture/0x30eb.BMP" alt="0x30eb[ƒ‹]" width="20" height="22"><BR><font size=2 color=green>0x30eb</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK156" name="RCHK156" value="0x30ec[&#x30ec]"><BR>
+<IMG SRC="picture/0x30ec.BMP" alt="0x30ec[ƒŒ]" width="19" height="23"><BR><font size=2 color=green>0x30ec</font></TD>
+</TR>
+<TR ALIGN=CENTER><!-- 11th line -->
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK157" name="RCHK157" value="0x30ed[&#x30ed]"><BR>
+<IMG SRC="picture/0x30ed.BMP" alt="0x30ed[ƒ]" width="18" height="24"><BR><font size=2 color=green>0x30ed</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK158" name="RCHK158" value="0x30ee[&#x30ee]"><BR>
+<IMG SRC="picture/0x30ee.BMP" alt="0x30ee[ƒŽ]" width="20" height="24"><BR><font size=2 color=green>0x30ee</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK159" name="RCHK159" value="0x30ef[&#x30ef]"><BR>
+<IMG SRC="picture/0x30ef.BMP" alt="0x30ef[ƒ]" width="20" height="25"><BR><font size=2 color=green>0x30ef</font></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK160" name="RCHK160" value="0x30f2[&#x30f2]"><BR>
+<IMG SRC="picture/0x30f2.BMP" alt="0x30f2[ƒ’]" width="20" height="25"><BR><font size=2 color=green>0x30f2</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK161" name="RCHK161" value="0x30f3[&#x30f3]"><BR>
+<IMG SRC="picture/0x30f3.BMP" alt="0x30f3[ƒ“]" width="21" height="24"><BR><font size=2 color=green>0x30f3</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK162" name="RCHK162" value="0x30f4[&#x30f4]"><BR>
+<IMG SRC="picture/0x30f4.BMP" alt="0x30f4[ƒ”]" width="21" height="24"><BR><font size=2 color=green>0x30f4</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK163" name="RCHK163" value="0x30f5[&#x30f5]"><BR>
+<IMG SRC="picture/0x30f5.BMP" alt="0x30f5[ƒ•]" width="21" height="25"><BR><font size=2 color=green>0x30f5</font></TD>
+<TD><input type="checkbox" class="saveSnapshot" id="RCHK164" name="RCHK164" value="0x30f6[&#x30f6]"><BR>
+<IMG SRC="picture/0x30f6.BMP" alt="0x30f6[ƒ–]" width="20" height="24"><BR><font size=2 color=green>0x30f6</font></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+<TD BGCOLOR=GRAY></TD>
+</TR>
+</TABLE>
+</FORM>
+
+NTR-06-0305-001-B<br>CONFIDENTIAL
+</BODY></HTML>
